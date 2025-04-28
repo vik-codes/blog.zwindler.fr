@@ -1,0 +1,34 @@
+ auto lo
+ iface lo inet loopback
+
+ iface eth0 inet manual
+
+ iface eth1 inet manual
+
+ auto vmbr0
+ iface vmbr0 inet static
+   address  91.xx.xx.xx
+   netmask  255.255.255.0
+   gateway  91.xx.xx.254
+   broadcast  91.xx.xx.255
+   bridge_ports eth0
+   bridge_stp offvi
+   bridge_fd 0
+   network 91.xx.xx.0
+
+ auto vmbr1
+ iface vmbr1 inet static
+   address  10.0.0.1
+   netmask  255.255.255.252
+   bridge_ports WAN
+   bridge_stp off
+   bridge_fd 0
+   post-up /root/kvm-networking-up.sh
+
+ auto vmbr2
+ iface vmbr2 inet static
+        address  192.168.9.1
+        netmask  255.255.255.0
+        bridge_ports LAN
+        bridge_stp off
+        bridge_fd 0

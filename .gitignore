@@ -1,0 +1,9 @@
+themes
+resources
+assets/jsconfig.json
+public
+resources/_gen
+.vscode
+.hugo*
+
+.DS_store

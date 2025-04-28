@@ -1,0 +1,9 @@
+---
+title: "Script"
+description: "Tous les articles ayant trait au scripting en général"
+slug: "Script"
+image: "bash.png"
+style:
+    background: "#2a9d8f"
+    color: "#fff"
+---

@@ -1,0 +1,168 @@
+---
+title: 'Emergency mode : point de montage mal ordonné par systemd-fstab-generator'
+authors:
+  - zwindler
+type: post
+date: 2017-01-03T13:00:18+00:00
+url: /2017/01/03/emergency-boot-point-de-montage-mal-ordonne-systemd/
+image: /2016/12/mode_emerg_short.png
+categories:
+  - Système
+tags:
+  - bind
+  - boot
+  - emergency
+  - filesystem
+  - fstab
+  - mode maintenance
+  - montage
+  - mount
+  - systemd
+  - systemd-fstab-generator
+
+---
+## Pourquoi mon OS passe en emergency lorsque je rajoute un montage bind ou automount dans la fstab ?
+
+C’est un problème que j’ai rencontré récemment. Nous avons progressivement migré toutes nos machines sous RHEL et CentOS 7, et nous avons essuyés par mal de plâtres dans migration, notamment par manque de connaissances de la nouvelles version qui amène son lot de nouveautés comme XFS, firewalld et surtout systemd.
+
+Un des problèmes rencontrés récemment était que sur une de nos machines, lorsqu’un reboot avait lieu, elle passait systématiquement en mode Maintenance (Emergency mode en anglais), mais que nous pouvions contourner le problème avec un simple ctrl + D.
+
+## Symptôme
+
+En réalité, ce problème n’est apparu qu’après mise en place d’un montage de type _bind_ ou _automount_ sur un serveur RHEL / CentOS 7+ (ou tout autre Linux avec systemd). Il n’y a pas de messages particuliers qui indique une erreur.
+
+![](/2016/12/mode_emerg.png)
+
+Après analyse des logs, on pouvait lire les entrées suivantes dans _journalctl_ (comme conseillé par le mode Emergency) :
+
+```
+journalctl -xb
+[...]
+-- Le chargement de l'espace utilisateur a nécessité 3905312 microsecondes.
+déc. 27 02:00:18 srv01 systemd[1]: Received SIGRTMIN+20 from PID 272 (plymouthd).
+déc. 27 02:00:18 srv01 systemd[1]: Received SIGRTMIN+21 from PID 272 (plymouthd).
+déc. 27 13:51:22 srv01 systemd[1]: Found ordering cycle on application-share\x2dbind.mount/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on application-share.mount/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on network-online.target/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on network.target/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on NetworkManager.service/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on basic.target/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on sysinit.target/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on rhel-autorelabel-mark.service/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on local-fs.target/start
+déc. 27 13:51:22 srv01 systemd[1]: Found dependency on application-share\x2dbind.mount/start
+déc. 27 13:51:22 srv01 systemd[1]: Breaking ordering cycle by deleting job application-share.mount/start
+déc. 27 13:51:22 srv01 systemd[1]: Job application-share.mount/start deleted to break ordering cycle starting with application-share\x2dbind.mount/start
+déc. 27 13:51:22 srv01 systemd[1]: Started Commit a transient machine-id on disk.
+-- Subject: L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage
+```
+
+
+Dans notre cas, dans le fichier /etc/fstab, il existe 2 entrées dépendantes l’une de l’autre avec un montage samba distant et un montage de type « bind » :
+
+```
+vi /etc/fstab
+[...]
+//samba.example.org/share /application/share/ cifs _netdev,auto,users,credentials=/application/.smbcred,context=system_u:object_r:svirt_sandbox_file_t:s0 0 0
+[...]
+/application/share/       /application/share-bind/  none    bind            0 0
+```
+
+
+## Contournement
+
+Un simple appui sur les touches Ctrl + D permet de passer outre l’erreur mais les points de montage ne sont pas disponibles à la fin de séquence de boot. Il est possible de le remonter sans problèmes particuliers avec la commande _mount_ classique.
+
+```
+sudo mount -a
+```
+
+
+## Cause
+
+Le problème est très bien expliqué dans [cet article en anglais (lien mort, j'utilise Internet Archive)](https://web.archive.org/web/20160604102941/https://copyninja.info/blog/systemd_automount_entry.html). Comme je l’annonçais en introduction, systemd a changé beaucoup de choses dans la façon dont le système traite le démarrage.
+
+Il existe des sous fonctions de systemd, notamment _systemd systemd.mount_, _systemd-fstab-generator_ et _systemd.automount_ qui se chargent de traiter le montage des filesystems à la manière de n’importe quel autre service (appelés « units » dans la terminologie systemd).
+
+Cependant, par défaut, il semble que le systemd-fstab-generator **ne tient pas compte de l’ordre dans lesquels les filesystems sont déclarés** ce qui peut provoquer des problèmes d’ordonnancement des montages !  
+Si c’est le cas, systemd préfère donc passer en mode Emergency et bloquer la séquence boot jusqu’à intervention d’un administrateur.
+
+On peut confirmer le problème en allant lire les fichiers units générés par systemd-fstab-generator. C’est fichiers se trouvent dans _/run/systemd/generator_ :
+
+```
+cd /run/systemd/generator/
+```
+
+
+```
+cat application-share.mount
+# Automatically generated by systemd-fstab-generator
+
+[Unit]
+SourcePath=/etc/fstab
+Documentation=man:fstab(5) man:systemd-fstab-generator(8)
+Before=remote-fs.target
+
+[Mount]
+What=//samba.example.org/share
+Where=/application/share
+Type=cifs
+Options=_netdev,auto,users,credentials=/application/.smbcred,context=system_u:object_r:svirt_sandbox_file_t:s0
+```
+
+
+```
+cat application-share\\x2dbind.mount
+# Automatically generated by systemd-fstab-generator
+
+[Unit]
+SourcePath=/etc/fstab
+Documentation=man:fstab(5) man:systemd-fstab-generator(8)
+Before=local-fs.target
+
+[Mount]
+What=/application/share/
+Where=/application/share-bind/
+Type=none
+Options=bind
+```
+
+
+Dans la philosophie systemd, il est nécessaire, quelque soit l’unit concerné, qu’il soit traité **après** ses dépendances au boot, et **avant** à l’extinction de la machine.
+
+Ici, il serait nécessaire d’avoir dans les fichiers application-share.mount et application-share\x2dbind.mount la directive _After=_ ou _Require=_, ce qui n’est pas le cas !
+
+## Solution
+
+Pour résoudre le problème, il existe une directive _x-systemd.requires=/path/to/dependancy_ à ajouter dans les options du filesystem qui doit être monter **après** un autre filsystem. De cette manière, le systemd-fstab-generator est capable de créer les « units systemd » disposant des bonnes directives After= et Requires=.
+
+On doit donc modifier le fichier /etc/fstab de la façon suivante :
+
+```
+vi /etc/fstab
+[...]
+//samba.example.org/share /application/share/ cifs _netdev,x-systemd.requires=/application,auto,users,credentials=/application/.smbcred,context=system_u:object_r:svirt_sandbox_file_t:s0 0 0
+[...]
+/application/share/       /application/share-bind/  x-systemd.requires=/application/share bind            0 0
+```
+
+
+On peut vérifier que la commande est bien prise en compte avec la commande suivante :
+
+```
+systemctl show -p After application-share.mount
+After=systemd-journald.socket network.target application.mount remote-fs-pre.target system.slice network-online.target -.mount
+```
+
+
+Ici on voit que /application/share nécessite que la couche réseau soit démarrée et que /application soit monté. Idem pour le montage « bind » :
+
+```
+systemctl show -p After application-share\\x2dbind.mount
+After=application-share.mount network.target systemd-journald.socket application.mount network-online.target system.slice local-fs-pre.target remote-fs-pre.target -.mount
+```
+
+
+De même, si on lit les fichiers units générés, on retrouve bien les directives After= et Requires= attendues.
+
+ [1]: /2016/12/mode_emerg.png

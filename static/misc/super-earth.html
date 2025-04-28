@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Étoiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('exotic.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .stars {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .star {
+            font-size: 50px;
+            color: gray;
+            transition: color 0.5s ease-in-out;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #555; /* Gris clair */
+            background-color: rgba(255, 238, 0, 0.85);
+            padding: 20px 160px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars">
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+    </div>
+    <div class="message">Outstanding Patriotism</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const stars = document.querySelectorAll(".star");
+            const message = document.querySelector(".message");
+
+            const delayBeforeStart = 3000; // Temps mort avant le début
+            const starInterval = 500; // Intervalle entre chaque étoile
+
+            setTimeout(() => {
+                stars.forEach((star, index) => {
+                    setTimeout(() => {
+                        star.style.color = "#FFEE00";
+                    }, index * starInterval);
+                });
+
+                setTimeout(() => {
+                    message.style.opacity = 1;
+                }, stars.length * starInterval);
+            }, delayBeforeStart);
+        });
+    </script>
+
+</body>
+</html>

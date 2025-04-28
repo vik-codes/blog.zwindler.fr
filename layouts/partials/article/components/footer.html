@@ -1,0 +1,25 @@
+<footer class="article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod">
+        {{ partial "helper/icon" "clock" }}
+        <span>
+            {{ T "article.lastUpdatedOn" }} {{ .Lastmod.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+        </span>
+    </section>
+    {{- end -}}
+
+    {{ partial "article/components/custom-footer" . }}
+</footer>
+
+<script data-goatcounter="https://blogzwindler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://tracker.blogtally.com/blogtally.min.js" data-site="5a222683-8a44-42a7-984a-2f75ae2d9062" defer></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="3d8f0ea9-97ed-44f6-82d1-bcd5b8e6efad"></script>
