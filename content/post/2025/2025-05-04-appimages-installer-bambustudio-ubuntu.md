@@ -49,7 +49,7 @@ Cette partie est la plus simple. On va donc simplement sur les releases github d
 
 On prend la dernière, on la télécharge :
 
-![](/2025/05/release.png)
+![](/2025/05/releases.png)
 
 À noter, les AppImages ne sont disponibles que pour Ubuntu 22.04 et 24.04 (et Fedora). Quelques versions plus tôt, c'était 20.04 et 24.04. Comme l'AppImage est liée à des libs (gtk) présentes sur l'OS, si vous lancez l'image Ubuntu avec la mauvaise version, il ne va pas trouver la version de la lib c'est très casse-pied.
 
