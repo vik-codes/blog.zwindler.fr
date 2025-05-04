@@ -5,7 +5,7 @@ authors:
 type: post
 date: 2025-05-04T12:00:00+02:00
 url: /2025/05/04/appimages-installer-bambustudio-ubuntu/
-image: /2025/05/bambustudio.png
+image: /2025/05/desktop.png
 categories:
   - DIY
 tags:
