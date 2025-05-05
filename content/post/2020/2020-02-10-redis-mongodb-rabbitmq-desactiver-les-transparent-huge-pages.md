@@ -10,7 +10,7 @@ image: /2020/01/mememe_1aa1a73fcaf242fa2e2642bfd90ccb42-1.jpg
 classic-editor-remember:
   - classic-editor
 categories:
-  - Système
+  - systeme
 tags:
   - couchbase
   - CPU

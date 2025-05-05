@@ -8,7 +8,7 @@ url: 2023/08/16/d-open-source-a-bullshit-licence-bsl
 image: /2023/08/28c1d418-5dd4-43c2-8345-4f4ce34f9ff2.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - bash
   - bashing

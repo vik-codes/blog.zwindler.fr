@@ -7,7 +7,7 @@ date: 2018-06-19T11:45:55+00:00
 url: /2018/06/19/openssh-ecouter-sur-des-ports-differents-en-fonction-de-linterface/
 image: /2018/06/openssh.png
 categories:
-  - Système
+  - systeme
 tags:
   - OpenSSH
   - port

@@ -9,7 +9,7 @@ image: /2014/03/lbvm1.png
 categories:
   - Cluster
   - Logiciel
-  - Système
+  - systeme
 tags:
   - CentOS
   - heartbeat

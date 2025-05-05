@@ -7,7 +7,7 @@ date: 2016-03-05T13:00:52+00:00
 url: /2016/03/05/a-fatal-error-occurred-while-trying-to-sysprep-the-machine/
 image: /2016/01/sysprep_error-1.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - A fatal error occurred while trying to sysprep the machine

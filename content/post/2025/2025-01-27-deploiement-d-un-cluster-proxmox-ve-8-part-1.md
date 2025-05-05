@@ -10,7 +10,7 @@ image: /2025/02/proxmox8.png
 categories:
   - autohebergement
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - kimsufi

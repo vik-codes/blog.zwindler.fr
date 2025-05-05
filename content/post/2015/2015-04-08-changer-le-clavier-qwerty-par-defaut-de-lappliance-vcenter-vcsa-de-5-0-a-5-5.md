@@ -8,7 +8,7 @@ url: /2015/04/08/changer-le-clavier-qwerty-par-defaut-de-lappliance-vcenter-vcsa
 image: /2015/07/vCSA.jpg
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - azerty

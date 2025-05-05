@@ -8,7 +8,7 @@ excerpt: "Suite de mon tutoriel pour imposer des politiques de conformité et de
 url: /2022/09/05/vos-politiques-de-conformite-sur-kubernetes-avec-kyverno-part2/
 image: /2022/07/Kyverno_Horizontal.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Docker

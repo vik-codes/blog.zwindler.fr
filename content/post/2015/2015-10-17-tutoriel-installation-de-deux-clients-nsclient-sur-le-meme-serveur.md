@@ -8,7 +8,7 @@ url: /2015/10/17/tutoriel-installation-de-deux-clients-nsclient-sur-le-meme-serv
 image: /2015/07/nsclient-logo.png
 categories:
   - Monitoring
-  - Système
+  - systeme
 tags:
   - client
   - clients multiples

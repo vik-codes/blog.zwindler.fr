@@ -8,7 +8,7 @@ excerpt: Optimisation de machines virtuelles PFsense dans Proxmox VE
 url: /2020/07/06/optimisation-de-pfsense-dans-proxmox-ve/
 image: /2020/03/article_logo_pfsense_proxmox.png
 categories:
-  - Système
+  - systeme
 tags:
   - kernel
   - KVM

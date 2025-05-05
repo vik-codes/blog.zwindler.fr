@@ -11,7 +11,7 @@ image: /2020/03/article_logo_pfsense_proxmox.png
 categories:
   - autohebergement
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - iptables

@@ -7,7 +7,7 @@ date: 2015-10-10T10:30:00+00:00
 url: /2015/10/10/bug-unable-to-execute-qemu-command-cont-sous-kvm-et-rhelcentos/
 image: /2015/10/kvm.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - 2.6.32

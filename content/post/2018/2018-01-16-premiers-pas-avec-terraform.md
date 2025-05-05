@@ -8,7 +8,7 @@ url: /2018/01/16/premiers-pas-avec-terraform/
 image: /2017/11/terraform.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cloud

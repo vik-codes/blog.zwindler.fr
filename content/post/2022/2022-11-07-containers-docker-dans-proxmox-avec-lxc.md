@@ -8,7 +8,7 @@ excerpt: "Quelques tips sur Proxmox VE que j'ai accumulé au fil des ans"
 url: /2022/11/07/containers-docker-dans-proxmox-avec-lxc/
 image: /2019/10/proxmox.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - LXC

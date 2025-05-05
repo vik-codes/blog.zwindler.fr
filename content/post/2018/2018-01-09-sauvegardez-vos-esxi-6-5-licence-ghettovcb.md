@@ -9,7 +9,7 @@ image: /2017/12/Consolidation_Backup.png
 categories:
   - DIY
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - GhettoVCB

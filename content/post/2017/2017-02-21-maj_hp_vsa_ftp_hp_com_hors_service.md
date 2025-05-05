@@ -8,7 +8,7 @@ url: /2017/02/21/maj_hp_vsa_ftp_hp_com_hors_service/
 image: /2017/02/hp_vsa-1.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CMC

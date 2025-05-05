@@ -8,7 +8,7 @@ url: /2018/05/22/sortie-de-proxmox-ve-5-2-1-les-nouveautes/
 image: /2017/08/proxmox_logo.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Ceph

@@ -9,7 +9,7 @@ url: /2020/03/23/supprimer-un-namespace-bloque-a-terminating/
 image: /2020/01/terminated.jpg
 categories:
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - kubectl

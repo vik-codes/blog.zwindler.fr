@@ -7,7 +7,7 @@ date: 2015-09-05T10:30:12+00:00
 url: /2015/09/05/debug-client-ntp-linux-vers-ntp-windows-server/
 image: /2015/09/ntp.png
 categories:
-  - Système
+  - systeme
 tags:
   - debug
   - dispersion

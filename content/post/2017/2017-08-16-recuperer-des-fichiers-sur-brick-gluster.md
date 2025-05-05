@@ -8,7 +8,7 @@ url: /2017/08/16/recuperer-des-fichiers-sur-brick-gluster/
 image: /2017/02/proxmox_and_glusterfs.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 
 ---

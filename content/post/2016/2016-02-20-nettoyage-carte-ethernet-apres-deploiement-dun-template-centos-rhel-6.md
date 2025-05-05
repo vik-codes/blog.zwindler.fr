@@ -7,7 +7,7 @@ date: 2016-02-20T19:00:58+00:00
 url: /2016/02/20/nettoyage-carte-ethernet-apres-deploiement-dun-template-centos-rhel-6/
 image: /2016/02/RedHatLogo.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CentOS 6

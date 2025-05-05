@@ -8,7 +8,7 @@ url: /2015/04/13/device-mapper-create-ioctl-failed-et-cannot-open-devsdx-device-
 image: /2015/05/multipathmap1.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - device or resource busy
   - device-mapper

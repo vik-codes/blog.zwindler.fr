@@ -8,7 +8,7 @@ url: /2018/02/27/harbor-la-docker-registry-dentreprise-open-source-de-vmware-par
 image: /2018/02/harbor.png
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Docker

@@ -8,7 +8,7 @@ url: /2016/11/15/administrer-des-serveurs-windows-avec-ansible/
 image: /2016/09/ansible-windows.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - ansible
   - kerberos

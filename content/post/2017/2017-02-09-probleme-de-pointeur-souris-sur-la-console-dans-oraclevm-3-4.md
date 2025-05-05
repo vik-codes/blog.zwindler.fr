@@ -7,7 +7,7 @@ date: 2017-02-09T13:00:44+00:00
 url: /2017/02/09/probleme-de-pointeur-souris-sur-la-console-dans-oraclevm-3-4/
 image: /2017/02/SimpleMouse.gif
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - décalage

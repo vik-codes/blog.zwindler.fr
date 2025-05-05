@@ -7,7 +7,7 @@ date: 2016-10-26T12:00:13+00:00
 url: /2016/10/26/comprendre-configurer-selinux-rhel-7/
 image: /2016/10/selinux.png
 categories:
-  - Système
+  - systeme
 tags:
   - CentOS
   - RHEL

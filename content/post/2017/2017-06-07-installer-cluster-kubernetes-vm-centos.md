@@ -7,7 +7,7 @@ date: 2017-06-07T12:00:53+00:00
 url: /2017/06/07/installer-cluster-kubernetes-vm-centos/
 image: /2017/06/kubernetes2.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Borg

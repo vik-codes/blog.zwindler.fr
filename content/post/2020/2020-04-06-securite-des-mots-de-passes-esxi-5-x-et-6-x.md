@@ -8,7 +8,7 @@ excerpt: Gestion de la sécurité des mots de passe locaux dans vSphere ESXi via
 url: /2020/04/06/securite-des-mots-de-passes-esxi-5-x-et-6-x/
 image: /2015/07/vmware2.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ESXi

@@ -9,7 +9,7 @@ image: /2018/03/kubernetes_le.png
 categories:
   - Cluster
   - DIY
-  - Système
+  - systeme
   - Virtualisation
 
 ---

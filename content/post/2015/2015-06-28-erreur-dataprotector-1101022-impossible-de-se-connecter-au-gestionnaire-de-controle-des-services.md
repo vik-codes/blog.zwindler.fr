@@ -8,7 +8,7 @@ url: /2015/06/28/erreur-dataprotector-1101022-impossible-de-se-connecter-au-gest
 image: /2015/06/HP_Data_Protector.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - 110:1022
   - antivirus

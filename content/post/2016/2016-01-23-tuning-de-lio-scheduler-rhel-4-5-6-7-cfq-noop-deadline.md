@@ -7,7 +7,7 @@ date: 2016-01-23T11:30:02+00:00
 url: /2016/01/23/tuning-de-lio-scheduler-rhel-4-5-6-7-cfq-noop-deadline/
 image: /2016/02/RedHatLogo.png
 categories:
-  - Système
+  - systeme
 tags:
   - CFQ
   - Deadline

@@ -7,7 +7,7 @@ date: 2016-06-30T11:00:38+00:00
 url: /2016/06/30/tutoriel-migrer-vers-windows-10-de-reseau-dentreprise/
 image: /2016/02/57UKydQS.png
 categories:
-  - Système
+  - systeme
 tags:
   - 8024402C
   - Ce PC est joint à un domaine

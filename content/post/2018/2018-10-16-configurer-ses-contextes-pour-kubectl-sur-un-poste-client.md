@@ -8,7 +8,7 @@ url: /2018/10/16/configurer-ses-contextes-pour-kubectl-sur-un-poste-client/
 image: /2017/11/kubernetes2.png
 categories:
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CAcert

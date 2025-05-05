@@ -13,7 +13,7 @@ categories:
   - autohebergement
   - Cluster
   - Divers
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

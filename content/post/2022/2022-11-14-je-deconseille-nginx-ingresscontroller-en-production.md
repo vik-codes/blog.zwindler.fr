@@ -8,7 +8,7 @@ excerpt: "Régulièrement, j'indique que je ne considère pas l'ingressControlle
 url: /2022/11/14/je-deconseille-nginx-ingresscontroller-en-production/
 image: /2017/06/kubernetes2.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - nginx

@@ -8,7 +8,7 @@ url: /2018/09/12/installer-minikube-sur-windows-10-et-hyper-v-part-1/
 image: /2018/09/minikube.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - hyper-v

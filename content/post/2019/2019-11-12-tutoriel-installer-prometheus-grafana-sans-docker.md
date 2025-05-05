@@ -9,7 +9,7 @@ url: /2019/11/12/tutoriel-installer-prometheus-grafana-sans-docker/
 image: /2019/11/grafana_prometheus_proxmox.png
 categories:
   - Monitoring
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Docker

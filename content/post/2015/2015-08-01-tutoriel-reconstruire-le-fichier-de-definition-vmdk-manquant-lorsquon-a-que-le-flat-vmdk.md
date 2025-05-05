@@ -8,7 +8,7 @@ url: /2015/08/01/tutoriel-reconstruire-le-fichier-de-definition-vmdk-manquant-lo
 image: /2015/07/vmware2.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - ESX
   - ESX(i)

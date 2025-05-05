@@ -7,7 +7,7 @@ date: 2017-08-08T11:30:25+00:00
 url: /2017/08/08/vsphere-web-client-vmware-lookup-service-ssl-certificate-verification-failed/
 image: /2015/07/vmware2.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - flash

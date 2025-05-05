@@ -7,7 +7,7 @@ date: 2017-01-03T13:00:18+00:00
 url: /2017/01/03/emergency-boot-point-de-montage-mal-ordonne-systemd/
 image: /2016/12/mode_emerg_short.png
 categories:
-  - Système
+  - systeme
 tags:
   - bind
   - boot

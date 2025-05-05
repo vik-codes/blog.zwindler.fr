@@ -7,7 +7,7 @@ date: 2015-11-14T11:30:12+00:00
 url: /2015/11/14/reminder-desactiver-ipv6-sur-les-windows-server/
 image: /2015/11/wikipedia_slash8.png
 categories:
-  - Système
+  - systeme
 tags:
   - configuration
   - désactiver

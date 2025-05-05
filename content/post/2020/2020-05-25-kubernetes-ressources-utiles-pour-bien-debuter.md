@@ -8,7 +8,7 @@ excerpt: Ressources utiles sur Internet pour apprendre Kubernetes quand on débu
 url: /2020/05/25/kubernetes-ressources-utiles-pour-bien-debuter/
 image: /2019/07/concerning_kubernetes.jpg
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Kubernetes

@@ -8,7 +8,7 @@ url: /2013/07/07/demarrage-force-avec-moins-de-la-moitie-des-votes-sur-redhat-cl
 image: /2014/03/lbvm1.png
 categories:
   - Cluster
-  - Système
+  - systeme
 tags:
   - demarrage forcé
   - force start

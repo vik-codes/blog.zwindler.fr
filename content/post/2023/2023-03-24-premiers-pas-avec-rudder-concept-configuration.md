@@ -10,7 +10,7 @@ aliases:
 - /2023/03/27/premiers-pas-avec-rudder-concept-configuration/
 image: /2023/03/rudder_logo.png
 categories:
-  - Système
+  - systeme
 tags:
   - gestion de configuration
   - rudder

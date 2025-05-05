@@ -10,7 +10,7 @@ image: /2020/04/10participants.png
 categories:
   - autohebergement
   - Monitoring
-  - Système
+  - systeme
 tags:
   - grafana
   - Jitsi

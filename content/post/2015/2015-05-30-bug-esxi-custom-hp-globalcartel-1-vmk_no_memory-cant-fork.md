@@ -7,7 +7,7 @@ date: 2015-05-30T10:00:04+00:00
 url: /2015/05/30/bug-esxi-custom-hp-globalcartel-1-vmk_no_memory-cant-fork/
 image: /2015/05/01_vmk_no_memory1.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - 5.0

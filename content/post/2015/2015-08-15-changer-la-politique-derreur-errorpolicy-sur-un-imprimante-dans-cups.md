@@ -7,7 +7,7 @@ date: 2015-08-15T10:30:51+00:00
 url: /2015/08/15/changer-la-politique-derreur-errorpolicy-sur-un-imprimante-dans-cups/
 image: /2015/07/cce_cups.jpg
 categories:
-  - Système
+  - systeme
 tags:
   - accepting tasks
   - CUPS

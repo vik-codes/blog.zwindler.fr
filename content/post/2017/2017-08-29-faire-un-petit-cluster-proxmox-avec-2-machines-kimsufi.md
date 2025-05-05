@@ -7,7 +7,7 @@ date: 2017-08-29T11:40:23+00:00
 url: /2017/08/29/faire-un-petit-cluster-proxmox-avec-2-machines-kimsufi/
 image: /2017/08/proxmox_logo.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

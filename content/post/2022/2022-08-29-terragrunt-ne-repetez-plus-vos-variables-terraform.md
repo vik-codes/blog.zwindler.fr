@@ -11,7 +11,7 @@ aliases:
   - /2022/08/29/premiers-pas-avec-Terraform/
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cloud

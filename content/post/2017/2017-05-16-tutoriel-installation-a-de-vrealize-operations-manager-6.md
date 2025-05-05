@@ -8,7 +8,7 @@ url: /2017/05/16/tutoriel-installation-a-de-vrealize-operations-manager-6/
 image: /2017/05/vrom_logo.png
 categories:
   - Monitoring
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - vRealize Operations Manager

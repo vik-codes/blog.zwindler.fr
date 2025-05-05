@@ -11,7 +11,7 @@ classic-editor-remember:
   - block-editor
 categories:
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

@@ -9,7 +9,7 @@ image: /2017/04/vnx5300-2.jpg
 categories:
   - Script
   - Stockage
-  - Système
+  - systeme
 tags:
   - Clariion
   - EMC

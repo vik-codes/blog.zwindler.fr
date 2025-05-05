@@ -8,7 +8,7 @@ url: /2015/07/02/installer-le-pilote-odbc-doracle-11g-12c-sur-windows-2k82k12/
 image: /2015/07/oracle-microsoft.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - 11g
   - 12c

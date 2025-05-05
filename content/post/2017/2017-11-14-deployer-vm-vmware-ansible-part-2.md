@@ -8,7 +8,7 @@ url: /2017/11/14/deployer-vm-vmware-ansible-part-2/
 image: /2017/03/ansible_vpshere.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

@@ -8,7 +8,7 @@ url: /2024/09/28/proxmox-bad-scheduler/
 image: /2024/09/bad_scheduler.jpg
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Proxmox VE

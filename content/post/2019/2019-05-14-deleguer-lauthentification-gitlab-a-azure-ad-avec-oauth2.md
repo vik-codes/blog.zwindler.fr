@@ -8,7 +8,7 @@ url: /2019/05/14/deleguer-lauthentification-gitlab-a-azure-ad-avec-oauth2/
 image: /2019/05/gitlab_azuread-1.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - Active Directory
   - authentification

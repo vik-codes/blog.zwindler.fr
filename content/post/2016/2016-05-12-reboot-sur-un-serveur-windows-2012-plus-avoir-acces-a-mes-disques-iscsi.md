@@ -8,7 +8,7 @@ url: /2016/05/12/reboot-sur-un-serveur-windows-2012-plus-avoir-acces-a-mes-disqu
 image: /2016/02/57UKydQS.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - Cible
   - Initiateur

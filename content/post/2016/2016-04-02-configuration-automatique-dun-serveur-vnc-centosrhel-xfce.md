@@ -7,7 +7,7 @@ date: 2016-04-02T10:30:45+00:00
 url: /2016/04/02/configuration-automatique-dun-serveur-vnc-centosrhel-xfce/
 image: /2015/07/vnc.png
 categories:
-  - Système
+  - systeme
 tags:
   - KVM
   - tigerVNC

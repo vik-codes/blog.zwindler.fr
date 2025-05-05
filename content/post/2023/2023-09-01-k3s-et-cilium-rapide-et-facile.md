@@ -11,7 +11,7 @@ image: /2023/09/k3s_cilium.png
 categories:
   - Cluster
   - DIY
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - k3s

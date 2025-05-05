@@ -8,7 +8,7 @@ excerpt: "Tutoriel pas à pas pour installer Vault de Hashicorp dans un cluster 
 url: /2020/08/31/gerez-vos-secrets-kubernetes-dans-vault/
 image: /2020/06/vault.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - hashicorp

@@ -10,7 +10,7 @@ image: /2019/11/grafana_prometheus_proxmox.png
 categories:
   - Cluster
   - Monitoring
-  - Système
+  - systeme
 tags:
   - exporter
   - grafana

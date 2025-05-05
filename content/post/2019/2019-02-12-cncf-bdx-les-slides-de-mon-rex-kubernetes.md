@@ -7,7 +7,7 @@ date: 2019-02-12T18:00:56+00:00
 url: /2019/02/12/cncf-bdx-les-slides-de-mon-rex-kubernetes/
 image: /2019/01/cncf3.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
   - Conférence
 tags:

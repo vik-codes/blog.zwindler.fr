@@ -7,7 +7,7 @@ date: 2016-02-06T11:30:44+00:00
 url: /2016/02/06/reminder-agrandissement-de-swap-linux/
 image: /2016/02/RedHatLogo.png
 categories:
-  - Système
+  - systeme
 tags:
   - Free
   - Linux

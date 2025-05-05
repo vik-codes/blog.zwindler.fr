@@ -7,7 +7,7 @@ date: 2018-10-29T19:30:26+00:00
 url: /2018/10/29/open-source-bashing-still-has-a-bright-future-ahead/
 image: /2018/10/2l8z3e.jpg
 categories:
-  - Système
+  - systeme
 tags:
   - humeur
   - Open Source

@@ -8,7 +8,7 @@ excerpt: Article dans lequel on va utiliser les outils à notre disposition (Kub
 url: /2024/10/01/sauvegarder-dashboards-grafana/
 image: /2020/01/20200102_084825-2.jpg
 categories:
-  - Système
+  - systeme
 tags:
   - Grafana
   - Kubernetes

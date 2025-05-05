@@ -9,7 +9,7 @@ url: /2020/09/28/mes-bases-mongodb-dans-kubernetes/
 image: /2020/09/mongodb_operator.png
 categories:
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - controller

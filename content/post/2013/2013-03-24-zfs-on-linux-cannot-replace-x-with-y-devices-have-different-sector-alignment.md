@@ -10,7 +10,7 @@ categories:
   - autohebergement
   - Matériel
   - Stockage
-  - Système
+  - systeme
 tags:
   - DIY
   - NAS

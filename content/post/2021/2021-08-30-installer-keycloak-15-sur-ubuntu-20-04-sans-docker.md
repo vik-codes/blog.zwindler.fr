@@ -8,7 +8,7 @@ excerpt: "Installer Keycloak 15 (produit d'IAM / SSO de Redhat) sur Ubuntu 20.04
 url: /2021/08/30/installer-keycloak-15-sur-ubuntu-20-04-sans-docker/
 image: /2021/08/sign_in_with_google.png
 categories:
-  - Système
+  - systeme
 tags:
   - IAM
   - keycloak

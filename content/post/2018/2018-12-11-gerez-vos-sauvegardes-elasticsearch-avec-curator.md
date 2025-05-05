@@ -9,7 +9,7 @@ image: /2017/10/elastic_3.png
 categories:
   - Cluster
   - Stockage
-  - Système
+  - systeme
 tags:
   - API
   - Curator

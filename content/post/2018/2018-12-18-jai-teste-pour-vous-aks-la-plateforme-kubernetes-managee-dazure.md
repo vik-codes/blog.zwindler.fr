@@ -7,7 +7,7 @@ date: 2018-12-18T12:45:33+00:00
 url: /2018/12/18/jai-teste-pour-vous-aks-la-plateforme-kubernetes-managee-dazure/
 image: /2018/12/aks.jpg
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ACI

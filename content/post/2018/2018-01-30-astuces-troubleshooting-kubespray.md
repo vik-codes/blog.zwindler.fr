@@ -10,7 +10,7 @@ categories:
   - Cluster
   - Logiciel
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

@@ -7,7 +7,7 @@ date: 2015-06-05T13:36:49+00:00
 url: /2015/06/05/la-connexion-bureau-a-distance-ne-peut-pas-verifier-lidentite-depuis-un-macosx-vers-windows-2008/
 image: /2015/06/mac01.png
 categories:
-  - Système
+  - systeme
 tags:
   - authentification
   - certificat

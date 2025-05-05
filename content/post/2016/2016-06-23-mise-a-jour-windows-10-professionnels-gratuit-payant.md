@@ -7,7 +7,7 @@ date: 2016-06-23T11:30:06+00:00
 url: /2016/06/23/mise-a-jour-windows-10-professionnels-gratuit-payant/
 image: /2016/02/57UKydQS.png
 categories:
-  - Système
+  - systeme
 tags:
   - free update
   - gratuit

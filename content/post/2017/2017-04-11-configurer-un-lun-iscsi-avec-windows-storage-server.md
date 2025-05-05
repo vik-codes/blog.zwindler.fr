@@ -8,7 +8,7 @@ url: /2017/04/11/configurer-un-lun-iscsi-avec-windows-storage-server/
 image: /2017/03/windows_iscsi.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ESX(i)

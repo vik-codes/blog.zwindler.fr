@@ -10,7 +10,7 @@ image: /2020/12/k3s.png
 categories:
   - Cluster
   - DIY
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CentOS

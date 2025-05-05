@@ -7,7 +7,7 @@ date: 2014-01-23T08:49:15+00:00
 url: /2014/01/23/supprimer-un-fichier-ou-un-dossier-dans-lequel-il-y-a-un-caractere-special/
 image: /2014/01/unix-plate.jpg
 categories:
-  - Système
+  - systeme
 tags:
   - Linux
   - rm

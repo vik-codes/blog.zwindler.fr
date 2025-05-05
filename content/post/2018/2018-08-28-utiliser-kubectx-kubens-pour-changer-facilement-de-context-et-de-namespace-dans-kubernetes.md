@@ -8,7 +8,7 @@ url: /2018/08/28/utiliser-kubectx-kubens-pour-changer-facilement-de-context-et-d
 image: /2017/06/kubernetes2.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - k8s

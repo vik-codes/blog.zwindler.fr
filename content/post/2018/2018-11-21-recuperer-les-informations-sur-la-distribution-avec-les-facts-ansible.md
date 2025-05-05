@@ -8,7 +8,7 @@ url: /2018/11/21/recuperer-les-informations-sur-la-distribution-avec-les-facts-a
 image: /2018/10/ansible_logo.png
 categories:
   - Script
-  - Système
+  - systeme
 tags:
   - ansible
   - CentOS

@@ -7,7 +7,7 @@ date: 2018-06-26T11:45:04+00:00
 url: /2018/06/26/decouverte-de-harbor-la-registry-docker-open-source-de-vmware/
 image: /2017/10/harbor.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Docker

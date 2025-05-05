@@ -8,7 +8,7 @@ url: /2017/09/26/deploy-vmware-virtual-machines-with-ansible/
 image: /2017/03/ansible_vpshere.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

@@ -8,7 +8,7 @@ url: /2018/08/14/your-first-vm-in-azure-deployed-with-ansible-of-course/
 image: /2018/06/azure.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

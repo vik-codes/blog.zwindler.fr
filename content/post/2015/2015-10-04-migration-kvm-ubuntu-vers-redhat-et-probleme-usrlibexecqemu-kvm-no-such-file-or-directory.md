@@ -7,7 +7,7 @@ date: 2015-10-04T19:20:58+00:00
 url: /2015/10/04/migration-kvm-ubuntu-vers-redhat-et-probleme-usrlibexecqemu-kvm-no-such-file-or-directory/
 image: /2015/10/kvm.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - '/usr/libexec/qemu-kvm: No such file or directory'

@@ -8,7 +8,7 @@ url: /2015/07/11/configurer-dataprotector-pour-lenvoi-de-rapports-via-smtp/
 image: /2015/06/HP_Data_Protector.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - ASCII
   - DataProtector

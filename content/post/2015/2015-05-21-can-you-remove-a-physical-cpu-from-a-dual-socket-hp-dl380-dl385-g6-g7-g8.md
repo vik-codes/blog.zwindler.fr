@@ -8,7 +8,7 @@ url: /2015/05/21/can-you-remove-a-physical-cpu-from-a-dual-socket-hp-dl380-dl385
 image: /2015/05/IMG_20150430_162441.jpg
 categories:
   - Matériel
-  - Système
+  - systeme
 tags:
   - audit
   - CPU

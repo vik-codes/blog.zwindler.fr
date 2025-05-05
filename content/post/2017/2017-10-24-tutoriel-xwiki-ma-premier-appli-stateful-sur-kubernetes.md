@@ -8,7 +8,7 @@ url: /2017/10/24/tutoriel-xwiki-ma-premier-appli-stateful-sur-kubernetes/
 image: /2017/10/xwiki_kubernetes.png
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

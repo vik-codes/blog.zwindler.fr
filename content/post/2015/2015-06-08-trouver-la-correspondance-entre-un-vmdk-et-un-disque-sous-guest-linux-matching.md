@@ -8,7 +8,7 @@ url: /2015/06/08/trouver-la-correspondance-entre-un-vmdk-et-un-disque-sous-guest
 image: /2015/06/00_match_vmdk.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CentOS

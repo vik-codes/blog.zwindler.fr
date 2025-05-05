@@ -9,7 +9,7 @@ image: /2014/08/zfs-linux.png
 categories:
   - autohebergement
   - Stockage
-  - Système
+  - systeme
 tags:
   - debian
   - Oracle

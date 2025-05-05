@@ -8,7 +8,7 @@ url: /2013/02/28/clusters-what-people-see-what-i-see/
 image: /2013/02/clusters_what_i_see_blog1.jpg
 categories:
   - Cluster
-  - Système
+  - systeme
 tags:
   - Clusters
   - DIY

@@ -9,7 +9,7 @@ image: /2017/08/proxmox_logo.png
 categories:
   - autohebergement
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - corosync

@@ -10,7 +10,7 @@ sharing_disabled:
   - 1
 categories:
   - Script
-  - Système
+  - systeme
 tags:
   - command line
   - csv

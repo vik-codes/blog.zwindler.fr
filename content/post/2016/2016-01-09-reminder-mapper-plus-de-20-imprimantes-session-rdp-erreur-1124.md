@@ -7,7 +7,7 @@ date: 2016-01-09T11:30:29+00:00
 url: /2016/01/09/reminder-mapper-plus-de-20-imprimantes-session-rdp-erreur-1124/
 image: /2015/12/rdp.png
 categories:
-  - Système
+  - systeme
 tags:
   - DWORD
   - imprimantes

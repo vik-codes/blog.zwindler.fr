@@ -7,7 +7,7 @@ date: 2010-07-02T14:01:28+00:00
 url: /2010/07/02/configurer-yum-pour-quil-fouille-ici-plutot-quailleur/
 image: /2010/07/logo_yum_yum.png
 categories:
-  - Système
+  - systeme
 tags:
   - CentOS
   - EyesOfNetwork

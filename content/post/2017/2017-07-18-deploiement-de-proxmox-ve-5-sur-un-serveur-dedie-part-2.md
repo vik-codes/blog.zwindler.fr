@@ -7,7 +7,7 @@ date: 2017-07-18T12:00:32+00:00
 url: /2017/07/18/deploiement-de-proxmox-ve-5-sur-un-serveur-dedie-part-2/
 image: /2017/07/proxmox-install_thumbnail.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - iptables

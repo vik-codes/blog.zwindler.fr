@@ -7,7 +7,7 @@ date: 2015-06-13T10:00:52+00:00
 url: /2015/06/13/mot-de-passe-par-defaut-pour-console-dadministration-dell-idrac/
 image: /2015/06/Dell_Logo.png
 categories:
-  - Système
+  - systeme
 tags:
   - calvin
   - défaut

@@ -7,7 +7,7 @@ date: 2016-04-16T10:00:03+00:00
 url: /2016/04/16/reminder-modifier-interfaces-reseaux-ligne-de-commande-nmcli-rhel-7/
 image: /2016/03/Network_Configuration-NM-Teaming-Complete.png
 categories:
-  - Système
+  - systeme
 tags:
   - domain
   - FQDN

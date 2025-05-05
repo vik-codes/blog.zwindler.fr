@@ -9,7 +9,7 @@ image: /2017/12/kubespray.png
 categories:
   - Cluster
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

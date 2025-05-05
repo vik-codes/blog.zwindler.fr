@@ -8,7 +8,7 @@ url: /2015/05/06/rhel-centos-6-mount-type-inconnu-de-systeme-de-fichiers-ntfs/
 image: /2015/05/multipathmap1.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - CentOS 6
   - disque dur externe

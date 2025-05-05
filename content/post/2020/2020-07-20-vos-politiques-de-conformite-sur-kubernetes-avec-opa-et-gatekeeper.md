@@ -8,7 +8,7 @@ excerpt: "Tutoriel pour imposer des politiques de conformité et de sécurité s
 url: /2020/07/20/vos-politiques-de-conformite-sur-kubernetes-avec-opa-et-gatekeeper/
 image: /2020/05/gatekeeper.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Docker

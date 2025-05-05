@@ -8,7 +8,7 @@ url: /2016/03/19/1811/
 image: /2016/02/VAAI_1.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - Datacore
   - datastore

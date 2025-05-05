@@ -8,7 +8,7 @@ url: /2018/10/19/lopen-source-bashing-a-encore-de-beaux-jours-devant-lui/
 image: /2018/10/2kh0qn.jpg
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - bash
   - bashing

@@ -8,7 +8,7 @@ url: /2014/03/31/best-practices-pour-quorum-redhat-cluster-suite/
 image: /2014/03/lbvm1.png
 categories:
   - Cluster
-  - Système
+  - systeme
 tags:
   - best practices
   - CMAN

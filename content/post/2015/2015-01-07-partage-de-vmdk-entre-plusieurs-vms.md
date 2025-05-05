@@ -8,7 +8,7 @@ url: /2015/01/07/partage-de-vmdk-entre-plusieurs-vms/
 image: /2015/07/vmware2.png
 categories:
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

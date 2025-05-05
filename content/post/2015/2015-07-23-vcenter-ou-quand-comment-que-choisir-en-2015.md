@@ -7,7 +7,7 @@ date: 2015-07-23T17:00:56+00:00
 url: /2015/07/23/vcenter-ou-quand-comment-que-choisir-en-2015/
 image: /2015/07/vCSA.jpg
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ESX

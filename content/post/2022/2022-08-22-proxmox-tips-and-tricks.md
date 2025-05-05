@@ -8,7 +8,7 @@ excerpt: "Quelques tips sur Proxmox VE que j'ai accumulé au fil des ans"
 url: /2022/10/22/proxmox-tips-tricks/
 image: /2019/10/proxmox.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ZFS

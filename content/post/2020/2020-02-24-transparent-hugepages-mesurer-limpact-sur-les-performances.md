@@ -8,7 +8,7 @@ excerpt: "Comprendre à quoi servent et mesurer l'impact des Transparents Hugepa
 url: /2020/02/24/transparent-hugepages-mesurer-limpact-sur-les-performances/
 image: /2020/02/thp_nothp-1.jpg
 categories:
-  - Système
+  - systeme
 tags:
   - kernel
   - Linux

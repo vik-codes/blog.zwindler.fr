@@ -8,7 +8,7 @@ excerpt: Tutoriel pour installer, configurer et restaurer des objets Kubernetes 
 url: /2021/08/02/__trashed-2/
 image: /2021/08/68747470733a2f2f76656c65726f2e696f2f646f63732f6d61696e2f696d672f76656c65726f2e706e67.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - AKS

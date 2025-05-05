@@ -8,7 +8,7 @@ url: /2015/03/04/accelerer-le-rebuildresync-dun-volume-raid-mdadm/
 image: /2015/03/mdadm.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - CentOS
   - debian

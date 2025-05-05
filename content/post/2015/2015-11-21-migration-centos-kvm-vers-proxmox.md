@@ -7,7 +7,7 @@ date: 2015-11-21T11:30:53+00:00
 url: /2015/11/21/migration-centos-kvm-vers-proxmox/
 image: /2015/10/Logo-ProxmoxVE.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - debian

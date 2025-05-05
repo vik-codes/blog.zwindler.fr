@@ -8,7 +8,7 @@ url: /2017/05/24/erreur-multipath-path-not-correctly-configured-for-failover/
 image: /2017/05/path_failover2.png
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - credstore_admin.pl
   - EMC²

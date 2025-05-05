@@ -8,7 +8,7 @@ url: /2018/03/06/exposer-des-applications-kubernetes-en-dehors-des-cloud-provide
 image: /2018/02/kubernetes_nginx.png
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - container

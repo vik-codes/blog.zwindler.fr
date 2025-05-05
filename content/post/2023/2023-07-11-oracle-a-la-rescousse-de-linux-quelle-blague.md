@@ -8,7 +8,7 @@ url: /2023/07/11/oracle-a-la-rescousse-de-linux-quelle-blague
 image: /2023/07/oracle-linux.png
 categories:
   - Logiciel
-  - Système
+  - systeme
 tags:
   - bash
   - bashing

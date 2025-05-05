@@ -9,7 +9,7 @@ image: /2017/02/hp_vsa-1.png
 categories:
   - Cluster
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Centreon

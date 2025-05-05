@@ -7,7 +7,7 @@ date: 2017-07-11T11:30:47+00:00
 url: /2017/07/11/deploiment-de-proxmox-ve-5-sur-un-serveur-dedie-part-1/
 image: /2017/07/proxmox-install_thumbnail.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - kimsufi

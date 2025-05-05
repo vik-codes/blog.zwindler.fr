@@ -7,7 +7,7 @@ date: 2016-05-05T11:30:06+00:00
 url: /2016/05/05/windows-2012-reboot-force-des-serveurs-sans-que-vous-ne-puissiez-rien-ny-faire/
 image: /2016/02/57UKydQS.png
 categories:
-  - Système
+  - systeme
 tags:
   - forcé
   - reboot

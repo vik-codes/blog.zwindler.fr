@@ -8,7 +8,7 @@ url: /2016/08/25/when-should-we-have-containers/
 image: /2016/08/Fullvirt_containers.png
 categories:
   - Monitoring
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - cloud ready

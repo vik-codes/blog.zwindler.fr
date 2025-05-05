@@ -8,7 +8,7 @@ url: /2018/06/05/creation-dun-cluster-de-virtualisation-proxmox-ve-5-2-x/
 image: /2017/08/proxmox_logo.png
 categories:
   - autohebergement
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

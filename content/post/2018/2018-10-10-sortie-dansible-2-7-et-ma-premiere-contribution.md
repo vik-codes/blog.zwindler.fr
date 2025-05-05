@@ -8,7 +8,7 @@ url: /2018/10/10/sortie-dansible-2-7-et-ma-premiere-contribution/
 image: /2018/10/ansible_logo.png
 categories:
   - Script
-  - Système
+  - systeme
 tags:
   - ansible
   - Ansible 2.7

@@ -8,7 +8,7 @@ url: /2018/03/14/diminuer-la-taille-du-vmdk-dune-vm-linux/
 image: /2015/07/vmware2.png
 categories:
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - CentOS

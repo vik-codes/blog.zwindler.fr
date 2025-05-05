@@ -8,7 +8,7 @@ excerpt: Tutoriel pas à pas pour installer Microk8s dans Windows 10 sans passer
 url: /2020/06/01/installer-microk8s-dans-wsl-2/
 image: /2020/05/external-content.duckduckgo.com_.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - hyper-v

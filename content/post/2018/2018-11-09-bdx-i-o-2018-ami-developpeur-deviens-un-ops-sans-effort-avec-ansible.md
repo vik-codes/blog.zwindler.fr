@@ -10,7 +10,7 @@ classic-editor-remember:
   - classic-editor
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Conférence
 tags:
   - ansible

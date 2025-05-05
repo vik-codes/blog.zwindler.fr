@@ -8,7 +8,7 @@ excerpt: Découverte et installation de Rudder, le logiciel de gestion de config
 url: /2023/03/19/premiers-pas-avec-rudder-installation/
 image: /2023/03/rudder_logo.png
 categories:
-  - Système
+  - systeme
   - 
 tags:
   - gestion de configuration

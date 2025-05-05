@@ -8,7 +8,7 @@ url: /2013/05/07/reduire-la-ram-consommee-par-la-vmware-vcenter-appliance-5-1/
 image: /2015/07/vCSA.jpg
 categories:
   - Logiciel
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - DB2

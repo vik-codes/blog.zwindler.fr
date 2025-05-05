@@ -10,7 +10,7 @@ image: /2025/03/sdn2.png
 categories:
   - autohebergement
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - kimsufi

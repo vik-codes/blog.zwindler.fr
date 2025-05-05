@@ -8,7 +8,7 @@ url: /2018/10/02/minikube-sur-hyper-v-part-2-troubleshooting-de-linstallation/
 image: /2018/09/minikube.png
 categories:
   - Script
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - 'attempted methods [publickey none]'

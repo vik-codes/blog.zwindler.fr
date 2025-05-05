@@ -8,7 +8,7 @@ excerpt: Articles d'astuces en vrac avec le logiciel de configuration management
 url: /2023/04/20/rudder-astuces-en-vrac
 image: /2023/03/rudder_logo.png
 categories:
-  - Système
+  - systeme
 tags:
   - gestion de configuration
   - rudder

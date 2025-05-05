@@ -7,7 +7,7 @@ date: 2015-03-30T21:18:12+00:00
 url: /2015/03/30/echec-deploiement-package-ovf-cette-tache-a-ete-annulee-par-un-utilisateur/
 image: /2015/03/Failed-to-deploy-OVF-Package1.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - annulée

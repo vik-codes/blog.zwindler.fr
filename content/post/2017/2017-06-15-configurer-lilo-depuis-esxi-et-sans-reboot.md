@@ -7,7 +7,7 @@ date: 2017-06-15T12:00:02+00:00
 url: /2017/06/15/configurer-lilo-depuis-esxi-et-sans-reboot/
 image: /2017/06/HP-iLO.jpg
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Asrock

@@ -10,7 +10,7 @@ image: /2023/01/harvester.png
 categories:
   - Cluster
   - DIY
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - k8s

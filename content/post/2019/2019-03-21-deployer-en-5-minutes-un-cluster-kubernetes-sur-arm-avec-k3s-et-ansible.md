@@ -9,7 +9,7 @@ image: /2019/03/k3s_scaleway.png
 categories:
   - Cluster
   - DIY
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

@@ -7,7 +7,7 @@ date: 2018-08-07T11:45:22+00:00
 url: /2018/08/07/premiere-vm-dans-azure-avec-ansible-bien-sur/
 image: /2018/06/azure.png
 categories:
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - ansible

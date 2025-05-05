@@ -8,7 +8,7 @@ url: /2015/11/07/configuration-multipath-alua-4-pnr-1-sur-emc-vnx-pour-redhat-4/
 image: /2015/10/vnx5300.jpg
 categories:
   - Stockage
-  - Système
+  - systeme
 tags:
   - EMC²
   - friendly name

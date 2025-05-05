@@ -10,7 +10,7 @@ image: /2019/11/Hetzner_DCP_Luftbild.jpg
 categories:
   - autohebergement
   - Cluster
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - Cluster

@@ -9,7 +9,7 @@ image: /2015/02/rhcs.png
 categories:
   - Cluster
   - Stockage
-  - Système
+  - systeme
   - Virtualisation
 tags:
   - DRBD
