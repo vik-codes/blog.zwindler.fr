@@ -8,7 +8,7 @@ excerpt: "Présentation par l'exemple de l'utilisation de skipped et defined ave
 url: /2022/02/07/ansible-subtilite-defined-skipped
 image: /2018/10/ansible_logo.png
 categories:
-  - Automatisation
+  - automatisation
 tags:
   - ansible
   - defined

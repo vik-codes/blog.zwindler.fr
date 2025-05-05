@@ -8,8 +8,8 @@ excerpt: Importer et modifier avec terraform un record TXT existant dans route53
 url: /2021/09/20/import-manuel-de-records-dns-route53-avec-terraform/
 image: /2017/11/terraform.png
 categories:
-  - Automatisation
-  - Cloud
+  - automatisation
+  - cloud
 tags:
   - aws
   - DNS
