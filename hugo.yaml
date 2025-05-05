@@ -147,4 +147,4 @@ markup:
         ordered: true
         startLevel: 2
     highlight:
-        noClasses: falsehttps://github.com/zwindler/zwindler
+        noClasses: false
