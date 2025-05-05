@@ -7,7 +7,7 @@ date: 2015-12-19T17:30:56+00:00
 url: /2015/12/19/mentions-legales-webmaster/
 image: /2022/05/cnil.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - CNIL
   - Cookies

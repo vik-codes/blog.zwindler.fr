@@ -8,7 +8,7 @@ excerpt: Retours sur les changements sur le blog de ces derniers mois, avec des 
 url: /2020/09/14/2020-sur-le-blog-pas-mal-de-changements-encore/
 image: /2017/11/blog.zwindler.fr_is_over_9000.jpg
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - 2020
   - audimétrie

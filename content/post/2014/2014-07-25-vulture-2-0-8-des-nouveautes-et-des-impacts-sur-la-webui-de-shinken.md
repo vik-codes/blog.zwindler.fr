@@ -7,7 +7,7 @@ date: 2014-07-25T14:14:08+00:00
 url: /2014/07/25/vulture-2-0-8-des-nouveautes-et-des-impacts-sur-la-webui-de-shinken/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Logiciel
   - Monitoring
 tags:

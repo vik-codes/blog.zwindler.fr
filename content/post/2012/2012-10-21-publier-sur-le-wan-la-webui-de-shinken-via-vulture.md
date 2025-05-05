@@ -7,7 +7,7 @@ date: 2012-10-21T19:13:14+00:00
 url: /2012/10/21/publier-sur-le-wan-la-webui-de-shinken-via-vulture/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Monitoring
 tags:
   - content rewrite

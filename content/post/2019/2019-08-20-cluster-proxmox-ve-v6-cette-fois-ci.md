@@ -10,7 +10,7 @@ image: /2019/08/cropped-proxmox_ansible.png
 classic-editor-remember:
   - block-editor
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Divers
   - Système

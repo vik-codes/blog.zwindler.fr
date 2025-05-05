@@ -8,7 +8,7 @@ excerpt: "Suite à des soucis avec le support de OneProvider, j'ai décidé de m
 url: /2019/11/19/changement-de-provider-mon-hyperviseur-sur-un-dedie-hetzner/
 image: /2019/11/Hetzner_DCP_Luftbild.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
   - Virtualisation

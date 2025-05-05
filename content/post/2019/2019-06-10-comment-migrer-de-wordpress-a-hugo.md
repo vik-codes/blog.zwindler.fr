@@ -9,7 +9,7 @@ image: /2019/06/wordpress_vers_hugo.png
 classic-editor-remember:
   - block-editor
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - git
   - wordpress

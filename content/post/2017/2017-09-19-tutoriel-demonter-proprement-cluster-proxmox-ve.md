@@ -7,7 +7,7 @@ date: 2017-09-19T11:30:18+00:00
 url: /2017/09/19/tutoriel-demonter-proprement-cluster-proxmox-ve/
 image: /2017/08/proxmox_logo.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
   - Virtualisation

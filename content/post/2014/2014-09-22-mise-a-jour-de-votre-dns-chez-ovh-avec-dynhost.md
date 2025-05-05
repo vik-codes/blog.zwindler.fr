@@ -7,7 +7,7 @@ date: 2014-09-22T20:03:47+00:00
 url: /2014/09/22/mise-a-jour-de-votre-dns-chez-ovh-avec-dynhost/
 image: /2014/09/entreprise-ovh-roubaix.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Script
 tags:

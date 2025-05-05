@@ -7,7 +7,7 @@ date: 2023-08-01T06:00:00+02:00
 url: /2023/08/01/automatiser-hugo-sans-github-action
 image: /2021/11/wordpress-to-hugo.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - git
   - hugo

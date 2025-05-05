@@ -7,7 +7,7 @@ date: 2024-01-29T06:00:00+02:00
 url: /2024/01/29/planifier-les-posts-clever-cloud
 image: /2022/05/clever-trott.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Logiciel
 tags:

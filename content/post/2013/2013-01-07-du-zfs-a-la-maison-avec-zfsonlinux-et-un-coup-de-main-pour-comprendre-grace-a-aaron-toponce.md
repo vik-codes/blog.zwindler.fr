@@ -7,7 +7,7 @@ date: 2013-01-07T17:59:37+00:00
 url: /2013/01/07/du-zfs-a-la-maison-avec-zfsonlinux-et-un-coup-de-main-pour-comprendre-grace-a-aaron-toponce/
 image: /2014/08/zfs-linux.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Stockage
   - Système
 tags:

@@ -9,7 +9,7 @@ excerpt: "Tutoriel de déploiement d'un serveur Proxmox VE 6 sécurisé par un s
 url: /2020/03/09/proxmox-ve-6-pfsense-sur-un-serveur-dedie-2-3/
 image: /2020/03/article_logo_pfsense_proxmox.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
   - Virtualisation

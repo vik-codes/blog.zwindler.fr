@@ -8,7 +8,7 @@ excerpt: Step by step tutorial to self host AIDungeon 2 locally on a Ubuntu 18.0
 url: /2020/01/08/run-aidungeon-2-on-ubuntu-18-04/
 image: /2020/01/aidungeon_screen.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Matériel
 tags:

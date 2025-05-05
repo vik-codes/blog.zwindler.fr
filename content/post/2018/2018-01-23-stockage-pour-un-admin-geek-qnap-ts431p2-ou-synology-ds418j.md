@@ -7,7 +7,7 @@ date: 2018-01-23T12:45:24+00:00
 url: /2018/01/23/stockage-pour-un-admin-geek-qnap-ts431p2-ou-synology-ds418j/
 image: /2018/01/qnap22.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - ARM

@@ -8,7 +8,7 @@ excerpt: "Petit récit et tuto pas à pas pour expliquer comment j'ai ajouté IP
 url: /2021/03/01/le-blog-en-ipv6-ca-aurait-du-etre-simple-et-pourtant/
 image: /2021/02/ipv6-ready.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - blog
   - dedibox

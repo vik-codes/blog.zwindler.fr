@@ -8,7 +8,7 @@ excerpt: tutoriel pas à pas pour installer un serveur domotique Jeedom dans un 
 url: /2021/10/04/jeedom-dans-un-container-lxc/
 image: /2021/08/mijia.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Virtualisation
 tags:
   - bluetooth

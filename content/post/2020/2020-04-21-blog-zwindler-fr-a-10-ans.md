@@ -8,7 +8,7 @@ excerpt: Les 10 ans de blog.zwindler.fr, rétrospective et perspectives.
 url: /2020/04/21/blog-zwindler-fr-a-10-ans/
 image: /2019/12/nyanonimous_rond_850x550.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - 10 ans
   - blog

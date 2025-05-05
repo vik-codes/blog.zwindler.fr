@@ -9,7 +9,7 @@ image: /2017/03/nyanonimous_rond.png
 classic-editor-remember:
   - classic-editor
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - anniversaire
   - blog

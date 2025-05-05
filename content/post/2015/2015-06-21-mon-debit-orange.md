@@ -7,7 +7,7 @@ date: 2015-06-21T08:30:10+00:00
 url: /2015/06/21/mon-debit-orange/
 image: /2015/06/orange-w8.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - atténuation

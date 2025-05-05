@@ -7,7 +7,7 @@ date: 2015-05-31T09:49:36+00:00
 url: /2015/05/31/mise-en-place-de-guacamole-0-9-5-sur-centos-7/
 image: /2015/05/guac-tricolor.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - authentification
   - CentOS 7

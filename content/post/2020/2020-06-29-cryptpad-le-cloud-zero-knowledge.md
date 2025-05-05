@@ -8,7 +8,7 @@ excerpt: "Présentation et procédure d'installation de Cryptpad, le cloud colla
 url: /2020/06/29/cryptpad-le-cloud-zero-knowledge/
 image: /2020/06/cryptpad-logo.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - anonyme
   - cryptpad

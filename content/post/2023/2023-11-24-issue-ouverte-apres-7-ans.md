@@ -7,7 +7,7 @@ date: 2023-11-24T14:00:00+02:00
 url: /2023/11/24/issue-ouverte-apres-7-ans
 image: /2016/09/article_docker_xwiki.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Virtualisation
 tags:
   - automatisation

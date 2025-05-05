@@ -7,7 +7,7 @@ date: 2024-05-03T12:00:00+02:00
 url: /2024/05/03/mon-nas-en-2024-jonsbo-n100-part1/
 image: /2024/05/nas2024.jpeg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - QNAP

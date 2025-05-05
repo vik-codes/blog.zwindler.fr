@@ -8,7 +8,7 @@ excerpt: 'Tutoriel étape par étape pour héberger soit même le jeu  AIDungeon
 url: /2020/01/13/lancer-aidungeon-2-sur-ubuntu-18-04/
 image: /2020/01/aidungeon_screen.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Matériel
 tags:

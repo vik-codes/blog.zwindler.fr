@@ -7,7 +7,7 @@ date: 2014-12-30T13:48:52+00:00
 url: /2014/12/30/vulture-2-0-8-probleme-dordre-dans-la-directive-proxypass-dans-le-cas-de-plusieurs-applis-pour-un-meme-fqdn/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Monitoring
 tags:
   - 2.0.8

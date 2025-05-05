@@ -7,7 +7,7 @@ date: 2015-09-08T10:30:06+00:00
 url: /2015/09/08/decouverte-de-cozy-cloud-personnel/
 image: /2015/09/cozy_logo.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
 tags:
   - Cloud

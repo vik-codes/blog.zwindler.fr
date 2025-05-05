@@ -7,7 +7,7 @@ date: 2024-05-10T18:00:00+02:00
 url: /2024/05/10/installer-plex-sur-truenas-scale/
 image: /2024/05/truenas-plex-2.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - QNAP

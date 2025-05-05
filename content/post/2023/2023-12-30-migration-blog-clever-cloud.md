@@ -7,7 +7,7 @@ date: 2023-12-30T16:00:00+02:00
 url: /2023/12/30/its-migration-day-again
 image: /2022/05/clever-trott.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Logiciel
 tags:

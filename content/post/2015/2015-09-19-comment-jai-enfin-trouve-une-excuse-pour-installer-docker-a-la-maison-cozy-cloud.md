@@ -7,7 +7,7 @@ date: 2015-09-19T10:30:30+00:00
 url: /2015/09/19/comment-jai-enfin-trouve-une-excuse-pour-installer-docker-a-la-maison-cozy-cloud/
 image: /2015/09/docker.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Logiciel
 tags:
   - container

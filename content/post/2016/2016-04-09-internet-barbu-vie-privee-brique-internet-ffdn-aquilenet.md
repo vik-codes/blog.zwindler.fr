@@ -7,7 +7,7 @@ date: 2016-04-09T11:00:22+00:00
 url: /2016/04/09/internet-barbu-vie-privee-brique-internet-ffdn-aquilenet/
 image: /2016/04/brique.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - Aquilenet
   - Brique Internet

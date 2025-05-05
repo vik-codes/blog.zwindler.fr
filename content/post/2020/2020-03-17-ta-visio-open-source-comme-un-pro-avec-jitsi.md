@@ -8,7 +8,7 @@ excerpt: "Tutoriel d'installation de la solution de visio conférence Jitsi Meet
 url: /2020/03/17/ta-visio-open-source-comme-un-pro-avec-jitsi/
 image: /2020/03/jitsi_front.jpg
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - Jitsi
   - Jitsi Meet

@@ -8,7 +8,7 @@ excerpt: "Tutoriel de déploiement d'un clusters d'hyperviseurs Proxmox VE 8 - p
 url: /2025/01/27/deploiement-d-un-cluster-proxmox-ve-8-part-1/
 image: /2025/02/proxmox8.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
   - Virtualisation

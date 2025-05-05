@@ -7,7 +7,7 @@ date: 2013-08-22T19:38:28+00:00
 url: /2013/08/22/sortie-de-la-2-0-6-de-vulture/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - CentOS
   - content rewrite

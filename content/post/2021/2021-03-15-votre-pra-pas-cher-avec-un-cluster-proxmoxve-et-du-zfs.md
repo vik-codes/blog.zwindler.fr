@@ -8,7 +8,7 @@ excerpt: Installer ZFS sur Proxmox VE sur des machines chez OneProvider pour fai
 url: /2021/03/15/votre-pra-pas-cher-avec-un-cluster-proxmoxve-et-du-zfs/
 image: /2021/03/cover2.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Stockage
   - Virtualisation

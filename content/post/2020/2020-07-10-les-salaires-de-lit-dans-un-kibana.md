@@ -8,7 +8,7 @@ excerpt: "Étude des salaires de l'IT lancée par Shirley Almosni Chiche et dont
 url: /2020/07/10/les-salaires-de-lit-dans-un-kibana/
 image: /2020/07/shirley2-2.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Monitoring
 tags:

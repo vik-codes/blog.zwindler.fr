@@ -7,7 +7,7 @@ date: 2016-09-15T11:00:28+00:00
 url: /2016/09/15/installer-xwiki-8-2-1-avec-docker-compose-en-2-lignes-de-commandes/
 image: /2016/09/article_docker_xwiki.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Virtualisation
 tags:
   - automatisation

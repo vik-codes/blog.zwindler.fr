@@ -10,7 +10,7 @@ image: /2017/08/cropped-proxmox_logo-1.png
 classic-editor-remember:
   - block-editor
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Virtualisation
 tags:

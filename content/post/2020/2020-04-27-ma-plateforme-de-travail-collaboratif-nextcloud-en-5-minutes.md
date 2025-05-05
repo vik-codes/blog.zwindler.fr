@@ -8,7 +8,7 @@ excerpt: "Tutoriel pour installer la plateforme de travail collaboratif Nextclou
 url: /2020/04/27/ma-plateforme-de-travail-collaboratif-nextcloud-en-5-minutes/
 image: /2020/04/Nextcloud_Logo.svg_.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - ansible
   - collabora

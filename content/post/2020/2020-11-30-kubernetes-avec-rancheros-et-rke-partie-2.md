@@ -8,7 +8,7 @@ excerpt: "Tutoriel pas à pas pour déployer Kubernetes avec RKE, un binaire de 
 url: /2020/11/30/kubernetes-avec-rancheros-et-rke-partie-2/
 image: /2020/11/rke.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Virtualisation
 tags:

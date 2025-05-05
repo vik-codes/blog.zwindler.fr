@@ -8,7 +8,7 @@ excerpt: "Présentation et Tutoriel pour installer RancherOS, l'OS minimaliste d
 url: /2020/10/26/kubernetes-avec-rancheros-et-rke-partie-1/
 image: /2020/10/rancheros_explained.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
 tags:
   - container

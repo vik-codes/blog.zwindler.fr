@@ -8,7 +8,7 @@ excerpt: "Installation de mon instance PeerTube sur une VM Ubuntu 20.04 en moins
 url: /2021/12/06/mon-peertube-sur-ubuntu-20-04
 image: /2021/12/peertube.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - PeerTube
   - ubuntu

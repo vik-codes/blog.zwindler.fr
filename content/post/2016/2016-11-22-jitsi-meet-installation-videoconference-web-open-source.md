@@ -7,7 +7,7 @@ date: 2016-11-22T13:00:51+00:00
 url: /2016/11/22/jitsi-meet-installation-videoconference-web-open-source/
 image: /2016/11/jitsi_meet.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - CentOS 7
   - Chrome

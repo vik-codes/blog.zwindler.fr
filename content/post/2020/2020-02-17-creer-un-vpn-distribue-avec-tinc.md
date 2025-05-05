@@ -8,7 +8,7 @@ excerpt: Tutoriel pas à pas pour monter un VPN multipoint (full mesh) avec Tinc
 url: /2020/02/17/creer-un-vpn-distribue-avec-tinc/
 image: /2020/03/airwolf03.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
 tags:

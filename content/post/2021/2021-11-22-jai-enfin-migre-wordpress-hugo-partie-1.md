@@ -7,7 +7,7 @@ date: 2021-11-22T08:00:00+00:00
 url: /2021/11/22/jai-enfin-migre-de-wordpress-a-hugo-partie-1/
 image: /2021/11/wordpress-to-hugo.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - git
   - wordpress

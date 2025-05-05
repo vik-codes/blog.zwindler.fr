@@ -7,7 +7,7 @@ date: 2017-05-02T12:00:47+00:00
 url: /2017/05/02/proxmox-lets-encrypt/
 image: /2017/04/proxmox_letsencrypt.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Virtualisation
 tags:
   - automatique

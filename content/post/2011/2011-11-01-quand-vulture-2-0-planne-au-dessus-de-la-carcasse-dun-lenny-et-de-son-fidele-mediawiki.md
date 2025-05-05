@@ -7,7 +7,7 @@ date: 2011-11-01T17:03:35+00:00
 url: /2011/11/01/quand-vulture-2-0-planne-au-dessus-de-la-carcasse-dun-lenny-et-de-son-fidele-mediawiki/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - apache
   - Firewall

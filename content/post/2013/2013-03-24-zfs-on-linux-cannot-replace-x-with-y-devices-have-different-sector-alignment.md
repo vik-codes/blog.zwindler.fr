@@ -7,7 +7,7 @@ date: 2013-03-24T14:27:45+00:00
 url: /2013/03/24/zfs-on-linux-cannot-replace-x-with-y-devices-have-different-sector-alignment/
 image: /2014/08/zfs-linux.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
   - Stockage
   - Système

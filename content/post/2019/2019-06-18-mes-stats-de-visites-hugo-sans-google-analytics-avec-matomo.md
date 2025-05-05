@@ -10,7 +10,7 @@ image: /2019/06/hugo_matomo.png
 classic-editor-remember:
   - block-editor
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - hugo
   - Kibana

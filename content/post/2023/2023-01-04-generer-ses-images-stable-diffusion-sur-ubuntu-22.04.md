@@ -8,7 +8,7 @@ excerpt: 'Tutoriel pour installer Stable Diffusion en local sur une machine Ubun
 url: /2023/01/04/generer-ses-images-stable-diffusion-sur-ubuntu-22.04/
 image: /2023/01/stablediffusion.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Matériel
 tags:

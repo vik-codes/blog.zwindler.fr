@@ -7,7 +7,7 @@ date: 2017-04-04T12:00:45+00:00
 url: /2017/04/04/installation-dun-serveur-compact-a-la-maison/
 image: /2017/04/monter_serveur_perso.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - debian

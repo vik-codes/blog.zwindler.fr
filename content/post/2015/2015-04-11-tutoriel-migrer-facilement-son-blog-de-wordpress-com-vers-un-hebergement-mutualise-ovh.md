@@ -7,7 +7,7 @@ date: 2015-04-11T21:23:20+00:00
 url: /2015/04/11/tutoriel-migrer-facilement-son-blog-de-wordpress-com-vers-un-hebergement-mutualise-ovh/
 image: /2015/04/10_manager.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
   - Logiciel
 tags:

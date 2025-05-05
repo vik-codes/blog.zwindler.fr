@@ -7,7 +7,7 @@ date: 2010-10-18T14:03:09+00:00
 url: /2010/10/18/pages-perso-free-vs-wordpress/
 image: /2014/10/free-pic.gif
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
 tags:
   - eDegree

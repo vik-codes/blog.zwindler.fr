@@ -8,7 +8,7 @@ excerpt: "Tutoriel Proxmox VE 8 - SDN en mode VXLAN avec des machines sur Intern
 url: /2025/03/30/tutoriel-sdn-vxlan-proxmoxve-8
 image: /2025/03/vxlan2.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Cluster
   - Système
   - Virtualisation

@@ -7,7 +7,7 @@ date: 2022-06-13T08:00:00+02:00
 url: /2022/06/13/qnap-debranche-lxc-workaround
 image: /2018/01/qnap22.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - ARM

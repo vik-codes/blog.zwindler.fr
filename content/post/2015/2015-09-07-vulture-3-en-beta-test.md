@@ -7,7 +7,7 @@ date: 2015-09-07T20:59:58+00:00
 url: /2015/09/07/vulture-3-en-beta-test/
 image: /2014/12/logo2-white1.png
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
 tags:
   - Advens

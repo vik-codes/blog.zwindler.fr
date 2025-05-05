@@ -7,7 +7,7 @@ date: 2016-09-05T07:15:28+00:00
 url: /2016/09/05/geekerie-du-week-end-installer-docker-sur-un-raspberry-pi/
 image: /2016/09/20160904_111047.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - DIY
 tags:
   - Do it yourself

@@ -7,7 +7,7 @@ date: 2024-07-04T12:00:00+02:00
 url: /2024/07/04/mon-nas-en-2024-jonsbo-n100-part3/
 image: /2024/07/cpu-stress-2.jpeg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
 tags:
   - Jonsbo N2

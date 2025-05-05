@@ -11,7 +11,7 @@ sharing_disabled:
 categories:
   - Divers
 tags:
-  - autohébergement
+  - autohebergement
   - démarche
   - fax
   - Free

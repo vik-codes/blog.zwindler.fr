@@ -7,7 +7,7 @@ date: 2015-06-24T15:51:50+00:00
 url: /2015/06/24/creation-dun-dynhost-avec-le-nouveau-manager-ovh/
 image: /2015/06/ovh.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - BBox
   - CNAME

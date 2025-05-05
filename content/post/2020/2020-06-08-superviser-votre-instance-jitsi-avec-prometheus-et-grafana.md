@@ -8,7 +8,7 @@ excerpt: Tutoriel pour ajouter une brique de supervision applicative à un serve
 url: /2020/06/08/superviser-votre-instance-jitsi-avec-prometheus-et-grafana/
 image: /2020/04/10participants.png
 categories:
-  - Autohébergement
+  - autohebergement
   - Monitoring
   - Système
 tags:

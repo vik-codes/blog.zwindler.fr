@@ -7,7 +7,7 @@ date: 2014-02-07T16:37:01+00:00
 url: /2014/02/07/migration-jonglage-de-disques-avec-mdadm-growreducegrow-dun-miroir-a-2-puis-3-puis-2-pattes/
 image: /2014/02/8-Bay_Raid_Station_04.jpg
 categories:
-  - Autohébergement
+  - autohebergement
   - Matériel
   - Stockage
   - Virtualisation

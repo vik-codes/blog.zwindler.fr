@@ -7,10 +7,10 @@ date: 2016-02-11T16:30:45+00:00
 url: /2016/02/11/a-recherche-dun-equivalent-a-photostation-trovebox-openphoto/
 image: /2016/02/9aPU595b.png
 categories:
-  - Autohébergement
+  - autohebergement
 tags:
   - apache
-  - autohébergement
+  - autohebergement
   - CentOS 7
   - CozyCloud
   - Docker
