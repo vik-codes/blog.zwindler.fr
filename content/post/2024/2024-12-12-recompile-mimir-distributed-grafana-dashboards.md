@@ -8,7 +8,6 @@ excerpt: In this article I’ll why you may need to recompile official grafana d
 url: /2024/12/12/recompile-mimir-distributed-grafana-dashboards/
 image: /2020/01/20200102_084825-2.jpg
 categories:
-  - grafana
   - Système
 tags:
   - Grafana
