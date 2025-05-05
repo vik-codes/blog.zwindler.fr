@@ -8,7 +8,7 @@ excerpt: "Récapitulatif de la conférence cybersécurité Hack-It-N 2019 qui a 
 url: /2019/12/16/recap-de-hack-it-n-2019/
 image: /2019/12/20191210_103154.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - conference
   - hack-it-n

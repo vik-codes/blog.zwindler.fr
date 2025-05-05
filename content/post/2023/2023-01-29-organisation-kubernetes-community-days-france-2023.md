@@ -8,11 +8,11 @@ excerpt: Je rejoins l'équipe d'organisation des Kubernetes Community Days Franc
 url: /2023/01/29/organisation-kubernetes-community-days-france-2023
 image: /2023/01/KCD_LOGO_2023-color-2000px.png
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubernetes Community Days
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

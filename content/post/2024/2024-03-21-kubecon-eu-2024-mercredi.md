@@ -8,12 +8,12 @@ excerpt: "Récap' du premier vrai jour (mercredi) de la KubeCon + CloudNativeCon
 url: /2024/03/21/kubecon-eu-2024-mercredi
 image: /2024/03/10years.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2024
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

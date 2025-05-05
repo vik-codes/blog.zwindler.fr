@@ -8,7 +8,7 @@ url: 2025/03/22/microstack-un-projet-open-source-pour-imprimer-un-rack-dell-micr
 image: /2025/03/microstack.jpg
 categories:
   - DIY
-  - Matériel
+  - materiel
 tags:
   - Cluster
   - DIY

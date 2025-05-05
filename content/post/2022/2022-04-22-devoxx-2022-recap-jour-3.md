@@ -8,7 +8,7 @@ excerpt: Je suis à Devoxx France 2022 et je fais un récapitulatif de cette der
 url: /2022/04/22/devoxx-2022-recap-jour-3/
 image: /2022/04/devoxx_jour3.jpeg
 categories:
-  - Conférence
+  - conference
 tags:
   - Devoxx 2022
   - Devoxx 

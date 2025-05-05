@@ -7,7 +7,7 @@ date: 2017-03-14T12:05:57+00:00
 url: /2017/03/14/fr-youve-won-nvidia-i-give-up-surround-triple-screen-just-wont-work/
 image: /2017/03/LUOWehvo_400x400.jpeg
 categories:
-  - Matériel
+  - materiel
 tags:
   - BF3
   - BF4

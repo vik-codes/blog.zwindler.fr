@@ -10,7 +10,7 @@ classic-editor-remember:
   - classic-editor
 categories:
   - Divers
-  - Conférence
+  - conference
 tags:
   - Bordeaux
   - Chaos IQ

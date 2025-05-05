@@ -9,7 +9,7 @@ url: /2019/10/14/cncf-meetup-bordeaux-6-tour-dhorizon-du-monitoring-dans-kuberne
 image: /2019/10/cncfbdx_thanos.png
 categories:
   - Monitoring
-  - Conférence
+  - conference
 tags:
   - CNCF
   - gekko

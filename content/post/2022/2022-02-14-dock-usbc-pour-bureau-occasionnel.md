@@ -8,7 +8,7 @@ url: /2022/02/14/dock-usbc-pour-bureau-occasionnel
 image: /2022/02/cablematters.png
 categories:
   - DIY
-  - Matériel
+  - materiel
 tags:
   - dock
   - USB-c

@@ -7,7 +7,7 @@ date: 2015-08-29T10:30:54+00:00
 url: /2015/08/29/supprimer-les-recommandations-de-la-mini-4kandroid-tv/
 image: /2015/08/IMG_20150827_204118.jpg
 categories:
-  - Matériel
+  - materiel
 tags:
   - Android TV
   - Free

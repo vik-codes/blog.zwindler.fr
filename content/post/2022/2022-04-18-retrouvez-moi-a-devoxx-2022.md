@@ -8,7 +8,7 @@ excerpt: Je serai speaker à Devoxx France 2022 au palais des congrès de Paris,
 url: /2022/04/18/retrouvez-moi-a-devoxx-2022/
 image: /2022/04/devoxx.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - bitcoin
   - hack

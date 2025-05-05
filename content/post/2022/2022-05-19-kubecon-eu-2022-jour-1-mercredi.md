@@ -8,12 +8,12 @@ excerpt: "Récap' du premier jour (mercredi) de la KubeCon + CloudNativeCon Euro
 url: /2022/05/19/kubecon-eu-2022-jour-1-mercredi
 image: /2022/05/PXL_20220518_062030468.MP.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2022
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

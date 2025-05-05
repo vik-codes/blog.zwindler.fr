@@ -7,7 +7,7 @@ date: 2015-08-28T11:48:51+00:00
 url: /2015/08/28/ecran-noirfige-sur-la-freebox-mini-4k-boitier-tv/
 image: /2015/06/fetch.php_.jpg
 categories:
-  - Matériel
+  - materiel
 tags:
   - bugtracker
   - débrancher

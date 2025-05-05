@@ -9,7 +9,7 @@ image: /2024/04/riche.jpeg
 categories:
   - Divers
 tags:
-  - conférences
+  - conferences
   - recrutement
   - blog
   - réseau professionnel

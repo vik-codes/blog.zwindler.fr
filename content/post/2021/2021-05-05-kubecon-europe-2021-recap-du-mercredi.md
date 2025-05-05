@@ -8,7 +8,7 @@ excerpt: Récapitulatif du mercredi 05 mai à la Kubecon Europe 2021
 url: /2021/05/05/kubecon-europe-2021-recap-du-mercredi/
 image: /2021/05/kubecon_2021.jpeg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - KubeCon Europe

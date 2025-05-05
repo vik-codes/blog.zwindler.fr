@@ -10,7 +10,7 @@ aliases:
   - /2022/02/13/retrouvez-moi-a-devoxx-2023/
 image: /2023/02/devoxx_vangogh.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubernetes
   - Devoxx 2023

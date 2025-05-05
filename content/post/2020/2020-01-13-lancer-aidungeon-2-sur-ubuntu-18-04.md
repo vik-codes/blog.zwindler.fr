@@ -10,7 +10,7 @@ image: /2020/01/aidungeon_screen.png
 categories:
   - autohebergement
   - DIY
-  - Matériel
+  - materiel
 tags:
   - AIDungeon
   - AIDungeon 2

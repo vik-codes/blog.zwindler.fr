@@ -8,7 +8,7 @@ excerpt: J'étais panéliste dans l'épisode spécial (100) IRL de Message à Ca
 url: /2024/01/19/MACI-100-IRL-a-Nantes
 image: /2024/01/MACI100.JPG
 categories:
-  - Conférence
+  - conference
 tags:
   - MACI
   - Message à caractère informatique

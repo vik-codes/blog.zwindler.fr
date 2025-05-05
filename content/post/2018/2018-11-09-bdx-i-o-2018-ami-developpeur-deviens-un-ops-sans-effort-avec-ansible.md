@@ -11,7 +11,7 @@ classic-editor-remember:
 categories:
   - Logiciel
   - systeme
-  - Conférence
+  - conference
 tags:
   - ansible
   - AutomateAllTheThings

@@ -8,7 +8,7 @@ url: /2022/01/12/touraine-tech-22-dis-papa-cest-quoi-un-sre/
 image: /2022/01/tnt_logo.png
 categories:
   - Cloud
-  - Conférence
+  - conference
 
 ---
 

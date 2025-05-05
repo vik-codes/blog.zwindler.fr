@@ -9,7 +9,7 @@ image: /2019/03/286682-Horizontal_Dark-4aef44-large-1533040181.png
 categories:
   - Divers
   - DIY
-  - Matériel
+  - materiel
 tags:
   - Blade
   - cloud computing

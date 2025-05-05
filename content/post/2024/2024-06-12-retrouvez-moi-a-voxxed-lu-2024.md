@@ -8,7 +8,7 @@ excerpt: Je serai speaker à Voxxed Luxembourg 2023 les 20 et 21 juin !
 url: /2024/06/12/retrouvez-moi-a-voxxed-lu-2024/
 image: /2023/02/devoxx_vangogh.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubernetes
   - Voxxed Luxembourg 2024

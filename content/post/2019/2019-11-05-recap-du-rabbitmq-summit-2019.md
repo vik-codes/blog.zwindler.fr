@@ -8,7 +8,7 @@ excerpt: Récapitulatif de la conférence RabbitMQ Summit 2019 à Londres
 url: /2019/11/05/recap-du-rabbitmq-summit-2019/
 image: /2019/11/20191104_085806.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - best practices
   - broker

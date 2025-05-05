@@ -8,7 +8,7 @@ url: /2021/09/27/cloud-nord-2021-dis-papa-cest-quoi-un-sre/
 image: /2021/09/1629905048956.jpeg
 categories:
   - Cloud
-  - Conférence
+  - conference
 tags:
   - Cloud nord
   - speaker

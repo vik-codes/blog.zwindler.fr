@@ -9,7 +9,7 @@ url: /2019/10/24/cncf-bdx-6-les-slides-de-mon-talk-thanos/
 image: /2019/10/cncfbdx_thanos.png
 categories:
   - Monitoring
-  - Conférence
+  - conference
 tags:
   - CNCF
   - gekko

@@ -8,7 +8,7 @@ url: /2013/03/24/zfs-on-linux-cannot-replace-x-with-y-devices-have-different-sec
 image: /2014/08/zfs-linux.png
 categories:
   - autohebergement
-  - Matériel
+  - materiel
   - Stockage
   - systeme
 tags:

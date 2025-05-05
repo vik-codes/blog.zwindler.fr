@@ -8,12 +8,12 @@ excerpt: "Récap' du premier jour (mardi) de la KubeCon + CloudNativeCon Europe 
 url: /2024/03/19/kubecon-eu-2024-mardi-colocated
 image: /2024/03/peday.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2024
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
   - colocated events

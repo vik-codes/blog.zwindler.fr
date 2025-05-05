@@ -8,7 +8,7 @@ excerpt: Je suis pour la première fois participant à la DevWorld Conference, u
 url: /2024/03/02/recap-devworld-conference-2024/
 image: /2024/03/devworld.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - DevWorld Conference 2024
   - DevWorld Conference

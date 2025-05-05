@@ -8,7 +8,7 @@ url: /2014/03/09/construction-dun-helmer-like-pour-mon-infra-perso-part-2-la-pre
 image: /2014/03/img_0225.jpg
 categories:
   - DIY
-  - Matériel
+  - materiel
 tags:
   - Cluster
   - Helmer

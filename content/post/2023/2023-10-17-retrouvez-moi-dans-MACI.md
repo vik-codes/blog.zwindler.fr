@@ -10,7 +10,7 @@ aliases:
   - /p/retrouvez-moi-dans-le-podcast-message-à-caractère-informatique-89-et-90/
 image: /2023/10/MACI90.png
 categories:
-  - Conférence
+  - conference
 tags:
   - MACI
   - Message à caractère informatique

@@ -8,7 +8,7 @@ url: /2024/05/10/installer-plex-sur-truenas-scale/
 image: /2024/05/truenas-plex-2.png
 categories:
   - autohebergement
-  - Matériel
+  - materiel
 tags:
   - QNAP
   - k3s

@@ -8,7 +8,7 @@ excerpt: Les slides de mon talk que je donne le 22 septembre 2020 aux RRLL 2020
 url: /2020/09/22/rrll-2020-les-slides-du-talk-le-logiciel-libre-a-t-il-de-beaux-jours-devant-lui/
 image: /2020/08/rrll_log_libre.jpeg
 categories:
-  - Conférence
+  - conference
 
 ---
 ## RRLL 2020

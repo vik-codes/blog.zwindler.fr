@@ -7,7 +7,7 @@ date: 2015-06-21T08:47:49+00:00
 url: /2015/06/21/freebox-mini-4k-partie-routeurserver-reboot-intempestifs-toutes-les-5-minutes/
 image: /2015/06/fetch.php_.jpg
 categories:
-  - Matériel
+  - materiel
 tags:
   - 3.1.2
   - 3.1.3

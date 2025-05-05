@@ -7,7 +7,7 @@ date: 2020-08-12T06:45:00+00:00
 url: /2020/08/12/rrll-2020-le-logiciel-libre-a-t-il-de-beaux-jours-devant-lui/
 image: /2020/08/rrll_log_libre.jpeg
 categories:
-  - Conférence
+  - conference
 
 ---
 ## Première conférence de 2020, aux RRLL !

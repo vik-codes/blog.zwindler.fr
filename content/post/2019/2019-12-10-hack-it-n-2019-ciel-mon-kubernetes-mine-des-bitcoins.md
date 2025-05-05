@@ -7,7 +7,7 @@ date: 2019-12-10T12:30:00+00:00
 url: /2019/12/10/hack-it-n-2019-ciel-mon-kubernetes-mine-des-bitcoins/
 image: /2019/12/HACK_IT_N_speaker.png
 categories:
-  - Conférence
+  - conference
 tags:
   - bitcoin
   - conference

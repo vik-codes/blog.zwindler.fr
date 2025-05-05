@@ -13,7 +13,7 @@ tags:
   - activité
   - temps partiel
   - équilibre pro/perso
-  - conférence
+  - conference
   - blog
   - recrutement
   - veille technologique

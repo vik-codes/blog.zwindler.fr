@@ -8,7 +8,7 @@ excerpt: Je suis à la DevoxxFR 2025 et je fais un récapitulatif de cette trois
 url: /2025/04/18/devoxxfr-2025-recap-jour-3/
 image: /2025/04/devoxxfr-jour3.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Quantum Computing
   - DevoxxFR 2025

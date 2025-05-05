@@ -8,7 +8,7 @@ excerpt: "Récap' du premier jour de Voxxed Lu"
 url: /2024/06/21/voxxed-days-luxembourg-2024-jour-1
 image: /2024/06/voxxed_lu_24.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Voxxed Luxembourg 2024
   - VoxxedLu

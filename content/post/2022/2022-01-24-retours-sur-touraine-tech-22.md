@@ -8,7 +8,7 @@ url: /2022/01/24/retours-sur-touraine-tech-22/
 image: /2022/01/ada2.jpg
 categories:
   - Cloud
-  - Conférence
+  - conference
 
 ---
 

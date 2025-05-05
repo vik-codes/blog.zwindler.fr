@@ -8,7 +8,7 @@ excerpt: Retrouvez-moi dans le podcast Deez is la Tech
 url: /2023/11/15/retrouvez-moi-dans-DILT
 image: /2023/11/DILT.png
 categories:
-  - Conférence
+  - conference
 tags:
   - DILT
   - Deez is la tech

@@ -7,7 +7,7 @@ date: 2011-06-29T20:29:52+00:00
 url: /2011/06/29/nasmediacenter-do-it-yourself-or-not/
 image: /2011/06/dscn1178.jpg
 categories:
-  - Matériel
+  - materiel
   - Stockage
 tags:
   - AT5IONT-I

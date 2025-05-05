@@ -8,7 +8,7 @@ excerpt: Je serai speaker lors d'un table ronde chez Zenika ce soir pour parler 
 url: /2024/05/30/retrouvez-moi-ce-soir-archilocus/
 image: /2024/05/archilocus.jpeg
 categories:
-  - Conférence
+  - conference
   - Monitoring
 tags:
   - meetup

@@ -8,7 +8,7 @@ excerpt: Résumé de la deuxième journée de la KubeCon + CloudNativeCon Europe
 url: /2021/05/06/kubecon-europe-2021-recap-du-jeudi/
 image: /2021/05/old.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - cilium
   - eBPF

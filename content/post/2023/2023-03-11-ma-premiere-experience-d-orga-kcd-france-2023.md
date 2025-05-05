@@ -8,11 +8,11 @@ excerpt: Ma première expérience d'orga - Retours sur KCD France 2023
 url: /2023/03/11/ma-premiere-experience-d-orga-kcd-france-2023
 image: /2023/03/pompidou.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubernetes Community Days
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

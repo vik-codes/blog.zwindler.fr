@@ -7,7 +7,7 @@ date: 2016-06-09T12:00:36+00:00
 url: /2016/06/09/manipuler-hotspares-serveur-hp-esxi-hpssacli/
 image: /2016/05/hpe_logo.png
 categories:
-  - Matériel
+  - materiel
   - Virtualisation
 tags:
   - cli

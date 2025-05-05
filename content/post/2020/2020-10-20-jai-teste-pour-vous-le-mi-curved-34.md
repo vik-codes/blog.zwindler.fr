@@ -9,7 +9,7 @@ excerpt: "J'ai testé pour vous... le Xiaomi Mi Curved Gaming 34 pouces"
 url: /2020/10/20/jai-teste-pour-vous-le-mi-curved-34/
 image: /2020/10/20201003_153754-1.jpg
 categories:
-  - Matériel
+  - materiel
 tags:
   - Curved
   - Ecran

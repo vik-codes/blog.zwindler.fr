@@ -8,7 +8,7 @@ url: /2014/03/09/construction-dun-helmer-like-pour-mon-infra-perso-part-1-le-des
 image: /2014/03/meuble_v3red.png
 categories:
   - DIY
-  - Matériel
+  - materiel
 tags:
   - Cluster
   - DIY

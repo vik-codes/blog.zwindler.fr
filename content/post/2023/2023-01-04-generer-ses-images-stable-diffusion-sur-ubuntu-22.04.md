@@ -10,7 +10,7 @@ image: /2023/01/stablediffusion.png
 categories:
   - autohebergement
   - DIY
-  - Matériel
+  - materiel
 tags:
   - AI
   - AI art

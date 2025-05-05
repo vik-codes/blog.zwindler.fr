@@ -7,9 +7,9 @@ date: 2022-03-30T20:00:00+00:00
 url: /2022/03/30/combien-temps-pour-preparer-conf/
 image: /2022/01/tnt2.jpg
 categories:
-  - Conférence
+  - conference
 tags:
-  - conférence
+  - conference
   - préparation
 
 ---

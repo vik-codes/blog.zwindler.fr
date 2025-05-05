@@ -8,7 +8,7 @@ url: /2014/03/10/construction-dun-helmer-like-pour-mon-infra-perso-part-3-lassem
 image: /2014/03/img_20140308_221246.jpg
 categories:
   - DIY
-  - Matériel
+  - materiel
 tags:
   - Cluster
   - Do it yourself

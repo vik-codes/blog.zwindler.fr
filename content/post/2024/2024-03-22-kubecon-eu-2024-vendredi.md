@@ -8,12 +8,12 @@ excerpt: "Récap' du dernier jour (vendredi) de la KubeCon + CloudNativeCon Euro
 url: /2024/03/22/kubecon-eu-2024-vendredi
 image: /2024/03/frenchies.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2024
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

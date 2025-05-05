@@ -8,7 +8,7 @@ excerpt: Résumé de la 3ème et dernière journée de Kubecon Europe 2021
 url: /2021/05/12/kubecon-europe-2021-recap-du-vendredi/
 image: /2021/05/kasten-1.jpeg
 categories:
-  - Conférence
+  - conference
 tags:
   - GPU
   - kind

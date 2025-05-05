@@ -8,7 +8,7 @@ url: /2024/07/04/mon-nas-en-2024-jonsbo-n100-part3/
 image: /2024/07/cpu-stress-2.jpeg
 categories:
   - autohebergement
-  - Matériel
+  - materiel
 tags:
   - Jonsbo N2
   - OpenMediaVault

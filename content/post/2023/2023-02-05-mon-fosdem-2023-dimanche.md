@@ -8,7 +8,7 @@ excerpt: Je suis pour la première fois de ma vie au FOSDEM et je fais un récap
 url: /2023/02/05/mon-fosdem-2023-dimanche/
 image: /2023/02/ulb2.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - FOSDEM 2023
   - FOSDEM

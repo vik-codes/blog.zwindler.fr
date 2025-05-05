@@ -8,12 +8,12 @@ excerpt: "Récap' du deuxième jour (jeudi) de la KubeCon + CloudNativeCon Europ
 url: /2022/05/20/kubecon-eu-2022-jour-2-jeudi
 image: /2022/05/PXL_20220519_110225897.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2022
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

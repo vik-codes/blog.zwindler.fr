@@ -8,12 +8,12 @@ excerpt: "Récap' du troisième et dernier jour (vendredi) de la KubeCon + Cloud
 url: /2022/05/22/kubecon-eu-2022-jour-3-vendredi
 image: /2022/05/PXL_20220520_070037429.MP.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2022
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

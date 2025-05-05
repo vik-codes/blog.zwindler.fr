@@ -8,7 +8,7 @@ excerpt: Je serai speaker à Cloud Nord 2023, BDX I/O 2023 et OSXP 2023 !
 url: /2023/07/29/rentree-chargee-cloud-nord-bdxio-osxp/
 image: /2023/07/rentree_chargee.png
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubernetes
   - GoReleaser

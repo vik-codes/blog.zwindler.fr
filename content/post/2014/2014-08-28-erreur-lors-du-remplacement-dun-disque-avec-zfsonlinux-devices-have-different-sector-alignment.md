@@ -8,7 +8,7 @@ url: /2014/08/28/erreur-lors-du-remplacement-dun-disque-avec-zfsonlinux-devices-
 image: /2014/08/zfs-linux.png
 categories:
   - DIY
-  - Matériel
+  - materiel
   - Stockage
 tags:
   - advanced format

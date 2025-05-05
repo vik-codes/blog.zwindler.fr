@@ -8,11 +8,11 @@ excerpt: Retour d’expérience sur un an dans l'equipe d’organisation de BDX 
 url: /2024/11/28/bdxio-un-an-orga-dune-conf
 image: /2024/11/bdxio2024.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - bdxio
   - BDX I/O
-  - Conférence
+  - conference
   - organisateur
 
 ---

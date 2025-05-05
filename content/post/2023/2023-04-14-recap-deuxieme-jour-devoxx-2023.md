@@ -8,7 +8,7 @@ excerpt: Je suis à Devoxx France 2023 et je fais un récapitulatif de cette deu
 url: /2023/04/14/devoxx-2023-recap-jour-2/
 image: /2023/04/denis_amphi_bleu.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubernetes
   - Devoxx 2023

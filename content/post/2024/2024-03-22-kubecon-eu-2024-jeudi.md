@@ -8,12 +8,12 @@ excerpt: "Récap' du deuxième vrai jour (jeudi) de la KubeCon + CloudNativeCon 
 url: /2024/03/22/kubecon-eu-2024-jeudi
 image: /2024/03/keynote_jeudi.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubecon
   - Kubecon Europe
   - Kubecon Europe 2024
-  - Conférence
+  - conference
   - Kubernetes
   - CloudNative
 

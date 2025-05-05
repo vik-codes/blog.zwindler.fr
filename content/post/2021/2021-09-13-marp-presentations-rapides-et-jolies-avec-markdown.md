@@ -8,7 +8,7 @@ excerpt: Mes présentations rapides à faire et jolies à voir avec Markdown et 
 url: /2021/09/13/marp-presentations-rapides-et-jolies-avec-markdown/
 image: /2021/09/marp-logo.png
 categories:
-  - Conférence
+  - conference
 tags:
   - documentation
   - html5

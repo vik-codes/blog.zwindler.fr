@@ -7,7 +7,7 @@ date: 2013-11-17T15:20:04+00:00
 url: /2013/11/17/configurer-le-thomson-789vn-en-vdsl2-sur-ligne-free-degroupee/
 image: /2014/09/Download-195m.png
 categories:
-  - Matériel
+  - materiel
 tags:
   - 789vn
   - ADSL2+

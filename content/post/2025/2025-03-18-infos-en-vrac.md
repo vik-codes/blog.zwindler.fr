@@ -8,7 +8,7 @@ excerpt: Je serai speaker à Devoxx France 2025 au palais des congrès de Paris,
 url: /2025/03/18/infos-en-vrac/
 image: /2025/03/devoxx.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Kubernetes
   - Devoxx 2025

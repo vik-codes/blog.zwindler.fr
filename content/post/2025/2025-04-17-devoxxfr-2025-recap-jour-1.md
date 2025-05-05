@@ -8,7 +8,7 @@ excerpt: Je suis à la DevoxxFR 2025 et je fais un récapitulatif de cette premi
 url: /2025/04/17/devoxxfr-2025-recap-jour-1/
 image: /2025/04/devoxxfr-jour1.png
 categories:
-  - Conférence
+  - conference
 tags:
   - AI
   - DevoxxFR 2025

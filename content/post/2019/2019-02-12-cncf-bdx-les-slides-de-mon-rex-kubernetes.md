@@ -9,7 +9,7 @@ image: /2019/01/cncf3.png
 categories:
   - systeme
   - Virtualisation
-  - Conférence
+  - conference
 tags:
   - Bordeaux
   - CNCF

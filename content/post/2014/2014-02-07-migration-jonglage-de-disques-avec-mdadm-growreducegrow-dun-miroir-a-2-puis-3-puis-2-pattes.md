@@ -8,7 +8,7 @@ url: /2014/02/07/migration-jonglage-de-disques-avec-mdadm-growreducegrow-dun-mir
 image: /2014/02/8-Bay_Raid_Station_04.jpg
 categories:
   - autohebergement
-  - Matériel
+  - materiel
   - Stockage
   - Virtualisation
 tags:

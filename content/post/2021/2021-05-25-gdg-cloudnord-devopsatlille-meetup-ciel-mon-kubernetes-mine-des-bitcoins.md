@@ -12,7 +12,7 @@ categories:
 tags:
   - bitcoin
   - Cloud nord
-  - conférence
+  - conference
   - GDG
   - Kubernetes
   - Meetup

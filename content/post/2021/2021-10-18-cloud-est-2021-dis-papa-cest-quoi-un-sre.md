@@ -8,7 +8,7 @@ url: /2021/10/18/cloud-est-2021-dis-papa-cest-quoi-un-sre/
 image: /2021/10/1633947580283.jpeg
 categories:
   - Cloud
-  - Conférence
+  - conference
 
 ---
 ## Non ce n’est pas un bug de la matrice : après le ch’Nord, l’Est &#x1f605;

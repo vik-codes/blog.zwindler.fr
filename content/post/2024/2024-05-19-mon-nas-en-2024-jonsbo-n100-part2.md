@@ -8,7 +8,7 @@ url: /2024/05/19/mon-nas-en-2024-jonsbo-n100-part2/
 image: /2024/05/truenas_installed.jpeg
 categories:
   - autohebergement
-  - Matériel
+  - materiel
 tags:
   - Jonsbo N2
   - OpenMediaVault

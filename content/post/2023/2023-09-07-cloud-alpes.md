@@ -7,7 +7,7 @@ date: 2023-09-07T08:00:00+02:00
 url: /2023/09/07/cloud-alpes
 image: /2023/09/insalyon.jpg
 categories:
-  - Conférence
+  - conference
 tags:
   - Cloud Alpes
   - LDLC

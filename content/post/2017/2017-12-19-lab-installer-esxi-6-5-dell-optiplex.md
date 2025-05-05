@@ -8,7 +8,7 @@ url: /2017/12/19/lab-installer-esxi-6-5-dell-optiplex/
 image: /2017/12/esxi_cluster3.jpg
 categories:
   - DIY
-  - Matériel
+  - materiel
   - Virtualisation
 tags:
   - ESX(i)

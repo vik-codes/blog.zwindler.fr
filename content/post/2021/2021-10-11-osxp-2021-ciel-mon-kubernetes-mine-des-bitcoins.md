@@ -8,7 +8,7 @@ excerpt: Je serai speaker à OSXP (Open Source Experience) au palais des congrè
 url: /2021/10/11/osxp-2021-ciel-mon-kubernetes-mine-des-bitcoins/
 image: /2021/08/osxp_logo.png
 categories:
-  - Conférence
+  - conference
 tags:
   - bitcoin
   - hack
