@@ -8,7 +8,7 @@ excerpt: "Mise à jour de l'article pour migrer ses VMs de Proxmox VE vers XCP N
 url: /2022/08/17/ipad-un-ecran-de-plus-pour-ubuntu
 image: /2022/08/partage3.jpg
 categories:
-  - DYI
+  - DIY
 tags:
   - Ubuntu
   - GNOME

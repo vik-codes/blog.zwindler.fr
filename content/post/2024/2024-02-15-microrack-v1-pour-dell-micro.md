@@ -11,7 +11,7 @@ categories:
   - Matériel
 tags:
   - Cluster
-  - DYI
+  - DIY
   - Helmer
   - Rack
   - Homelab
