@@ -123,3 +123,15 @@ J'ai récupéré le logo de Bambu Lab sur leur Github et je l'ai déposé dans l
 Et voilà le résultat :\)
 
 ![](/2025/05/desktop.png)
+
+## Addendum
+
+Si jamais vous voulez VRAIMENT faire du AppImage, il existe un projet github à 6k stars, **AppImageLauncher**, qui permet de gérer les AppImages
+
+* https://github.com/TheAssassin/AppImageLauncher
+
+> makes your Linux desktop AppImage ready™
+
+Grosso modo c'est un launcher pour AppImage, qui vous donne le choix entre installer les AppImages pour vous ou les lancer oneshot, la suppression et la mise à jour des images et un CLI.
+
+Merci Fabio pour l'info.
