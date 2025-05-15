@@ -36,8 +36,8 @@ Pratique pour suivre en live ou retrouver les liens 😉
 
 J'ai été (ou vais bientôt être) speaker sur les événements suivants :
 
-* **DevoxxFR 2025** : Kubernetes : 5 façons créatives de flinguer sa prod 🔫
-* **DevoxxFR 2025** : Ne perdez plus vos photos de vacances 🔥🏠🔥 (ou tout autre fichier important)
+* **DevoxxFR 2025** : Kubernetes : 5 façons créatives de flinguer sa prod 🔫 ([video](https://youtu.be/IeIuUCmjXUQ?si=lG4rR0ShCriDCHR5))
+* **DevoxxFR 2025** : Ne perdez plus vos photos de vacances 🔥🏠🔥 (ou tout autre fichier important) ([video](https://www.youtube.com/watch?v=FsItkp58sP0))
 * **VoxxedDays Luxembourg 2024** : Démystifions le fonctionnement interne de Kubernetes ([video](https://www.youtube.com/watch?v=HvuX8UBqroI&list=PL4PrrYCV-zcmooZhSE_SSI8c2htBWkqEl&index=20))
 * **Archilocus 2024** : Table ronde "Comment je monitore ma prod ?" [video](https://www.youtube.com/watch?v=jJN08S0RfaI)
 * **FOSDEM 2024** : Putting an end to Makefiles in go projects with GoReleaser ([video](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-1853-putting-an-end-to-makefiles-in-go-projects-with-goreleaser/) / feedbacks [here](https://openfeedback.io/OZIUfAJ1j3VdnNbeAF6g/2024-02-03/lR9zFD0niZhXEFFvxlm9) and [here](https://pretalx.fosdem.org/fosdem-2024/talk/DRBGAJ/feedback/))
