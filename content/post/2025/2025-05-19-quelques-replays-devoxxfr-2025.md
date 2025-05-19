@@ -6,7 +6,7 @@ type: post
 date: 2025-05-19T17:00:00+00:00
 excerpt: Un mois après devoxxfr 2025 je vous conseille quelques replays
 url: /2025/05/19/quelques-replays-devoxxfr-2025
-image: /2025/04/devoxxfr-jour3.jpg
+image: /2025/04/devoxxfr-jour1.png
 categories:
   - conference
 tags:
