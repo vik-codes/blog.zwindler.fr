@@ -142,6 +142,6 @@ Alain Regnier fait un chouette talk sur les features de Kubernetes que vous auri
 
 ## Communiquer à 36000 km : l'art de l'efficacité avec moins d'un Watt
 
-Très loin de la tech qu'on fait au jour le jour, Paul Pinault explique comment faire communiquer des objets dans l'espace. Très intéressant (pour les petits enfants fan de l'espace comme j'ai été).
+Très loin de la tech qu'on fait au jour le jour, Paul Pinault explique comment faire communiquer l'IoT avec des satellites. Très intéressant (pour les petits enfants fan de l'espace comme j'ai été).
 
 * https://www.youtube.com/watch?v=GkSs18PBX5c
