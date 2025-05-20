@@ -134,9 +134,14 @@ Un chouette REX de David Pilato sur une belle histoire de contribution open sour
 
 * https://www.youtube.com/watch?v=ReAvGonT31E
 
-## Bonus
+## Kubernetes en 2025
 
-Il me reste deux vidéos "à voir" dans ma liste. Je ne sais pas si elles sont bien ou pas, mais je les mets quand même :p
+Alain Regnier fait un chouette talk sur les features de Kubernetes que vous auriez pu louper. Je n'ai rien appris, mais c'est probablement un talk que je vais rajouter dans ma banette des ressources utiles que je conseille aux débutants, pour être à jour dès le début :
 
-* Kubernetes en 2025 - Alain Regnier - https://www.youtube.com/watch?v=Eh8jKVVSVKA
-* Communiquer à 36000 km : l'art de l'efficacité avec moins d'un Watt - Paul Pinault - https://www.youtube.com/watch?v=GkSs18PBX5c
+* https://www.youtube.com/watch?v=Eh8jKVVSVKA
+
+## Communiquer à 36000 km : l'art de l'efficacité avec moins d'un Watt
+
+Très loin de la tech qu'on fait au jour le jour, Paul Pinault explique comment faire communiquer des objets dans l'espace. Très intéressant (pour les petits enfants fan de l'espace comme j'ai été).
+
+* https://www.youtube.com/watch?v=GkSs18PBX5c
