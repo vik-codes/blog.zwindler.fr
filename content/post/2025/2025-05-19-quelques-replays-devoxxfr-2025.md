@@ -34,12 +34,14 @@ Mon deuxième talk de cette édition, si vous voulez un aperçu en 15 minutes de
 
 * https://www.youtube.com/watch?v=FsItkp58sP0
 
-![](/2025/05/backblaze-fine.jpeg)
-
 Dommage que j'aie appris trois jours plus tard que Backblaze était en proie à de très grandes difficultés financières et à une gestion très très louche des dirigeants. J'en ai parlé sur LinkedIn, je n'ai pas encore eu le temps de remettre le post au propre (désolé pour le crosspost de l'enfer).
 
 * https://www.linkedin.com/posts/denis-germain_devoxxfr-activity-7322626928757125121-SaVN
 * https://www.morpheus-research.com/backblaze/
+
+Update : j'ai pris le temps de relire les news un poil plus récentes à ce sujet, The Register a contacté BackBlaze qui nie en bloc. Mais clairement BackBlaze est gravement déficitaire et les derniers chiffres ne vont pas dans le bon sens. Wait and see?
+
+* https://forums.theregister.com/forum/all/2025/04/29/backblaze_sham_accounting_claims/
 
 ## Et si vous interrogiez le recruteur ? Pour bien choisir sa futur aventure pro !
 
