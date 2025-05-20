@@ -136,7 +136,7 @@ Un chouette REX de David Pilato sur une belle histoire de contribution open sour
 
 ## Kubernetes en 2025
 
-Alain Regnier fait un chouette talk sur les features de Kubernetes que vous auriez pu louper. Je n'ai rien appris, mais c'est probablement un talk que je vais rajouter dans ma banette des ressources utiles que je conseille aux débutants, pour être à jour dès le début :
+Alain Regnier fait un chouette talk sur les features de Kubernetes que vous auriez pu louper. C'est probablement un talk que je vais rajouter dans ma banette des ressources utiles que je conseille aux débutants, pour être à jour dès le début :
 
 * https://www.youtube.com/watch?v=Eh8jKVVSVKA
 
