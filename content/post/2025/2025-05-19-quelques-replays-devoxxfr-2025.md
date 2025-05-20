@@ -41,7 +41,7 @@ Dommage que j'aie appris trois jours plus tard que Backblaze était en proie à 
 
 Update : j'ai pris le temps de relire les news un poil plus récentes à ce sujet, The Register a contacté BackBlaze qui nie en bloc. Mais clairement BackBlaze est gravement déficitaire et les derniers chiffres ne vont pas dans le bon sens. Wait and see?
 
-* https://forums.theregister.com/forum/all/2025/04/29/backblaze_sham_accounting_claims/
+* https://www.theregister.com/2025/04/29/backblaze_sham_accounting_claims/
 
 ## Et si vous interrogiez le recruteur ? Pour bien choisir sa futur aventure pro !
 
