@@ -24,17 +24,17 @@ Ce n'est un secret pour personne, *je ne suis pas hyper fan* des bloggeurs techs
 
 > Je pars du principe que si je ne prends pas la peine d’écrire moi-même le contenu de ce blog, vous ne devriez pas prendre la peine de le lire.
 
-Cependant, j'ai exceptionnellement brisé cette règle aujourd'hui pour la rédaction d'un article "technique", comme support d'une réfléxion plus large que j'ai depuis quelques semaines maintenant. Question que j'ai d'ailleurs "posée tout haut" sur Bluesky et qui a eu des retours intéressants et même parfois inattendus.
+Cependant, j'ai exceptionnellement brisé cette règle aujourd'hui pour la rédaction d'un article "technique", comme support d'une réflexion plus large que j'ai depuis quelques semaines maintenant. Question que j'ai d'ailleurs "posée tout haut" sur Bluesky et qui a eu des retours intéressants et même parfois inattendus.
 
 > Vraie question : à quoi sert un blog technique (rédigé par un être humain, je veux dire) si même les technophiles considèrent que c'est plus simple de bypass la doc officielle et les gens qui partagent leur XP, avec de l'IA ?
 
 * [bsky.app/profile/zwindler.fr/post/3lpohy3efg22l](https://bsky.app/profile/zwindler.fr/post/3lpohy3efg22l)
 
-Plus globalement, la question était "**est ce que je me fais pas un peu de mal à rédiger des trucs techniques si les gens préfèrent le style fade des LLMs ?**"
+Plus globalement, la question était "**est-ce que je me fais pas un peu de mal à rédiger des trucs techniques si les gens préfèrent le style fade des LLMs ?**"
 
 ## Vos réponses à cette question (qui n'en attendait pas forcément)
 
-Je ne vais pas citer tout le monde, mais grosso modo, ce qu'il ressort c'est :
+Je ne vais pas citer tout le monde, mais grosso modo, ce qui en ressort c'est :
 
 * le blog tech, c'est avant tout pour son propre plaisir (d'écrire, d'apprendre)
 * c'est une façon très efficace pour apprendre un nouveau sujet
@@ -43,15 +43,15 @@ Je ne vais pas citer tout le monde, mais grosso modo, ce qu'il ressort c'est :
 * les LLMs ne peuvent pas "générer" un REX (enfin, pas un vrai :p) 
 * les LLMs ne vont pas faire des captures d'écrans pour les logiciels complexes qui ont des UIs
 
-Les 4 premières réponses, je les attendaient. C'est ce qui me motivent à écrire ce blog depuis maintenant plus de 15 ans et c'est d'ailleurs assez proche de [ce que je dis dans mon tout premier billet de blog de 2010](/2010/04/21/zwindlers-reflection/).
+Les 4 premières réponses, je les attendais. C'est ce qui me motive à écrire ce blog depuis maintenant plus de 15 ans et c'est d'ailleurs assez proche de [ce que je dis dans mon tout premier billet de blog de 2010](/2010/04/21/zwindlers-reflection/).
 
-Les deux derniers, je ne les avais pas forcément vus venir et c'est vraiment que je vais peut être maintenant plus me REconcentrer sur des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
+Les deux dernières, je ne les avais pas forcément vues venir et c'est vraiment que je vais peut-être maintenant plus me reconcentrer sur des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
 
-Mais il y a un point que personne n'a évoqué, c'est ce fameux style fade que j'aime pas dans les LLMs. C'est générique, mécanique, lisse, (statistiquement) moyen.
+Mais il y a un point que personne n'a évoqué, c'est ce fameux style fade que je n'aime pas dans les LLMs. C'est générique, mécanique, lisse, (statistiquement) moyen.
 
-Est ce qu'avec un bon LLM aujourd'hui, on arrive à contourner cette limitation ?
+Est-ce qu'avec un bon LLM aujourd'hui, on arrive à contourner cette limitation ?
 
-Il se trouve que depuis peu, j'ai une licence Copilot pour le travail, avec accès à **Claude Sonnet 4**. J'ai donc décidé de tester le mode "Agent" sur mon blog (la machine à accès à tous les fichiers de mon workspace et peut écrire dans le workspace).
+Il se trouve que depuis peu, j'ai une licence Copilot pour le travail, avec accès à **Claude Sonnet 4**. J'ai donc décidé de tester le mode "Agent" sur mon blog (la machine a accès à tous les fichiers de mon workspace et peut écrire dans le workspace).
 
 Note : c'est là où on voit que c'est pratique d'avoir tout en markdown dans un dépôt git !
 
@@ -61,9 +61,9 @@ J'ai donc décidé de prendre un sujet d'actualité (pour mon travail), que je c
 
 ### Prompt 1 : Demande initiale
 
-Dans cette version basique, j'ai volontairement laissé beaucoup de liberté au LLM. Je lui ai juste donné le contexte du blog, lui ai demandé de "manger" quelques uns de mes articles.
+Dans cette version basique, j'ai volontairement laissé beaucoup de liberté au LLM. Je lui ai juste donné le contexte du blog, lui ai demandé de "manger" quelques-uns de mes articles.
 
-Il en a "consommé" 6 entre 2025 et 2023 sur différents thèmes, et un de 2015. Personnellement, j'ai pensé que ça serait beaucoup trop peu car les 6 articles étaient vraiment hétéroclytes (il y avait un billet d'humeur politique et une recette de cuisine dans le lot).
+Il en a "consommé" 6 entre 2025 et 2023 sur différents thèmes, et un de 2015. Personnellement, j'ai pensé que ça serait beaucoup trop peu car les 6 articles étaient vraiment hétérocites (il y avait un billet d'humeur politique et une recette de cuisine dans le lot).
 
 ```
 Contexte : Je suis auteur d'un blog technique, spécialisé dans l'observabilité et la virtualisation depuis 2010. Depuis 8 ans, je parle beaucoup de Kubernetes. De temps en temps j'écris des billets d'humeurs ou sur des sujets non tech. Le blog est rédigé en markdown avec hugo, dans le dossier content/post. La grande majorité des posts sont en Français.
@@ -119,25 +119,25 @@ L'IA a produit un article complet qui reprenait effectivement mon style avec :
 
 Le résultat est assez bluffant.
 
-Avec un peu d'habitude, on peut deviner que ce n'est pas moi qui ait écrit l'article. Ma femme (qui lit la plupart de mes articles, a minima en diagonale) n'a pas su le dire à première vue.
+Avec un peu d'habitude, on peut deviner que ce n'est pas moi qui ai écrit l'article. Ma femme (qui lit la plupart de mes articles, a minima en diagonale) n'a pas su le dire à première vue.
 
-Il y a quelques tournures que je n'aurais pas utilisé, mais surtout ça reste hyper généraliste (voire générique), lisse. Mais le ton est suffisament décontracté pour que les détecteurs type ZeroGPT soient bernés :
+Il y a quelques tournures que je n'aurais pas utilisées, mais surtout ça reste hyper généraliste (voire générique), lisse. En revanche, le ton est suffisamment décontracté pour que les détecteurs type ZeroGPT soient bernés :
 
 > 12.62% : Votre Texte est probablement écrit par un humain, peut inclure des parties générées par une IA/GPT
 
 ![](/2025/06/zerogpt.png)
 
-Les parties surlignées en jaunes sont les seules détectées comme "générées".
+Les parties surlignées en jaune sont les seules détectées comme "générées".
 
 Produire l'article dans cette version m'a pris à peu près 2 minutes chrono. Mais ça ne correspond toujours pas à mon standard de "blogging".
 
-Donc j'ai décider de pousser l'expérience jusqu'au bout, quitte à passer plus de temps à prompter et lui donner des instructions que ça ne m'aurait pris à l'écrire moi même.
+Donc j'ai décidé de pousser l'expérience jusqu'au bout, quitte à passer plus de temps à prompter et lui donner des instructions que ça ne m'aurait pris à l'écrire moi-même.
 
 ## Avec plus de prompts (version itérative)
 
 ### Prompt X : Demande de modifications
 
-Il y a tellement de modifications demandées ici, certaines tellement directives (exemples que je lui demande d'inclure), que j'ai quasiment envie de dire que c'est moi qui est écrit une bonne moitié de l'article, pas le LLM... Mais c'était pour la science :p
+Il y a tellement de modifications demandées ici, certaines tellement directives (exemples que je lui demande d'inclure), que j'ai quasiment envie de dire que c'est moi qui ai écrit une bonne moitié de l'article, pas le LLM... Mais c'était pour la science :p
 
 ```
 Garde ce fichier tel quel, c'est une bonne première version
@@ -171,15 +171,17 @@ Mets cette image en "image:" /talks/2022-sre-sre-partout/binaries/sre_sre_partou
 Change le titre de la première version en y ajoutant "(en 2 prompts)", et le titre du second en y ajoutant "(en plusieurs prompts)"
 ```
 
-Après avoir écrit tout ça, le résultat est pas mal, proche de ce que j'aurais pu écrire "moi même".
+Après avoir écrit tout ça, le résultat n'est pas mal, proche de ce que j'aurais pu écrire "moi-même" ou presque. 
 
 ## Réflexions sur le processus
 
 Ce qui marche VRAIMENT bien, c'est l'analyse de style : le LLM est capable d'identifier et de reproduire *mes patterns stylistiques* avec une précision surprenante, au point de berner ma chérie sur une première lecture rapide.
 
-Cependant, on reste sur quelque chose de super générique techniquement (qui a dit "chiant" ?). Sans guidage explicite, les exemples sont pas dingues, ça manque de contextualisation, etc. Il y a une grosse phase d'aller-retours avant que le résultat soit "correct" (aka "pas pénible à lire") à mes yeux.
+Cependant, on reste sur quelque chose de super générique techniquement (qui a dit "chiant" ?). Sans guidage explicite, les exemples ne sont pas dingues, ça manque de contextualisation, etc. Il y a une grosse phase d'aller-retours avant que le résultat soit "correct" (aka "pas pénible à lire") à mes yeux.
 
-Et Claude Sonnet 4 ne permet pas de générer des images donc si je voulais pousser l'expérience en ajoutant des schémas, il aurait fallu que je me contente d'outils textes type mermaid, ou que je les ajoute à la main.
+Je pense aussi qu'on aurait encore pu améliorer le résultat en demandant au LLM de lire plus d'articles de mon blog (ou en lui pointant ceux qui sont pertinents).
+
+Enfin, Claude Sonnet 4 ne permet pas de générer des images donc si je voulais pousser l'expérience en ajoutant des schémas, il aurait fallu que je me contente d'outils textuels type mermaid, ou que je les ajoute à la main.
 
 ## Conclusion ?
 
@@ -191,5 +193,5 @@ Ensuite, je l'ai déjà dit, je vais me reconcentrer sur des sujets niches ou de
 
 Enfin, que "oui" on peut produire des articles plutôt pas mal (je trouve) avec un LLM, mais il faut (pour l'instant encore) :
 
-* connaitre le sujet
+* connaître le sujet
 * passer pratiquement autant de temps (voire plus) à itérer sur le résultat pour avoir quelque chose de similaire à ce qu'un humain (moi) aurait pu écrire
