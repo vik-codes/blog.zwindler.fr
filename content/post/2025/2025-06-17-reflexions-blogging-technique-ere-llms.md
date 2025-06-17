@@ -97,12 +97,18 @@ Ce qui est noté ici est un résumé. En réalité, l'analyse était bien plus l
 
 Il y a un peu de flagornerie par défaut dans les réponses des LLMs, il faut savoir lire entre les lignes, mais globalement c'était fidèle et intéressant d'avoir une analyse de la progression de mon style d'écriture.
 
+La version 1 est disponible ici :
+
+* [https://github.com/zwindler/blog.zwindler.fr/commit/335b4a94943628b5e462581508e899990ba1dee1](le commit qui va bien)
+
 ### Prompt 2 : Création de l'article
 
 Pour écrire l'article, j'ai essayé d'écrire un prompt relativement rapide. J'ai un peu triché par contre, je lui ai dit de se baser sur mon talk "SRE ! SRE partout !" dans lequel j'introduis les principes que j'avais envie de voir dans l'article écrit.
 
 ```
-Est-ce que tu penses pouvoir écrire un article daté du jour sur les concepts SLO / SLI / error budget / critical user journey en copiant mon style ? Indique qu'il ne faut pas confondre SLA et SLO
+Est-ce que tu penses pouvoir écrire un article daté du jour sur les concepts SLO / SLI / error budget / critical user journey en copiant mon style ?
+
+Indique qu'il ne faut pas confondre SLA et SLO
 
 Tu peux aussi t'inspirer en partie d'un talk que j'ai écrit sur le sujet et qu'on peut trouver ici : 
 
@@ -139,6 +145,11 @@ Donc j'ai décidé de pousser l'expérience jusqu'au bout, quitte à passer plus
 
 Il y a tellement de modifications demandées ici, certaines tellement directives (exemples que je lui demande d'inclure), que j'ai quasiment envie de dire que c'est moi qui ai écrit une bonne moitié de l'article, pas le LLM... Mais c'était pour la science :p
 
+L'article final est disponible ici :
+
+* [SLO, SLI, Error Budget et Critical User Journey expliqués simplement (et pourquoi ce ne sont pas des SLA !) (en plusieurs prompts)](/2025/06/17/slo-sli-error-budget-critical-user-journey-expliques-simplement/)
+
+
 ```
 Garde ce fichier tel quel, c'est une bonne première version
 
@@ -171,7 +182,11 @@ Mets cette image en "image:" /talks/2022-sre-sre-partout/binaries/sre_sre_partou
 Change le titre de la première version en y ajoutant "(en 2 prompts)", et le titre du second en y ajoutant "(en plusieurs prompts)"
 ```
 
-Après avoir écrit tout ça, le résultat n'est pas mal, proche de ce que j'aurais pu écrire "moi-même" ou presque. 
+Après avoir écrit tout ça, le résultat n'est pas mal, proche de ce que j'aurais pu écrire "moi-même" ou presque.
+
+Si on compare le diff entre la version 1 et la version 2, on voit que quasiment TOUT a été réécrit.
+
+![](/2025/06/diff.png)
 
 ## Réflexions sur le processus
 
