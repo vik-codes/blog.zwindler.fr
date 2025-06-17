@@ -1,5 +1,5 @@
 ---
-title: 'Réflexions sur le blogging technique à l\'ère des LLMs'
+title: 'Réflexions sur le blogging technique à l’ère des LLMs'
 authors:
   - zwindler
 type: post
