@@ -45,7 +45,7 @@ Je ne vais pas citer tout le monde, mais grosso modo, ce qui en ressort c'est :
 
 Les 4 premières réponses, je les attendais. C'est ce qui me motive à écrire ce blog depuis maintenant plus de 15 ans et c'est d'ailleurs assez proche de [ce que je dis dans mon tout premier billet de blog de 2010](/2010/04/21/zwindlers-reflection/).
 
-Les deux dernières, je ne les avais pas forcément vues venir et c'est vraiment que je vais peut-être maintenant plus me reconcentrer sur des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
+Les trois dernières, je ne les avais pas forcément vues venir et c'est vraiment que je vais peut-être maintenant plus me reconcentrer sur des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
 
 Mais il y a un point que personne n'a évoqué, c'est ce fameux style fade que je n'aime pas dans les LLMs. C'est générique, mécanique, lisse, (statistiquement) moyen.
 
@@ -99,7 +99,7 @@ Il y a un peu de flagornerie par défaut dans les réponses des LLMs, il faut sa
 
 La version 1 est disponible ici :
 
-* [https://github.com/zwindler/blog.zwindler.fr/commit/335b4a94943628b5e462581508e899990ba1dee1](le commit qui va bien)
+* [le commit qui va bien](https://github.com/zwindler/blog.zwindler.fr/commit/335b4a94943628b5e462581508e899990ba1dee1)
 
 ### Prompt 2 : Création de l'article
 
@@ -133,7 +133,7 @@ Il y a quelques tournures que je n'aurais pas utilisées, mais surtout ça reste
 
 ![](/2025/06/zerogpt.png)
 
-Les parties surlignées en jaune sont les seules détectées comme "générées".
+> Les parties surlignées en jaune sont les seules détectées comme "générées".
 
 Produire l'article dans cette version m'a pris à peu près 2 minutes chrono. Mais ça ne correspond toujours pas à mon standard de "blogging".
 
@@ -147,7 +147,7 @@ Il y a tellement de modifications demandées ici, certaines tellement directives
 
 L'article final est disponible ici :
 
-* [SLO, SLI, Error Budget et Critical User Journey expliqués simplement (et pourquoi ce ne sont pas des SLA !) (en plusieurs prompts)](/2025/06/17/slo-sli-error-budget-critical-user-journey-expliques-simplement/)
+* [SLO, SLI, Error Budget et Critical User Journey expliqués simplement et pourquoi ce ne sont pas des SLA !](/2025/06/17/slo-sli-error-budget-critical-user-journey-expliques-simplement/)
 
 
 ```
@@ -190,7 +190,7 @@ Si on compare le diff entre la version 1 et la version 2, on voit que quasiment 
 
 ## Réflexions sur le processus
 
-Ce qui marche VRAIMENT bien, c'est l'analyse de style : le LLM est capable d'identifier et de reproduire *mes patterns stylistiques* avec une précision surprenante, au point de berner ma chérie sur une première lecture rapide.
+Ce qui marche VRAIMENT bien, c'est l'analyse de style : le LLM est capable d'identifier et de reproduire *mes patterns stylistiques* avec une précision surprenante par rapport au peu d'articles qu'il a analysé, au point de berner ma chérie sur une première lecture rapide.
 
 Cependant, on reste sur quelque chose de super générique techniquement (qui a dit "chiant" ?). Sans guidage explicite, les exemples ne sont pas dingues, ça manque de contextualisation, etc. Il y a une grosse phase d'aller-retours avant que le résultat soit "correct" (aka "pas pénible à lire") à mes yeux.
 
@@ -204,7 +204,7 @@ Que dire de tout ça ?
 
 Déjà, Zero GPT ne sert à rien. Il a été totalement incapable de détecter que le texte avait été généré (à part quelques bribes).
 
-Ensuite, je l'ai déjà dit, je vais me reconcentrer sur des sujets niches ou des REX.
+Ensuite, je n'ai pas vraiment prévu de changer ma manière de blogger, même si j'y réfléchirai peut être à deux fois si j'ai un sujet très généraliste en tête. Je ferai peut être un peu plus de sujets "niches" et de REX.
 
 Enfin, que "oui" on peut produire des articles plutôt pas mal (je trouve) avec un LLM, mais il faut (pour l'instant encore) :
 
