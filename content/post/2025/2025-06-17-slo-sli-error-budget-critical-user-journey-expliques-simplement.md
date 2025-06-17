@@ -20,6 +20,16 @@ tags:
 
 ---
 
+**NOTE IMPORTANTE :** cet article a été généré par un LLM. Ceci va à l'encontre de règles que je me suis fixé pour ce blog (cf l'[AI Manifesto](https://blog.zwindler.fr/ai-manifesto/)). 
+
+> Je pars du principe que si je ne prends pas la peine d’écrire moi-même le contenu de ce blog, vous ne devriez pas prendre la peine de le lire.
+
+Je l'ai fait dans le cadre d'une expérience qui est décrite dans l'article suivant :
+
+* [Réflexions sur le blogging technique à l'ère des LLMs](/2025/06/17/reflexions-blogging-technique-ere-llms/)
+
+Cependant, je ne vous interdit pas de lire cet article ci (les informations qu'il contient sur les SLOs sont correctes), je veux juste que vous le fassiez en connaissance de cause ;-P.
+
 ## Introduction : quand les devs découvrent le SRE
 
 Suite à plusieurs discussions récentes avec des collègues développeurs, je me suis rendu compte que les concepts SRE comme les SLO, SLI et Error Budget restaient flous pour beaucoup d'entre eux. Pourtant, ces notions sont de plus en plus utilisées dans nos équipes, souvent sans qu'on prenne le temps de bien les expliquer.
@@ -108,7 +118,9 @@ Si votre SLO est respecté (utilisateurs contents), vous pouvez "dépenser" votr
 
 À l'inverse, si vous "cramez" votre error budget (SLO pas atteint), alors là, stop : on arrête tout ce qui n'améliore pas la fiabilité du service !
 
-C'est un formidable outil de priorisation entre les équipes produit (qui veulent des nouvelles features) et les équipes ops (qui veulent de la stabilité).
+C'est un formidable outil de priorisation entre les équipes produit (qui veulent des nouvelles features) et les équipes ops (qui veulent de la stabilité). Le fameux mur de la confusion :
+
+![](/talks/2022-sre-sre-partout/binaries/mur_de_la_confusion.png)
 
 ## Exemple concret : une API de recommendation
 
