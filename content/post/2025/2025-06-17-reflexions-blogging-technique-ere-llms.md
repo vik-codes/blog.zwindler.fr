@@ -3,7 +3,7 @@ title: 'Réflexions sur le blogging technique à l\'ère des LLMs'
 authors:
   - zwindler
 type: post
-date: 2025-06-17T19:00:00+02:00
+date: 2025-06-17T18:00:00+02:00
 excerpt: "Retour d'expérience sur l'utilisation de LLMs pour la rédaction d'articles techniques : processus, itérations et réflexions"
 url: /2025/06/17/reflexions-blogging-technique-ere-llms/
 image: /2025/06/bsky-a-quoi-ca-sert-blog-tech.png
