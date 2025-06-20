@@ -10,12 +10,12 @@ image: /2025/06/zeropod.png
 categories:
   - virtualisation
 tags:
-  - "Kubernetes"
-  - "k3s"
-  - "zeropod
-  - "scale-to-zero"
-  - "CRIU"
-  - "containerd"
+  - Kubernetes
+  - k3s
+  - zeropod
+  - scale-to-zero
+  - CRIU
+  - containerd
 
 ---
 
