@@ -88,6 +88,11 @@ $ sudo chown ubuntu:ubuntu ~/.kube/config
 $ chmod 600 ~/.kube/config
 $ export KUBECONFIG=~/.kube/config
 
+$ echo 'export KUBECONFIG=~/.kube/config' >> ~/.bashrc
+$ echo 'source <(kubectl completion bash)' >> ~/.bashrc
+$ echo 'alias k=kubectl' >> ~/.bashrc
+$ source ~/.bashrc
+
 $ kubectl get nodes
 NAME     STATUS     ROLES                  AGE   VERSION
 kube01   NotReady   control-plane,master   70s   v1.27.4+k3s1
