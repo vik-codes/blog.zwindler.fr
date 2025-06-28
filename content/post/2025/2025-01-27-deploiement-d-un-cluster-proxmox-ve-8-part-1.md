@@ -4,7 +4,7 @@ authors:
   - zwindler
 type: post
 date: 2025-01-27T20:00:00+00:00
-excerpt: "Tutoriel de déploiement d'un clusters d'hyperviseurs Proxmox VE 8 - partie 1"
+excerpt: "Tutoriel de déploiement d'un cluster d'hyperviseurs Proxmox VE 8 - partie 1"
 url: /2025/01/27/deploiement-d-un-cluster-proxmox-ve-8-part-1/
 image: /2025/02/proxmox8.png
 categories:
@@ -32,7 +32,7 @@ Note - cet article fait partie d'une suite d'articles :
 
 ## Introduction
 
-Ce qui suivent un peu le "lore" de ce blog savent que je suis un peu connu dans la communauté des bidouilleurs du dimanche pour avoir rédigé (ou co-rédigé) plusieurs tutos sur Proxmox VE. Je pense en particulier deux suites d'articles sur [Proxmox VE 5](https://blog.zwindler.fr/2017/07/11/deploiment-de-proxmox-ve-5-sur-un-serveur-dedie-part-1/), puis [Proxmox VE 6](https://blog.zwindler.fr/2020/03/02/deploiement-de-proxmox-ve-6-pfsense-sur-un-serveur-dedie/), pour créer de zéro un cluster de virtualisation avec Proxmox VE (et PFSense à l'époque).
+Ceux qui suivent un peu le "lore" de ce blog savent que je suis un peu connu dans la communauté des bidouilleurs du dimanche pour avoir rédigé (ou co-rédigé) plusieurs tutos sur Proxmox VE. Je pense en particulier à deux suites d'articles sur [Proxmox VE 5](https://blog.zwindler.fr/2017/07/11/deploiment-de-proxmox-ve-5-sur-un-serveur-dedie-part-1/), puis [Proxmox VE 6](https://blog.zwindler.fr/2020/03/02/deploiement-de-proxmox-ve-6-pfsense-sur-un-serveur-dedie/), pour créer de zéro un cluster de virtualisation avec Proxmox VE (et pfSense à l'époque).
 
 C'est une nouvelle itération de ces tutos, basée cette fois-ci sur Proxmox VE 8, avec pas mal de choses qui changent et de nouvelles approches.
 
@@ -48,9 +48,9 @@ Il faudra suivre plusieurs articles pour y parvenir.
 
 Note : si vous n'avez pas besoin de virtualisation (exemple : pas de Windows ou d'OS un peu particulier), Proxmox VE est une super plateforme de containérisation, notamment grâce à LXC, qui permet de créer des containers Linux avec un OS entier, que vous pourrez gérer exactement comme une VM mais avec des performances bien meilleures (et quelques limitations dues au partage de kernel, mais c'est souvent suffisant). Vous pouvez aller lire [mes articles sur LXC](/recherche/?keyword=lxc) si ça vous intéresse.
 
-**3-** J'aimerais attirer votre attention sur le fait que de nombreuses actions auraient pu dûu ?) être scriptées ou gérées via de "l'infrastructure as code". C'est plus dans l'air du temps, car plus robuste et plus fiable. Cependant, l'intérêt de cet article est de faire "à la main" pour comprendre ce qu'on fait, pas à pas, pas juste vous fournir une infrastructure "clé en main" que vous ne saurez pas gérer au premier pépin.
+**3-** J'aimerais attirer votre attention sur le fait que de nombreuses actions auraient pu être scriptées ou gérées via de "l'infrastructure as code". C'est plus dans l'air du temps, car plus robuste et plus fiable. Cependant, l'intérêt de cet article est de faire "à la main" pour comprendre ce qu'on fait, pas à pas, pas juste vous fournir une infrastructure "clé en main" que vous ne saurez pas gérer au premier pépin.
 
-Si vous cherchez des méthodes plus industrielles pour déployer des clusters de virtualisation, vous en trouverez surement plein sur Internet, de la part d'autres blogueurs (certains français, certains sont même des copains). 
+Si vous cherchez des méthodes plus industrielles pour déployer des clusters de virtualisation, vous en trouverez sûrement plein sur Internet, de la part d'autres blogueurs (certains français, certains sont même des copains). 
 
 J'ai d'ailleurs moi-même plusieurs fois fait l'exercice avec Ansible ou [Rudder](/recherche/?keyword=rudder) par le passé, par exemple ici (note : ce code est obsolète) :
 
@@ -79,7 +79,7 @@ Chez Scaleway, l'offre d'entrée de gamme est centrée sur les Atom Avoton ou de
 
 ![](/2025/02/scaleway.png)
 
-Pour les besoins de cet article, j'ai optimisé les coûts et je suis parti sur le serveur OVHcloud que je présente juste au-dessus (KS-GAME-LE), malheureusement uniquement disponible au Canada :\(. Mais 8 threads et 16 Go de RAM pour 12€ TTC par mois, ce n'est vraiment pas cher payé. 
+Pour les besoins de cet article, j'ai optimisé les coûts et je suis parti sur le serveur OVHcloud que je présente juste au-dessus (KS-GAME-LE), malheureusement uniquement disponible au Canada :(. Mais 8 threads et 16 Go de RAM pour 12€ TTC par mois, ce n'est vraiment pas cher payé. 
 
 Deux points noirs : 
 
@@ -96,7 +96,7 @@ Deux points noirs :
 
 ## Installation de l'OS
 
-Une fois commandé, le serveur est relativement rapidement disponible dans votre "manager OVH". On a un menu relativement intuitif pour installer directement Proxmox VE 8, quasiment à jour (les images fournies sont rebuildés très régulièrement avec toutes les mises à jour).
+Une fois commandé, le serveur est relativement rapidement disponible dans votre "manager OVH". On a un menu relativement intuitif pour installer directement Proxmox VE 8, quasiment à jour (les images fournies sont reconstruites très régulièrement avec toutes les mises à jour).
 
 Pour lancer l'installation, on clique sur les "..." dans la partie Système d'exploitation (OS), puis on sélectionne l'install depuis un template OVH
 
@@ -116,19 +116,19 @@ Avant de valider l'installation, n'oubliez pas de modifier son nom (Custom hostn
 
 ![](/2025/02/install06.png)
 
-## Première tâches post installation : upgrade et reboot
+## Premières tâches post-installation : upgrade et reboot
 
-Il y a toute une petite série de trucs à faire quand on vient d'installer une machine, en particulier sur Proxmox VE, et on va essayer de se réfréner de "vite vite" se connecter à l'interface graphique.
+Il y a toute une petite série de trucs à faire quand on vient d'installer une machine, en particulier sur Proxmox VE, et on va essayer de se retenir de "vite vite" se connecter à l'interface graphique.
 
 De toute façon, on ne pourra pas s'y connecter, à l'interface graphique de Proxmox VE...
 
 > Ah bon ???
 
-Oui, car si on peut normalement se connecter avec l'utilisateur `root` de notre Linux, on ne va pas pouvoir dans le cas d'OVHcloud, tout simplement parce qu'on n'a PAS le mot de passe root. Heureusement qu'on a mis une clé SSH ;-)
+Oui, car si on peut normalement se connecter avec l'utilisateur `root` de notre Linux, on ne va pas pouvoir dans le cas d'OVHcloud, tout simplement parce qu'on n'a PAS le mot de passe root. Heureusement qu'on a mis une clé SSH ;)
 
 On y reviendra plus tard, on a plus urgent à faire.
 
-La première chose que moi, j'ai fait, c'est d'ajouter tout de suite un record DNS de type A pour que l'IP de ma machine corresponds à un FQDN. Pour cet article, j'y ferais référence de la manière suivante :
+La première chose que moi, j'ai faite, c'est d'ajouter tout de suite un record DNS de type A pour que l'IP de ma machine corresponde à un FQDN. Pour cet article, j'y ferai référence de la manière suivante :
 
 * hostname: myPVEhost
 * FQDN: proxmox.example.org
@@ -152,7 +152,7 @@ apt install unattended-upgrades
 
 ## C'est pour la sécurité
 
-Une fois que c'est fait, je vous conseille de tout de suite CrowdSec. Ici, je me suis simplement basé sur la documentation officielle de crowdsec, pour ajouter le moteur de détection, le composant de remédiation (ici via `iptables`) :
+Une fois que c'est fait, je vous conseille d'installer tout de suite CrowdSec. Ici, je me suis simplement basé sur la documentation officielle de crowdsec, pour ajouter le moteur de détection, le composant de remédiation (ici via `iptables`) :
 
 * [CrowdSec.net - Installation Linux](https://doc.crowdsec.net/u/getting_started/installation/linux)
 
@@ -181,7 +181,7 @@ Jan 26 21:04:26 myPVEhost systemd[1]: Started crowdsec.service - Crowdsec agent.
 apt install crowdsec-firewall-bouncer
 ```
 
-Une fois que Crowdsec est opérationnel, on peut lui ajouter la collection "fulljackz/proxmox", qu'il va falloir modifier (merci le super article de Julien Louis sur son blog slash-root.fr), qui va écouter les logs de la webUI pour détecter tout bruteforce et ban ceux qui tenteraient de le faire :
+Une fois que Crowdsec est opérationnel, on peut lui ajouter la collection "fulljackz/proxmox", qu'il va falloir modifier (merci le super article de Julien Louis sur son blog slash-root.fr), qui va écouter les logs de la webUI pour détecter tout brute force et bannir ceux qui tenteraient de le faire :
 
 * https://app.crowdsec.net/hub/author/fulljackz/collections/proxmox
 * [slash-root.fr - CrowdSec : Protéger l’authentification Proxmox](https://slash-root.fr/crowdsec-proteger-lauthentification-proxmox/)
@@ -193,7 +193,7 @@ INFO Enabled fulljackz/proxmox
 INFO Run 'sudo systemctl reload crowdsec' for the new configuration to be effective. 
 ```
 
-Le pattern écouté par la parser proxmox n'est pas/plus bon avec les nouvelles versions
+Le pattern écouté par le parser proxmox n'est pas/plus bon avec les nouvelles versions
 
 ```console
 Jan 26 21:23:14 myPVEhost pvedaemon[1250]: authentication failure; rhost=::ffff:203.0.113.159.78 user=coucou@pve msg=no such user ('coucou@pve')
@@ -222,7 +222,7 @@ cscli alerts list
 ╭────┬────────────────────┬───────────────────────────┬─────────┬──────────────────────────────────────────────────────────────┬───────────┬─────────────────────────────────────────╮
 │ ID │        value       │           reason          │ country │                              as                              │ decisions │                created_at               │
 ├────┼────────────────────┼───────────────────────────┼─────────┼──────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────┤
-│ 2  │ Ip:203.0.113.222 │ crowdsecurity/ssh-slow-bf │ IR      │ 202468 Gloubi Bo ulgua Co. ( Private Joint Stock)            │ ban:1     │ 2025-01-26 22:31:15.366187524 +0000 UTC │
+│ 2  │ Ip:203.0.113.222   │ crowdsecurity/ssh-slow-bf │ IR      │ 202468 Gloubi Bo ulgua Co. ( Private Joint Stock)            │ ban:1     │ 2025-01-26 22:31:15.366187524 +0000 UTC │
 ╰────┴────────────────────┴───────────────────────────┴─────────┴──────────────────────────────────────────────────────────────┴───────────┴─────────────────────────────────────────╯
 ```
 
@@ -238,7 +238,7 @@ Alors, une popup, je veux bien ! C'est important de récompenser le travail des 
 
 C'est bien entendu une question rhétorique.
 
-Évidement, de nombreuses personnes ont trouvé plusieurs méthodes pour désactiver le code JS responsable. Big up à [fabio](https://blog.zwindler.fr/authors/fabio/) pour sa version qui fonctionne bien.
+Évidemment, de nombreuses personnes ont trouvé plusieurs méthodes pour désactiver le code JS responsable. Big up à [fabio](https://blog.zwindler.fr/authors/fabio/) pour sa version qui fonctionne bien.
 
 ```bash
 sed -Ezi.bak "s/(function\(orig_cmd\) \{)/\1\n\torig_cmd\(\);\n\treturn;/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service

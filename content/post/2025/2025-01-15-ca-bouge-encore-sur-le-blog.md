@@ -28,7 +28,7 @@ Les plus gros d'entre eux étant la suppression de toute forme de tracking intru
 
 > Je passe tout le contenu qui m'appartient sur ce blog sous licence Creative Commons
 
-Voilà la décision aussi militante que radicale que j'ai prise le 3 octobre dernier, suite à un énième vol de propriété intellectuelle entre bloggers et le drama qui en a suivi :
+Voilà la décision aussi militante que radicale que j'ai prise le 3 octobre dernier, suite à un énième vol de propriété intellectuelle entre blogueurs et le drama qui en a suivi :
 
 * [Le contenu du blog passe en Creative Commons CC BY-SA 4.0](/2024/10/03/blog-creative-commons)
 
@@ -38,7 +38,7 @@ Ce n'est peut-être pas le cas de tout le monde (c'est leur droit), mais ce site
 
 Je n'ai aucune raison de le monétiser, quelle qu'en soit la forme. 
 
-**Son but unique est le partage de connaissance**. Et je n'ai pas la prétention d'être le meilleur ou de connaitre la meilleure façon de diffuser cette connaissance.
+**Son but unique est le partage de connaissance**. Et je n'ai pas la prétention d'être le meilleur ou de connaître la meilleure façon de diffuser cette connaissance.
 
 TL;DR : vous pouvez donc **copier, améliorer, redistribuer tout ou partie de ce blog, et même tirer directement ou indirectement des revenus**, tant que je suis cité quelque part comme l'auteur initial. Ça me fait plaisir si vous en profitez. Enjoy.
 
@@ -48,19 +48,19 @@ J'ai adhéré au AI manifesto, popularisé par [Cassidy Williams / cassidoo](htt
 
 > Je pars du principe que si je ne prends pas la peine d'écrire moi-même le contenu de ce blog, vous ne devriez pas prendre la peine de le lire.
 
-Je sais que **cette décision est un plus clivante** que le passage du blog en CC BY-SA 4.0, et que plusieurs personnes dans ma sphère tech sont en opposition avec ce principe. Là aussi, c'est leur droit. 
+Je sais que **cette décision est plus clivante** que le passage du blog en CC BY-SA 4.0, et que plusieurs personnes dans ma sphère tech sont en opposition avec ce principe. Là aussi, c'est leur droit. 
 
 Moi, j'adhère totalement à cette vision.
 
-Aucun de mes articles n'est écrit par l'IA. Ils ne sont même pas relus par des IAs pour les "améliorer". 
+Aucun de mes articles n'est écrit par l'IA. Ils ne sont même pas relus par des IA pour les "améliorer". 
 
 Note pour plus tard, je vais aussi essayer également de ne plus générer de visuels avec l'IA pour des problématiques de propriété intellectuelle.
 
 ## Fin de la migration Wordpress vers Hugo et ménage dans les liens morts
 
-Lorsque j'avais entamé la migration Wordpress vers Hugo en 2020, je n'avais pas nettoyé tout le code qui avait été importé de Wordpress. Pas mal d'images restaient dans un format bâtard non-markdown, avec des balides HTML chelous.
+Lorsque j'avais entamé la migration Wordpress vers Hugo en 2020, je n'avais pas nettoyé tout le code qui avait été importé de Wordpress. Pas mal d'images restaient dans un format bâtard non-markdown, avec des balises HTML chelou.
 
-De la même manière, ça doit faire plus de 10 ans que je n'ai pas fait une passe sur mon site pour nettoyer les liens morts derrière mois.
+De la même manière, ça doit faire plus de 10 ans que je n'ai pas fait une passe sur mon site pour nettoyer les liens morts derrière moi.
 
 Comme je suis quelqu'un d'un peu têtu/bourrin, je me suis mis en tête qu'il était temps de finaliser cette migration, que j'ai quasiment faite d'une traite (je n'ai écrit que 2 articles entre le début et la fin). Quelques exemples :
 
@@ -75,13 +75,13 @@ Même à coup de regex et de tooling python pour automatiser le plus possible, c
 * plus de 200 liens morts
 * plus de 120 contenus retrouvés (souvent manuellement) sur Internet Archive
 
-Je ne remercie pas du tout HPe, VMware, Dell EMC, Microsoft, d'avoir supprimé la totalité des ressources sur lesquelle j'ai bloggé dans les années 2015 et +. Toutes les docs, les forums, les KBs, les fichiers de configuration ont été annihilés. Si une partie de ces contenus étaient effectivement obsolètes, ce n'était pas le cas de tous.
+Je ne remercie pas du tout HPE, VMware, Dell EMC, Microsoft, d'avoir supprimé la totalité des ressources sur lesquelles j'ai bloggé dans les années 2015 et +. Toutes les docs, les forums, les KBs, les fichiers de configuration ont été annihilés. Si une partie de ces contenus étaient effectivement obsolètes, ce n'était pas le cas de tous.
 
 Je ne remercie pas non plus les boites comme Oracle, SAP ou autre qui ont racheté de plus petites entités et détruit des billets de blogs corporate pourtant toujours utiles aujourd'hui et que je n'ai pas toujours pu retrouver sur Internet Archive, malheureusement.
 
 Je ne remercie toujours pas les entreprises ou les logiciels open source tels que Ansible, pfSense ou encore XWiki (que j'apprécie par ailleurs) qui ont décidé un jour de changer l'arborescence de leur site / leur documentation officielle sans mettre en place de redirection correcte...
 
-Enfin, j'ai pu constater avec tristesse que de très nombreux blogs de petites entreprises ou de particulier, dont certains que j'aimais beaucoup, avaient disparu d'Internet sans laisser de traces... Souvent autour de 2020... J'espère ne pas y voir un signe lugubre 😔.
+Enfin, j'ai pu constater avec tristesse que de très nombreux blogs de petites entreprises ou de particuliers, dont certains que j'aimais beaucoup, avaient disparu d'Internet sans laisser de traces... Souvent autour de 2020... J'espère ne pas y voir un signe lugubre 😔.
 
 ## Au revoir, Clever Cloud
 
@@ -93,7 +93,7 @@ J'ai fait de l'auto-hébergé, [vercel](https://vercel.com/), [froggit (gitlab r
 
 Au début, j'étais plutôt content, et [j'ai même fait quelques articles](https://blog.zwindler.fr/recherche/?keyword=clever+cloud) de plus pour améliorer mon expérience (sur les conseils avisés de David). Mais au fil des mois, je me suis rendu compte que l'expérience utilisateur n'y était pas.
 
-Pousser un commit sur un remote git spécial pour mettre à jour mon blog, ou alors trigger une github action au commit, qui lance la CLI avec un token, qui relance un build, ce n'est pas dingue. 
+Pousser un commit sur un remote git spécial pour mettre à jour mon blog, ou alors déclencher une github action au commit, qui lance la CLI avec un token, qui relance un build, ce n'est pas dingue. 
 
 Et avoir une facture entre 7 et 8€ par mois (que j'aurais pu optimiser un peu, certes) pour ne pas avoir de compatibilité IPv6 ([une régression par rapport à mon site auto-hébergé en 2021](https://blog.zwindler.fr/2021/03/01/le-blog-en-ipv6-ca-aurait-du-etre-simple-et-pourtant/)), et autant de configuration manuelle et de "moving parts" pouvant planter à chaque commit, ce n'était vraiment pas pour moi.
 
@@ -121,7 +121,7 @@ C'est moche, mais ça marche. Et ça me permet de savoir les articles qui marche
 
 ![](/2025/01/goat.png)
 
-Et comme c'est un peu moche et que je suis [les aventures de Hugo Lassiège](https://eventuallycoding.com/) avec attention, je teste aussi en paralèlle son tout dernier produit d'analytics spécial bloggers [BlogTally](https://blogtally.com/)
+Et comme c'est un peu moche et que je suis [les aventures d'Hugo Lassiège](https://eventuallycoding.com/) avec attention, je teste aussi en parallèle son tout dernier produit d'analytics spécial blogueurs [BlogTally](https://blogtally.com/)
 
 > L'objectif étant de faire un outil de web analytics mais dédié aux bloggers
 

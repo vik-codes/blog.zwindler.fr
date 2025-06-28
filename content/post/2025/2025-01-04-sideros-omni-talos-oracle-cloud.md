@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Fun fact, le 4 janvier 2024 (il y a tout pile un an donc), mon premier article de l'année était sur [Maas](/2024/01/04/un-peu-plus-loin-avec-maas-canonical). Commencer 2025, le même jour, avec un autre article à propos d'une solution qui vise à automatiser de l'infra, notamment en baremetal, c'est drôle :\)
+Fun fact, le 4 janvier 2024 (il y a tout pile un an donc), mon premier article de l'année était sur [Maas](/2024/01/04/un-peu-plus-loin-avec-maas-canonical). Commencer 2025, le même jour, avec un autre article à propos d'une solution qui vise à automatiser de l'infra, notamment en bare metal, c'est drôle :\)
 
 ## Contexte
 
@@ -37,7 +37,7 @@ Pour celles et ceux qui se demandent, Omni est une solution de déploiement de c
 
 Gagner, c'est bien, ça fait toujours plaisir. Mais j'en fais quoi, désormais, de ce SaaS ?
 
-La première idée qui vient à l'esprit est de commander un serveur dédié quelque part et d'installer Talos dessus (avec un ISO généré par Omni), ou alors de faire la même chose, mais d'installer un hyperviseur, puis de pop des VMs Talos Linux (là encore, grâce à Omni).
+La première idée qui vient à l'esprit est de commander un serveur dédié quelque part et d'installer Talos dessus (avec un ISO généré par Omni), ou alors de faire la même chose, mais d'installer un hyperviseur, puis de créer des VMs Talos Linux (là encore, grâce à Omni).
 
 Mais je suis ~~radin~~ un éternel économe et j'ai vu qu'Oracle Cloud Infrastructure (OCI) est supporté par Talos Linux et Omni, et donc j'ai voulu essayer.
 
@@ -48,13 +48,13 @@ Pour ceux qui ne connaissent pas OCI, j'ai fait une série d'articles en 2023 po
 
 On va donc réutiliser le free tier ici, mais pour déployer et gérer des clusters avec Omni.
 
-Note : vous pouvez les relire, mais j'ai fait mieux depuis car j'ai réussi à intégrer les machines du free tier DANS un cluster Kubernetes managé, bien plus agréable à utiliser. Stay tuned pour l'article à venir ;-).
+Note : vous pouvez les relire, mais j'ai fait mieux depuis car j'ai réussi à intégrer les machines du free tier DANS un cluster Kubernetes managé, bien plus agréable à utiliser. Stay tuned pour l'article à venir ;).
 
 ## Prérequis
 
 Pour Talos Linux sur Oracle Cloud Infrastructure (OCI) et plus spécifiquement intégrer les machines à Omni, il y a quelques étapes de configuration nécessaires.
 
-Note : ce tutoriel s'appuie partiellement sur [la documentation officielle de Talos Linux](https://www.talos.dev/v1.9/talos-guides/install/cloud-platforms/oracle/), adapté pour Omni et avec des détails complémentaires sur Oracle Cloud Infrastructure.
+Note : ce tutoriel s'appuie partiellement sur [la documentation officielle de Talos Linux](https://www.talos.dev/v1.9/talos-guides/install/cloud-platforms/oracle/), adaptée pour Omni et avec des détails complémentaires sur Oracle Cloud Infrastructure.
 
 Je pars du principe que vous avez déjà un compte sur Oracle Cloud Infrastructure, ainsi que les binaires `talosctl` et la CLI `oci`. Sinon un petit :
 
@@ -72,7 +72,7 @@ Lorsque l'authentification est demandée, choisissez la région correspondant à
 
 ## Récupération du compartment ID
 
-Un des concepts intéressant d'Oracle Cloud Infrastructure (qu'on retrouve chez d'autres cloud providers sous une forme ou une autre) est la notion de "compartment". Grosso modo, les ressources sont stockées dans des "compartiments" (la traduction littérale fonctionne pour comprendre) pour organiser les ressources. 
+Un des concepts intéressants d'Oracle Cloud Infrastructure (qu'on retrouve chez d'autres cloud providers sous une forme ou une autre) est la notion de "compartment". Grosso modo, les ressources sont stockées dans des "compartiments" (la traduction littérale fonctionne pour comprendre) pour organiser les ressources. 
 
 On peut travailler dans le "root" compartment, mais c'est quand même plus propre d'en créer un spécifique pour l'occasion.
 
@@ -103,7 +103,7 @@ export vcn_id=$(oci network vcn create --cidr-block $cidr_block --display-name t
 export rt_id=$(oci network subnet create --cidr-block $subnet_block --display-name kubernetes --compartment-id $compartment_id --vcn-id $vcn_id --query data.route-table-id --raw-output)
 ```
 
-À l'issue de la 2eme commande, on récupère non pas l'OCID du subnet (on n'en a pas besoin), mais celui de la "Route Table", un sous composant du subnet, qui permet de définir la table de routage du subnet qu'on vient de créer.
+À l'issue de la 2e commande, on récupère non pas l'OCID du subnet (on n'en a pas besoin), mais celui de la "Route Table", un sous-composant du subnet, qui permet de définir la table de routage du subnet qu'on vient de créer.
 
 Configurer une passerelle (Internet Gateway) :
 
@@ -142,12 +142,12 @@ xz --decompress ./oracle-amd64-omni-zwindler-v1.9.1.qcow2.xz
 ```
 
 Rappel : le free tier d'OCI consiste en :
-* 2 machines **amd64** de 1 oCPU (= vCPU) et 1 Go de RAM chacunes
+* 2 machines **amd64** de 1 oCPU (= vCPU) et 1 Go de RAM chacune
 * une combinaison *flexible* d'instances **arm64** ayant 1 x **n** oCPU et 6 x **n** Go, tant que le total n'excède pas 4 oCPU (et donc 6x4 = 24 Go de RAM).
 
 Sur OCI, il existe plusieurs formats pour importer des disques. Le plus simple est d'utiliser le format "maison" d'OCI (le .oci, extra original comme nom), qui se compose d'un fichier de métadonnées et du QCOW2.
 
-Créez le fichier de métadonnées pour l'importation, avec la shape **VM.Standard.E2.1.Micro** car on a un image amd64 (sinon c'est VM.Standard.A1.Flex) :
+Créez le fichier de métadonnées pour l'importation, avec la shape **VM.Standard.E2.1.Micro** car on a une image amd64 (sinon c'est VM.Standard.A1.Flex) :
 
 ```bash
 cat > image_metadata.json << EOF
@@ -190,7 +190,7 @@ tar zcf oracle-amd64-omni-zwindler-v1.9.1.oci oracle-amd64-omni-zwindler-v1.9.1.
 
 ## Importation de l'image sur Oracle Cloud
 
-On a le fichier prêt à être uploadé... mais on l'upload où ??
+On a le fichier prêt à être uploadé... mais on l'uploade où ??
 
 Pas de chance, cette étape se fait en 2 parties. D'abord, il faut uploader le fichier .oci sur un bucket. C'est assez simple à faire dans l'UI (on aurait aussi pu le faire en CLI) :
 
@@ -209,7 +209,7 @@ Cette étape est bizarrement assez longue, l'image qui ne fait que 100 Mo a pris
 
 ## Création de la VM
 
-Une fois l'image importée, on peut maintenant utiliser notre image customisée par Omni pour booter nos machines freetier.
+Une fois l'image importée, on peut maintenant utiliser notre image customisée par Omni pour booter nos machines free tier.
 
 Je l'ai fait là aussi via l'interface OCI, mais là encore, on pourrait le faire en CLI.
 
@@ -217,7 +217,7 @@ Je l'ai fait là aussi via l'interface OCI, mais là encore, on pourrait le fair
 
 ![](/2025/01/vm2.png)
 
-Quelques secondes après le boot, elle apparait dans l'UI d'omni et peut être ajoutée à un cluster.
+Quelques secondes après le boot, elle apparaît dans l'UI d'Omni et peut être ajoutée à un cluster.
 
 ![](/2025/01/omni-oracle.png)
 
@@ -229,9 +229,9 @@ Oui...-ish.
 
 **En théorie**, les machines sont gratuites (forever free comme ils disent). Mais attention, plein de petits trucs peuvent être payants.
 
-Par exemple, le bucket sur lequel on a uploadé le QCOW2/.oci est très probablement payant. Idem pour la custom image, qui est facturée comme 1 Go de stockage (selon l'UI, j'ai pas encore la facture LOL).
+Par exemple, le bucket sur lequel on a uploadé le QCOW2/.oci est très probablement payant. Idem pour la custom image, qui est facturée comme 1 Go de stockage (selon l'UI, je n'ai pas encore la facture LOL).
 
-Si vous mettez les VMs derrière un loadbalancer (il n'y a pas de raison que vous le fassiez ici), attention, seul le LB "non flexible" bridé à 10 Mbps est gratuit (et un seul).
+Si vous mettez les VMs derrière un load balancer (il n'y a pas de raison que vous le fassiez ici), attention, seul le LB "non flexible" bridé à 10 Mbps est gratuit (et un seul).
 
 Et si comme moi, vous avez déjà 4 disques de 50 Go, le stockage de l'OS est payant (1,85€ / mois).
 
