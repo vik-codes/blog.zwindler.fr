@@ -4,7 +4,7 @@ authors:
   - zwindler
 type: post
 date: 2025-02-17T10:30:00+02:00
-excerpt: "Tutoriel de déploiement d'un clusters d'hyperviseurs Proxmox VE 8 - partie 2"
+excerpt: "Tutoriel de déploiement d'un cluster d'hyperviseurs Proxmox VE 8 - partie 2"
 url: /2025/02/17/deploiement-d-un-cluster-proxmox-ve-8-part-2/
 image: /2025/02/proxmox8.png
 categories:
@@ -36,7 +36,7 @@ Dans le tutoriel précédent (que je vous invite à lire, si ça n'a pas été f
 
 On peut maintenant essayer de se connecter à l'UI. La première chose qui devrait vous frapper (💥 aïe !) c'est que la page d'administration est en HTTPS avec un certificat autosigné. On va commencer par régler ça.
 
-Un truc assez frustrant avec Proxmox VE (mais c'est probablement pour des "bonnes raisons" que j'ignore) c'est que certaines opérations ne sont pas possibles à réaliser dans l'UI si vous vous connectez avec le compte admin zwindler@pve que nous avons créé dans le blogpost précédent.
+Un truc assez frustrant avec Proxmox VE (mais c'est probablement pour de "bonnes raisons" que j'ignore) c'est que certaines opérations ne sont pas possibles à réaliser dans l'UI si vous vous connectez avec le compte admin zwindler@pve que nous avons créé dans le blog post précédent.
 
 C'est typiquement vrai pour les mises à jour, la mise en cluster et la configuration et... pour **la configuration des certificats** (liste non exhaustive). Ici, on va donc devoir pour l'instant se connecter en root@pam et non pas en zwindler@pve...
 
@@ -46,7 +46,7 @@ Notez bien qu'il y a (pour l'instant) 2 "realms", Linux PAM (pour root) et Proxm
 
 ![](/2025/02/auth-pve.png)
 
-Dans la barre de droite, on retrouve notre serveur, qui est pour l'instant tout seul dans son datacenter (on y reviendra plus tard). Il y a plusieurs vues dans l'UI de Proxmox VE, certaines choses sont dures à trouver quand on n'a pas ça en tête. Ici, je suis dans la "server view", probablement la plus classique si vous venez du monde VMware. Dans ce menu, vous trouverez vos hyperviseurs et on pourra interagir avec chacun d'entre eux, comment ils sont configurés.
+Dans la barre de droite, on retrouve notre serveur, qui est pour l'instant tout seul dans son datacenter (on y reviendra plus tard). Il y a plusieurs vues dans l'UI de Proxmox VE, certaines choses sont difficiles à trouver quand on n'a pas ça en tête. Ici, je suis dans la "server view", probablement la plus classique si vous venez du monde VMware. Dans ce menu, vous trouverez vos hyperviseurs et on pourra interagir avec chacun d'entre eux, comment ils sont configurés.
 
 ![](/2025/02/pve-first-login.png)
 
@@ -98,20 +98,20 @@ Je me suis pris la tête un nombre incalculable de fois avec des gens qui persis
 
 > C'est faux. Et archifaux. Euh...
 
-* non, il n'y a pas besoin d'avoir de la RAM ECC pour stocker des choses sur ZFS. D'abord, c'est une préconisation (un peu zélée probablement) faites par des gens qui ont conçu un filesystem extrêmement robuste. De très nombreuses prods fonctionnent avec ZFS sans RAM ECC. Ensuite, c'est surtout vrai si vous faites de la déduplication, car la perte d'un bloc pour avoir des conséquences catastrophiques dans ce genre de cas...
+* non, il n'y a pas besoin d'avoir de la RAM ECC pour stocker des choses sur ZFS. D'abord, c'est une préconisation (un peu zélée probablement) faite par des gens qui ont conçu un filesystem extrêmement robuste. De très nombreuses prods fonctionnent avec ZFS sans RAM ECC. Ensuite, c'est surtout vrai si vous faites de la déduplication, car la perte d'un bloc peut avoir des conséquences catastrophiques dans ce genre de cas...
 
-* non, ZFS ne nécessite pas 1 Go de RAM par To de disque, là encore, c'est uniquement si vous activez la déduplication (pour stocker les tables de correspondance entre les hash et les blocs).
+* non, ZFS ne nécessite pas 1 Go de RAM par To de disque, là encore, c'est uniquement si vous activez la déduplication (pour stocker les tables de correspondance entre les hashes et les blocs).
 
-En revanche, ce qui est exact, c'est que par défaut, ZFS va essayer d'utiliser 50% de la RAM disponible sur votre serveur et de s'en servir de cache. Dans beaucoup de logiciels d'administration, y compris Proxmox VE, cette valeur va être beaucoup trop haut pour nous, car la RAM est une ressource précieuse sur un hyperviseur.
+En revanche, ce qui est exact, c'est que par défaut, ZFS va essayer d'utiliser 50% de la RAM disponible sur votre serveur et de s'en servir comme cache. Dans beaucoup de logiciels d'administration, y compris Proxmox VE, cette valeur va être beaucoup trop haute pour nous, car la RAM est une ressource précieuse sur un hyperviseur.
 
-Ça ne veut pas dire que cette fonctionnalité est inutile. Avoir du cache quand on a de la RAM qui ne sert à rien, c'est toujours bien. Donc, on va aller réduire cette valeur pour éviter des conflits de ressources entre l'optimisation des perfs de notre stockage et la quantité de VMs qu'on peut héberger.
+Ça ne veut pas dire que cette fonctionnalité est inutile. Avoir du cache quand on a de la RAM qui ne sert à rien, c'est toujours bien. Donc, on va réduire cette valeur pour éviter des conflits de ressources entre l'optimisation des performances de notre stockage et la quantité de VMs qu'on peut héberger.
 
 ```bash
-#Restrict to 512MB
-echo 536870912 |sudo tee -a /sys/module/zfs/parameters/zfs_arc_max
+# Restrict to 512MB
+echo 536870912 | sudo tee -a /sys/module/zfs/parameters/zfs_arc_max
 
-#Restrict to 4GB
-echo 4294967296 |sudo tee -a /sys/module/zfs/parameters/zfs_arc_max
+# Restrict to 4GB
+echo 4294967296 | sudo tee -a /sys/module/zfs/parameters/zfs_arc_max
 ```
 
 Note : cette commande sera à persister d'une manière ou d'une autre
@@ -122,7 +122,7 @@ Bon... j'ai essayé de repousser au maximum le moment où on arrive au réseau (
 
 Par défaut, notre serveur Proxmox VE est installé avec un bridge Linux qui va nous permettre de partager du réseau entre l'interface physique de notre serveur et nos machines virtuelles.
 
-Ce setup fonctionne bien sur votre réseau local avec un DHCP et votre propre LAN IPv4 local ou si vous disposez d'un range d'IP (que ce soit v6 ou v4) et de quoi les affecter aux machines virtuelles.
+Ce setup fonctionne bien sur votre réseau local avec un DHCP et votre propre LAN IPv4 local ou si vous disposez d'une plage d'IP (que ce soit v6 ou v4) et de quoi les affecter aux machines virtuelles.
 
 Malheureusement dans mon cas, je n'ai qu'une IPv4 (je pourrais activer l'IPv6 mais j'aurais d'autres problématiques et je préfère rester simple ici). Si je crée des VMs et que je les affecte sur le bridge, elles ne récupèreront pas d'IP et n'auront pas accès à Internet.
 
@@ -130,7 +130,7 @@ Il existe plusieurs façons de connecter les machines virtuelles au réseau ext�
 
 * [pve.proxmox.com/wiki/Network_Configuration](https://pve.proxmox.com/wiki/Network_Configuration)
 
-Dans les précédents articles sur [Proxmox VE 5](/2017/07/11/deploiment-de-proxmox-ve-5-sur-un-serveur-dedie-part-1) puis [Proxmox VE 6](/2020/03/02/deploiement-de-proxmox-ve-6-pfsense-sur-un-serveur-dedie/), on avait fait des trucs compliqués à base de plusieurs bridges, de DMZ, de firewalling PFsense, et d'un script IPtables de l'enfer.
+Dans les précédents articles sur [Proxmox VE 5](/2017/07/11/deploiment-de-proxmox-ve-5-sur-un-serveur-dedie-part-1) puis [Proxmox VE 6](/2020/03/02/deploiement-de-proxmox-ve-6-pfsense-sur-un-serveur-dedie/), on avait fait des trucs compliqués à base de plusieurs bridges, de DMZ, de firewalling pfSense, et d'un script iptables de l'enfer.
 
 ![](/2017/07/proxmox-install_simple-infra-map.jpg)
 
@@ -148,13 +148,13 @@ La configuration de l'interface réseau peut en théorie se faire directement de
 
 Ici, on voit que je ne vous ai pas raconté de carabistouilles, et qu'on a bien un bridge avec notre interface physique (ici enp1s0). 
 
-(On a même un range IPv6, ohlala 🙈 je n'ai aucune excuse... BREEEF, on va faire comme si on n'avait pas vu.)
+(On a même une plage IPv6, oh là là 🙈 je n'ai aucune excuse... BREEEF, on va faire comme si on n'avait pas vu.)
 
-On arrive maintenant au moment rigolo où on peut se couper la chique assez facilement. Je l'ai fait assez souvent et de passer en rescue... 
+On arrive maintenant au moment rigolo où on peut se couper la chique assez facilement. Je l'ai fait assez souvent et passer en rescue... 
 
 > fun fun fun fun
 
-L'idée ici, c'est donc retirer l'interface du bridge, de configurer le réseau directement dessus, et de donner un réseau local pour nos VMs sur le bridge, tout en ajoutant les règles iptables pour faire le masquerading.
+L'idée ici, c'est donc de retirer l'interface du bridge, de configurer le réseau directement dessus, et de donner un réseau local pour nos VMs sur le bridge, tout en ajoutant les règles iptables pour faire le masquerading.
 
 ![](/2025/02/pve-network-2.png)
 
@@ -162,7 +162,7 @@ L'idée ici, c'est donc retirer l'interface du bridge, de configurer le réseau 
 
 Tant qu'on ne cliquera pas sur le bouton **Apply Configuration**, on ne "risque" rien.
 
-Le problème de l'UI est que nous n'allons pouvoir modifier QUE les IPs, les gateway et les interfaces sur le bridge ou non. Sauf que pour réaliser le masquerading et que nos machines virtuelles accèdent à Internet, nous devons ajouter les fameuses règles IPtables dont je vous parle juste avant et on ne peut pas le faire depuis l'UI.
+Le problème de l'UI est que nous n'allons pouvoir modifier QUE les IP, les gateway et les interfaces sur le bridge ou non. Sauf que pour réaliser le masquerading et que nos machines virtuelles accèdent à Internet, nous devons ajouter les fameuses règles iptables dont je vous parle juste avant et on ne peut pas le faire depuis l'UI.
 
 Il va falloir rajouter les cinq dernières lignes dans la configuration du vmbr0...
 
@@ -184,9 +184,9 @@ iface vmbr0 inet static
         post-down iptables -t raw -D PREROUTING -i fwbr+ -j CT --zone 1
 ```
 
-**Attention** : le point le plus important est de bien vérifier que l'interface de sortie (-o) a bien le bon nom. Ici, mon interface physique connectée à Internet est **enp1s0**, mais si la vôtre à un autre nom, il faut adapter.
+**Attention** : le point le plus important est de bien vérifier que l'interface de sortie (-o) a bien le bon nom. Ici, mon interface physique connectée à Internet est **enp1s0**, mais si la vôtre a un autre nom, il faut adapter.
 
-De mon point de vue, l'UI n'est tout de même pas complètement inutile, car elle nous permet de faire le changement le plus touchy (échange des IPs) avec le diff visuel et le bouton "apply config". Les scripts post-up ont peu de chances de nous couper l'accès.
+De mon point de vue, l'UI n'est tout de même pas complètement inutile, car elle nous permet de faire le changement le plus délicat (échange des IP) avec le diff visuel et le bouton "apply config". Les scripts post-up ont peu de chances de nous couper l'accès.
 
 ![](/2025/02/pve-network-4.png)
 
@@ -208,17 +208,17 @@ Une fois uploadé, on peut maintenant cliquer sur le bouton bleu en haut à droi
 
 ![](/2025/02/proxmox-create-01.png)
 
-À partir de là, le wizard de création de VM devrait vous prendre la main. Ça va être un peu verbeux, mais tous les menus sont utiles, quand on commence à bien connaitre Proxmox VE. Je vous donne quand même le minimum :
+À partir de là, le wizard de création de VM devrait vous prendre la main. Ça va être un peu verbeux, mais tous les menus sont utiles, quand on commence à bien connaître Proxmox VE. Je vous donne quand même le minimum :
 
-Dans le premier menu, on ne va pas choisir sur quel node on installe la VM puisque pour l'instant, on en a qu'un... En revanche, on va devoir lui donner un ID (100 par défaut) unique pour tout le cluster. Idéalement, on lui donne aussi un petit nom. Moi, j'ai opté pour talos02 (car j'ai déjà un talos01 sur un autre serveur, vous avez vu comme je suis original ?).
+Dans le premier menu, on ne va pas choisir sur quel nœud on installe la VM puisque pour l'instant, on n'en a qu'un... En revanche, on va devoir lui donner un ID (100 par défaut) unique pour tout le cluster. Idéalement, on lui donne aussi un petit nom. Moi, j'ai opté pour talos02 (car j'ai déjà un talos01 sur un autre serveur, vous avez vu comme je suis original ?).
 
-Enfin, j'ai coché la case "Start at boot", c'est le genre de truc relou quand on a oublié de le mettre et que hyperviseur redémarre (ça arrive)...
+Enfin, j'ai coché la case "Start at boot", c'est le genre de truc relou quand on a oublié de le mettre et que l'hyperviseur redémarre (ça arrive)...
 
 On peut donner des tags à nos VMs, elles auront de jolies pastilles de couleurs pour les distinguer :)
 
 ![](/2025/02/create-vm-1.png)
 
-Dans le second menu (OS), doit indiquer deux choses. D'abord, qu'on veut utiliser l'ISO qu'on vient de récupérer / uploader pour booter notre machine (il faut choisir le bon pool de stockage, par défaut, c'est "local" qui est sélectionné). On doit aussi donner le type d'OS pour des histoires de compatibilité de pilotes pour les périphériques virtuels. Ça fait belle lurette qu'on n'a plus trop besoin de ça, "6.X - 2.6" fonctionne pour tous les Linux récents (la sortie du kernel 2.6, c'est 2003 !). 
+Dans le second menu (OS), on doit indiquer deux choses. D'abord, qu'on veut utiliser l'ISO qu'on vient de récupérer / uploader pour booter notre machine (il faut choisir le bon pool de stockage, par défaut, c'est "local" qui est sélectionné). On doit aussi donner le type d'OS pour des histoires de compatibilité de pilotes pour les périphériques virtuels. Ça fait belle lurette qu'on n'a plus trop besoin de ça, "6.X - 2.6" fonctionne pour tous les Linux récents (la sortie du kernel 2.6, c'est 2003 !). 
 
 ![](/2025/02/create-vm-2.png)
 
@@ -226,7 +226,7 @@ Je saute System, dans Disks, on ajoute un disque sur le bon pool (donc pas local
 
 ![](/2025/02/create-vm-3.png)
 
-Je saute CPU et memory, l'important, c'est de surtout lui donner au moins 2 cores et 2 Go de RAM (au moins). On peut là aussi optimiser les perfs CPU en activant les bons flags, mais là encore, on est plus dans le but de l'article donc je n'insiste pas.
+Je saute CPU et memory, l'important, c'est de surtout lui donner au moins 2 cores et 2 Go de RAM (au moins). On peut là aussi optimiser les performances CPU en activant les bons flags, mais là encore, on n'est plus dans le but de l'article donc je n'insiste pas.
 
 Dans la partie network, on s'assure juste qu'on est bien branché sur le bon bridge (normalement si vous avez suivi l'article, on en a qu'un, **vmbr0**, donc on ne peut pas se tromper).
 
@@ -244,7 +244,7 @@ Et on vérifie que tout est OK. Protip, pour gagner cinq secondes dans votre vie
 
 Car oui, je n'ai pas configuré de DHCP ni de SDN. Il faut donc aller configurer à la main la carte réseau virtuelle (ce qui n'est pas foufou), en appuyant sur F3 dans la console.
 
-(Et en subissant un peu de QWERTY, mais c'est à ça qu'on reconnait un bon sysadmin normalement : il sait faire du QWERTY dans les consoles)
+(Et en subissant un peu de QWERTY, mais c'est à ça qu'on reconnaît un bon sysadmin normalement : il sait faire du QWERTY dans les consoles)
 
 ![](/2025/02/talos02-config.png)
 
@@ -252,7 +252,7 @@ Une fois le réseau configuré, la machine devrait quasiment instantanément com
 
 ![](/2025/02/talos02-booted.png)
 
-... et à s'enrôler dans omni :
+... et à s'enrôler dans Omni :
 
 ![](/2025/02/omni.png)
 
@@ -262,6 +262,6 @@ Victoire !!
 
 Enfin bon... oui, on a une VM fonctionnelle. Mais j'ambitionne qu'on aille quand même un peu plus loin avant de vraiment crier victoire.
 
-Comme je l'ai dit plus haut, on a dû configurer le réseau de notre VM à la main, et on a encore ni clustering, ni firewalling, ni SDN, ni monitoring, ni sauvegarde... Mais on chatouille allègrement les 16000 signes pour ce blogpost, il est donc temps de raccrocher pour se dire "à la prochaine fois".
+Comme je l'ai dit plus haut, on a dû configurer le réseau de notre VM à la main, et on n'a encore ni clustering, ni firewalling, ni SDN, ni monitoring, ni sauvegarde... Mais on chatouille allègrement les 16 000 signes pour ce blog post, il est donc temps de raccrocher pour se dire "à la prochaine fois".
 
 Et en attendant, have fun :)
