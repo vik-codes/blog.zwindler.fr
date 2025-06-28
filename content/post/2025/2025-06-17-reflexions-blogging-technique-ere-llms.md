@@ -20,7 +20,7 @@ tags:
 
 ## Introduction : quand l'IA rencontre le blogging technique
 
-Ce n'est un secret pour personne, *je ne suis pas hyper fan* des bloggeurs techs qui utilisent des LLMs pour rédiger des articles techniques à la pelle, sans saveur, parfois faux (parce que mal relu par l'humain derrière la machine). C'est la raison pour laquelle j'ai rédigé un [AI manifesto](https://blog.zwindler.fr/ai-manifesto/) et qu'on pourrait résumer avec la phrase suivante :
+Ce n'est un secret pour personne, *je ne suis pas hyper fan* des blogueurs techs qui utilisent des LLMs pour rédiger des articles techniques à la pelle, sans saveur, parfois faux (parce que mal relus par l'humain derrière la machine). C'est la raison pour laquelle j'ai rédigé un [AI manifesto](https://blog.zwindler.fr/ai-manifesto/) et qu'on pourrait résumer avec la phrase suivante :
 
 > Je pars du principe que si je ne prends pas la peine d’écrire moi-même le contenu de ce blog, vous ne devriez pas prendre la peine de le lire.
 
@@ -30,7 +30,7 @@ Cependant, j'ai exceptionnellement brisé cette règle aujourd'hui pour la réda
 
 * [bsky.app/profile/zwindler.fr/post/3lpohy3efg22l](https://bsky.app/profile/zwindler.fr/post/3lpohy3efg22l)
 
-Plus globalement, la question était "**est-ce que je me fais pas un peu de mal à rédiger des trucs techniques si les gens préfèrent le style fade des LLMs ?**"
+Plus globalement, la question était "**est-ce que je ne me fais pas un peu de mal à rédiger des trucs techniques si les gens préfèrent le style fade des LLMs ?**"
 
 ## Vos réponses à cette question (qui n'en attendait pas forcément)
 
@@ -45,7 +45,7 @@ Je ne vais pas citer tout le monde, mais grosso modo, ce qui en ressort c'est :
 
 Les 4 premières réponses, je les attendais. C'est ce qui me motive à écrire ce blog depuis maintenant plus de 15 ans et c'est d'ailleurs assez proche de [ce que je dis dans mon tout premier billet de blog de 2010](/2010/04/21/zwindlers-reflection/).
 
-Les trois dernières, je ne les avais pas forcément vues venir et c'est vraiment que je vais peut-être maintenant plus me reconcentrer sur des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
+Les trois dernières, je ne les avais pas forcément vues venir et c'est vraiment sur ça que je vais peut-être maintenant plus me reconcentrer : des REX et des sujets très pointus (qui étaient là aussi dans l'ADN du blog, surtout au début).
 
 Mais il y a un point que personne n'a évoqué, c'est ce fameux style fade que je n'aime pas dans les LLMs. C'est générique, mécanique, lisse, (statistiquement) moyen.
 

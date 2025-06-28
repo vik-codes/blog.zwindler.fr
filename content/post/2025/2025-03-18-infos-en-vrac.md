@@ -26,13 +26,13 @@ Vous vous êtes déjà demandé si une API #Kubernetes était déjà disponible 
 
 Et naviguer dans la documentation officielle est parfois pénible, cette information en particulier n'est pas toujours facilement accessible.
 
-Mais ça, c'était avant que mon collègue [Gérôme Grignon](https://www.linkedin.com/in/gerome-grignon/) ne s'attaque au problème et crée un outil visuel permettant de le voir en un coup d'œil !!
+Mais ça, c'était avant que mon collègue [Gérôme Grignon](https://www.linkedin.com/in/gerome-grignon/) ne s'attaque au problème et ne crée un outil visuel permettant de le voir en un coup d'œil !!
 
 * [kaniuse.gerome.dev](https://kaniuse.gerome.dev/)
 
 L'outil propose pour l'instant une navigation à l'aide d'une recherche et de filtres sur les status des APIs.
 
-Pour l'instant, l'outil est limité (pour des problématiques de lisibilités) aux 11 dernières versions, mais Gérôme a plusieurs idées d'amélioration en tête.
+Pour l'instant, l'outil est limité (pour des problématiques de lisibilité) aux 11 dernières versions, mais Gérôme a plusieurs idées d'amélioration en tête.
 
 ![](/2025/03/kaniuse.jpg)
 

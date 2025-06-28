@@ -39,11 +39,11 @@ Luc Julia a ouvert la journée (dans un amphi bleu blindé) avec un exposé acid
 
 Le titre est un rappel au fait que l'IA générative manque de créativité et que les IA omnipotentes d'Hollywood n'existent pas. Il faut toujours un humain derrière.
 
-Luc a également abordé des problématiques comme la propriété intellectuelle, en citant des cas où l'IA générative open source Stability diffusion ont produit des images avec des watermarks Getty Images clairement visibles, et un peu les problématiques environnementales, avec des chiffres complètement bidons (dommage).
+Luc a également abordé des problématiques comme la propriété intellectuelle, en citant des cas où l'IA générative open source Stability diffusion a produit des images avec des watermarks Getty Images clairement visibles, et un peu les problématiques environnementales, avec des chiffres complètement bidons (dommage).
 
 ## Github Copilot
 
-À 11h35, j'ai assisté à une démonstration de Github Copilot, réalisée par Kim-Adeline Miguel et Sandra Parlant en particulier les dernières fonctionnalités.
+À 11h35, j'ai assisté à une démonstration de Github Copilot, réalisée par Kim-Adeline Miguel et Sandra Parlant en particulier sur les dernières fonctionnalités.
 
 ![](/2025/04/githubcopilot.jpg)
 
@@ -59,7 +59,7 @@ Mon talk du jour !!
 
 C'était un sujet qui me tient assez à cœur et ça s'est très bien passé. J'ai eu de bons retours, notamment avec des discussions assez riches qui ont suivi.
 
-Je suis vraiment content, j'ai déroulé comme je voulais. J'ai eu des suggestions pertinentes et je postulerai à nouveau (peut-être) ailleurs :\).
+Je suis vraiment content, j'ai déroulé comme je voulais. J'ai eu des suggestions pertinentes et je postulerai à nouveau (peut-être) ailleurs :).
 
 Les slides :
 
@@ -67,9 +67,9 @@ Les slides :
 
 ## Comment nous avons transformé les Restos du Coeur en Cloud Provider
 
-À 13h30, (mon ancien collègue) Julien Briault et Stéphane Trognon nous ont raconté comment ils ont contribués à transformer les Restos du Coeur en véritable fournisseur de cloud. 
+À 13h30, (mon ancien collègue) Julien Briault et Stéphane Trognon nous ont raconté comment ils ont contribué à transformer les Restos du Cœur en véritable fournisseur de cloud. 
 
-De l'organisation initiale chaotique à une infrastructure professionnelle, ils nous ont partagé un voyage de transformation, du "DC au WC" jusqu'aux 3 DCs multi AZs from scratch gérée par 11 bénévoles.
+De l'organisation initiale chaotique à une infrastructure professionnelle, ils nous ont partagé un voyage de transformation, du "DC au WC" jusqu'aux 3 DCs multi AZs from scratch gérés par 11 bénévoles.
 
 ![](/2025/04/cloudducoeur.jpg)
 
@@ -77,7 +77,7 @@ Ils utilisent désormais OpenStack avec Kubernetes, et plus globalement des solu
 
 Ce projet est vraiment un coup de cœur (pun intended) que je suis depuis longtemps (j'avais déjà vu un autre talk de Julien qui en parlait).
 
-Grâce à leur approche d'éco-conception et à l'utilisation d'équipements de récupération. Ils ont réussi à économiser des millions ~d'euros~ de repas distribués, tout en fournissant des services essentiels permettant de s'affranchir d'AWS (en particulier dans le contexte géopolitique actuel).
+Grâce à leur approche d'éco-conception et à l'utilisation d'équipements de récupération, ils ont réussi à économiser des millions ~d'euros~ de repas distribués, tout en fournissant des services essentiels permettant de s'affranchir d'AWS (en particulier dans le contexte géopolitique actuel).
 
 ## Ca marche dans mon .devcontainer
 
