@@ -49,7 +49,7 @@ Bref, cette aventure est une leçon d'humilité qui m'a appris que l'entrepreneu
 Les deux seuls points positifs que j'en retire :
 
 * avoir pu rencontrer des gens qui ont eu la même idée, en même temps, mais qui eux s'en sont sortis. Coucou Alexis, la bise à [Sysnove](https://www.sysnove.fr/apropos) (je ne sais pas si tu te souviens de moi, cela dit).
-* avoir pu en profiter pour me payer un avocat du travail pour décortiquer mon contrat (abusif sur plusieurs points). J'ai appris plusieurs tips sur le droit du travail à cette occasion :-p.
+* avoir pu en profiter pour me payer un avocat du travail pour décortiquer mon contrat de travail de l'époque (abusif sur plusieurs points). J'ai appris plusieurs tips sur le droit du travail à cette occasion :-p.
 
 Note : j'ai tout gardé, les fichiers et les documents, je retombe dessus parfois, ça fait bizarre.
 
