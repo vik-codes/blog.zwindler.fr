@@ -22,9 +22,13 @@ Après toutes ces années à vous parler de Kubernetes, de containers et d'infra
 
 ## 1. J'ai brièvement monté une entreprise en 2014 qui n'a jamais eu un seul client
 
-Ah, l'entrepreneuriat ! Ce rêve français de monter sa boîte entre copains et de révolutionner le monde. En 2014, avec 4 ex-collègues, nous étions pleins d'optimisme et convaincus que nous allions changer la donne.
+Ah, l'entrepreneuriat ! Ce rêve français de monter sa boîte entre copains et de révolutionner le monde. En 2013, avec 4 ex-collègues, nous étions pleins d'optimisme et convaincus que nous allions changer la donne.
 
-L'idée ? Créer une ESN (Entreprise de Services du Numérique) qui capitaliserait fortement sur notre expertise en logiciels libres et open source pour faire de l'infogérance. Sur le papier, c'était génial : nous étions tous compétents techniquement, nous avions de l'expérience, et on se pensait plus malins que tout le monde.
+L'idée ? Créer une ESN (Entreprise de Services du Numérique) qui capitaliserait fortement sur notre expertise en logiciels libres et open source pour faire de l'infogérance. Sur le papier, c'était génial : nous étions tous compétents techniquement, nous avions de l'expérience, et **on se pensait plus malins que tout le monde**.
+
+Dovosys était créée !
+
+![](/2025/06/dovosys.png)
 
 Nous avons même intégré une pépinière d'entreprise pour nous accompagner dans cette aventure. Mais très vite, la réalité nous a rattrapés...
 
@@ -46,6 +50,8 @@ Les deux seuls points positifs que j'en retire :
 
 * avoir pu rencontrer des gens qui ont eu la même idée, en même temps, mais qui eux s'en sont sortis. Coucou Alexis, la bise à [Sysnove](https://www.sysnove.fr/apropos) (je ne sais pas si tu te souviens de moi, cela dit).
 * avoir pu en profiter pour me payer un avocat du travail pour décortiquer mon contrat (abusif sur plusieurs points). J'ai appris plusieurs tips sur le droit du travail à cette occasion :-p.
+
+Note : j'ai tout gardé, les fichiers et les documents, je retombe dessus parfois, ça fait bizarre.
 
 ## 2. J'ai longtemps souffert d'anxiété sociale, que j'ai "soignée" à grand coup de conférences tech
 
