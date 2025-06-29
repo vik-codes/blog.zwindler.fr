@@ -34,11 +34,11 @@ Nous avons même intégré une pépinière d'entreprise pour nous accompagner da
 
 D'abord, nous étions tous en poste (et tous insatisfaits de ces postes) mais aucun d'entre nous n'était prêt à faire les sacrifices nécessaires pour vraiment démarrer l'activité. Le mieux aurait été qu'un d'entre nous démissionne pour bootstraper l'entreprise et chercher activement des clients, mais personne n'a osé franchir le pas. Donc tout était fait en cachette sur les pauses ou le soir. *Fake it until you make it* ça marche pas souvent super bien.
 
-Ensuite, prendre des décisions à 5 (rapidement 4 car une des membres est partie dès le début), c'est un cauchemar. Les travaux n'étaient pas faits en temps et en heure par certains membres, qui pourtant nous assuraient qu'ils s'en occupaient (voire, qui mentaient que c'était fait, alors que non). L'accompagnement de la pépinière n'était pas extraordinaire non plus, probablement du fait de notre manque de disponibilité en heures ouvrées.
+Ensuite, prendre des décisions à 5 (rapidement 4 car une des membres est partie dès le début), c'est un cauchemar. Les travaux n'étaient pas faits en temps et en heure. Certaines tàches n'étaient pas faites en temps et en heure. L'accompagnement de la pépinière n'était pas extraordinaire non plus, probablement du fait de notre manque de disponibilité en heures ouvrées.
 
 À vrai dire, le mieux aurait été que je crée la boîte tout seul. Avec le recul, j'ai monté toute l'infra de virtualisation, écrit la plupart des parties techniques sur les dossiers, pondu la plupart des réponses aux appels d'offres publics...
 
-Au final, nous n'avons jamais eu un seul client, et il a fallu clôturer l'entreprise. Sauf que l'entreprise n'a pas été correctement clôturée et je l'ai découvert un an plus tard quand les impôts ont toqué à notre porte... avec des pénalités de retard et pour rien du tout au final.
+Au final, nous n'avons jamais eu un seul client, et il a fallu clôturer l'entreprise. Sauf que l'entreprise n'a pas été correctement clôturée et je l'ai découvert un an plus tard quand les impôts ont toqué à notre porte... avec des pénalités de retard (un chiffre d'affaire à 0 n'empêche pas de payer certaines taxes).
 
 A ce moment là (autour de 2015), mes associés étant totalement désengagés, j'ai dû faire tout le travail administratif de dissolution et liquidation tout seul. Un vrai parcours du combattant que j'ai d'ailleurs documenté dans deux articles détaillés : [la dissolution](/2015/11/25/dissolution-amiable-sas-mode-emploi/) et [la liquidation](/2015/12/26/liquidation-amiable-sas-mode-emploi/), probablement plus à jour mais représentatif de ma galère.
 
