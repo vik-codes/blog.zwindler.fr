@@ -38,9 +38,9 @@ Ensuite, prendre des décisions à 5 (rapidement 4 car une des membres est parti
 
 À vrai dire, le mieux aurait été que je crée la boîte tout seul. Avec le recul, j'ai monté toute l'infra de virtualisation, écrit la plupart des parties techniques sur les dossiers, pondu la plupart des réponses aux appels d'offres publics...
 
-Au final, nous n'avons jamais eu un seul client, et il a fallu clôturer l'entreprise. A ce moment là (autour de 2015), mes associés étant totalement désengagés. J'ai dû faire tout le travail administratif de dissolution et liquidation tout seul. Un vrai parcours du combattant que j'ai d'ailleurs documenté dans deux articles détaillés : [la dissolution](/2015/11/25/dissolution-amiable-sas-mode-emploi/) et [la liquidation](/2015/12/26/liquidation-amiable-sas-mode-emploi/), probablement plus à jour mais représentatif de ma galère.
+Au final, nous n'avons jamais eu un seul client, et il a fallu clôturer l'entreprise. Sauf que l'entreprise n'a pas été correctement clôturée et je l'ai découvert un an plus tard quand les impôts ont toqué à notre porte... avec des pénalités de retard et pour rien du tout au final.
 
-Le pire dans cette histoire, c'est que ne pas clôturer correctement une entreprise, ça nous a coûté cher en impôts ! 
+A ce moment là (autour de 2015), mes associés étant totalement désengagés, j'ai dû faire tout le travail administratif de dissolution et liquidation tout seul. Un vrai parcours du combattant que j'ai d'ailleurs documenté dans deux articles détaillés : [la dissolution](/2015/11/25/dissolution-amiable-sas-mode-emploi/) et [la liquidation](/2015/12/26/liquidation-amiable-sas-mode-emploi/), probablement plus à jour mais représentatif de ma galère.
 
 Bref, cette aventure est une leçon d'humilité qui m'a appris que l'entrepreneuriat, ce n'est pas si facile, et que ce n'est certainement pas que de la technique. S'associer, en particulier avec des copains, c'est probablement souvent plus compliqué que prévu.
 
