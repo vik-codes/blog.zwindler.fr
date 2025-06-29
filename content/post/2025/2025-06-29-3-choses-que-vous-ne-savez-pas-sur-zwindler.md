@@ -20,7 +20,7 @@ tags:
 
 Après toutes ces années à vous parler de Kubernetes, de containers et d'infrastructure, j'ai pensé qu'il était temps de vous révéler quelques petits secrets sur votre humble serviteur. Parce que derrière chaque nerd se cache parfois des surprises...
 
-## 1. J'ai brièvement monté une entreprise en 2014 qui n'a jamais eu un seul client
+## 1. J'ai brièvement monté une entreprise en 2013-2014 qui n'a jamais eu un seul client
 
 Ah, l'entrepreneuriat ! Ce rêve français de monter sa boîte entre copains et de révolutionner le monde. En 2013, avec 4 ex-collègues, nous étions pleins d'optimisme et convaincus que nous allions changer la donne.
 
