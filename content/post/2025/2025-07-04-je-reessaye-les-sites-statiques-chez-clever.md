@@ -1,11 +1,11 @@
 ---
-title: 'Je réessaye les sites statiques chez Clever Cloud'
+title: 'Je réessaye les sites statiques (Bloggrify) chez Clever Cloud'
 authors:
   - zwindler
 type: post
 draft: true
 date: 2025-07-04T16:00:00+02:00
-excerpt: "Retour d'expérience sur les nouvelles apps statiques de Clever Cloud après avoir abandonné leur offre précédente"
+excerpt: "Retour d'expérience sur les nouvelles apps statiques de Clever Cloud après avoir essayé puis abandonné"
 url: /2025/07/04/je-reessaye-les-sites-statiques-chez-clever/
 image: /2025/07/9zdbra.jpg
 categories:
@@ -35,11 +35,11 @@ Du coup, je me suis dit : pourquoi ne pas retenter l'expérience ?
 
 Pour ce test, j'ai choisi d'utiliser un autre site que celui-ci : **50ndk.zwindler.fr**, qui me sert pour faire la promotion de mon livre. Il est actuellement hébergé sur GitHub Pages et utilise le moteur [Bloggrify](https://bloggrify.io/) (un des projets d'[Hugo Lassiège](https://eventuallycoding.com/), quelqu'un que j'apprécie énormément dans l'écosystème tech français).
 
-Note : Julien Wittouck m'a devancé de 3 semaines et à fait un article sur l'hébergement de site statiques avec Hugo via ce nouveau type d'app chez clever cloud, [vous pouvez aller lire son post ici](https://codeka.io/2025/06/05/d%C3%A9ployer-des-applications-statiques-sur-clever-cloud/). Dans ce post, je vais essayer de montrer les petites différences entre la méthode de 2023 et aujourd'hui (il y en a quelques unes).
+Note : Julien Wittouck m'a devancé de 3 semaines et a fait un article sur l'hébergement de sites statiques avec Hugo via ce nouveau type d'app chez Clever Cloud, [vous pouvez aller lire son post ici](https://codeka.io/2025/06/05/d%C3%A9ployer-des-applications-statiques-sur-clever-cloud/). Dans ce post, je vais essayer de montrer les petites différences entre la méthode de 2023 et aujourd'hui (il y en a quelques-unes).
 
 ## Prérequis
 
-On pourrait aller créer l'application dans l'UI. Pour l'instant, la "tuile" Static et VLang, disponible à tout le monde depuis le 4 juillet. J'ai un petit accès anticipé (merci David) mais je n'en ai pas beaucoup profité 🙃 (occupé avec le livre).Grosso modo c'est comme les autres type d'Apps chez clever, vous ne serez pas perdu.
+On pourrait aller créer l'application dans l'UI. Pour l'instant, la "tuile" Static et VLang, disponible à tout le monde depuis le 4 juillet. J'ai un petit accès anticipé (merci David) mais je n'en ai pas beaucoup profité 🙃 (occupé avec le livre). Grosso modo c'est comme les autres types d'Apps chez Clever, vous ne serez pas perdus.
 
 ![](/2025/06/cleverl-nouvelles-tuiles.png)
 
@@ -96,9 +96,9 @@ denis@coucou % clever create --type static
   → Manage your application at: https://console.clever-cloud.com/goto/app_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-Note : si votre app est hébergée sur github, vous pouvez rajouter aussi `--github OWNER/REPO` à la ligne de commande précédente. J'en parle plus tard, mais lisez tout avant de le faire.
+Note : si votre app est hébergée sur GitHub, vous pouvez rajouter aussi `--github OWNER/REPO` à la ligne de commande précédente. J'en parle plus tard, mais lisez tout avant de le faire.
 
-Comme fin 2023, je vais avoir besoin de 2 machines différentes. Une qui va build mon site statique, un qui va le servir. Et du coup, là comme je n'ai pas l'apache, je peux avoir accès à une pico et économiser quelques euros à la fin de l'année :
+Comme fin 2023, je vais avoir besoin de 2 machines différentes. Une qui va builder mon site statique, une qui va le servir. Et du coup, là comme je n'ai pas l'Apache, je peux avoir accès à une pico et économiser quelques euros à la fin de l'année :
 
 ```
 $ clever scale --build-flavor M
@@ -108,7 +108,7 @@ $ clever scale --flavor pico
 App rescaled successfully
 ```
 
-Comme dans l'article que j'avais fait pour Hugo+Clever, j'ai besoin pour bloggrify de spécifier dans quel dossier le contenu statique doit être servi (et aussi quel dossier la machine qui build doit partager avec la machine qui sert). Dans le cas de Bloggrify, j'ai tout dans .output/public.
+Comme dans l'article que j'avais fait pour Hugo+Clever, j'ai besoin pour Bloggrify de spécifier dans quel dossier le contenu statique doit être servi (et aussi quel dossier la machine qui build doit partager avec la machine qui sert). Dans le cas de Bloggrify, j'ai tout dans .output/public.
 
 ```bash
 $ clever env set CC_WEBROOT ".output/public"
@@ -124,7 +124,7 @@ $ clever env set CC_BUILD_COMMAND "npm run generate"
 
 ## Déploiement de l'application
 
-A partir de là, on peut essayer de faire un premier déploiement à la main. Pour rappel, soit on envoie un commit sur le remote spécial créé par Clever (cf le message lors de la commande `clever create`), mais je vais préférer utiliser la commande `clever deploy`, déjà disponible en 2023 lors de mon premier temps, car je l'utiliserai pour automatiser le workflow plus tard.
+À partir de là, on peut essayer de faire un premier déploiement à la main. Pour rappel, soit on envoie un commit sur le remote spécial créé par Clever (cf le message lors de la commande `clever create`), mais je vais préférer utiliser la commande `clever deploy`, déjà disponible en 2023 lors de mon premier test, car je l'utiliserai pour automatiser le workflow plus tard.
 
 ```bash
 dgermain@dgermain-mac 50ndk % clever deploy
@@ -137,7 +137,7 @@ dgermain@dgermain-mac 50ndk % clever deploy
    Local commit    aaaaaa [will be deployed]
 ```
 
-La première partie du processus va donc me lancer une machine de taille M dans le but d'accélerer un peu le temps de build :
+La première partie du processus va donc me lancer une machine de taille M dans le but d'accélérer un peu le temps de build :
 
 ```bash
 🔄 Deployment progress
@@ -149,7 +149,7 @@ La première partie du processus va donc me lancer une machine de taille M dans 
    ...
 ```
 
-Le pre hook va lancer le `npm install` pour installer les prérequis pour bloggrify, puis le `npm run generate` pour générer le code HTML statique.
+Le pre-hook va lancer le `npm install` pour installer les prérequis pour Bloggrify, puis le `npm run generate` pour générer le code HTML statique.
 
 ```bash
 ...
@@ -182,7 +182,7 @@ Une fois le generate terminé, la machine de build génère un artefact contenan
 2025-07-04T13:26:55.584Z: Build succeeded in 1 minute and 0 seconds
 ```
 
-11 secondes plus tard, le site de promotion de mon livre est déployé sur Clever cloud
+11 secondes plus tard, le site de promotion de mon livre est déployé sur Clever Cloud
 
 ```
 2025-07-04T13:27:25.357Z: Serving static website from /.output/public
@@ -212,26 +212,26 @@ Une fois le FQDN associé, il est possible d'ajouter un CNAME chez votre gestion
 
 ## Automatiser le `clever deploy`
 
-Imaginons que je sois un fénéant ou que je n'aie pas envie d'installer clever CLI sur tous les postes où je travail. Admettons que j'ai envie qu'une nouvelle version de mon site soit automatiquement déployée dès que je pousse un commit sur github.
+Imaginons que je sois un fainéant ou que je n'aie pas envie d'installer clever CLI sur tous les postes où je travaille. Admettons que j'aie envie qu'une nouvelle version de mon site soit automatiquement déployée dès que je pousse un commit sur GitHub.
 
-Dans l'article [Planifier les posts de mon blog Hugo sur Clever Cloud](/2024/01/29/planifier-les-posts-clever-cloud), j'avais exploré la piste d'un Cron pour redéployer régulièrement mon site, notamment pour que les posts publiés dans le futur soient posté "au bon moment".
+Dans l'article [Planifier les posts de mon blog Hugo sur Clever Cloud](/2024/01/29/planifier-les-posts-clever-cloud), j'avais exploré la piste d'un Cron pour redéployer régulièrement mon site, notamment pour que les posts publiés dans le futur soient postés "au bon moment".
 
-J'avais aussi trouvé une github action tierce de quelqu'un ([47ng](https://github.com/47ng)) qui a l'air très bien mais que je ne connais pas : 
+J'avais aussi trouvé une GitHub Action tierce de quelqu'un ([47ng](https://github.com/47ng)) qui a l'air très bien mais que je ne connais pas : 
 
 * https://github.com/marketplace/actions/deploy-to-clever-cloud
 
-J'ai testé, elle fonctionne, mais j'étais moyen chaud à l'époque de déléguer mes creds (les fameuses variables CLEVER_TOKEN et CLEVER_SECRET affichée lors du `clever login`) à cette action.
+J'ai testé, elle fonctionne, mais j'étais moyen chaud à l'époque de déléguer mes creds (les fameuses variables CLEVER_TOKEN et CLEVER_SECRET affichées lors du `clever login`) à cette action.
 
-Et ben ça tombe bien parce qu'il y a deux nouvelles pour répondre à ces prolématiques.
+Et ben ça tombe bien parce qu'il y a deux nouvelles pour répondre à ces problématiques.
 
-La première, c'est qu'il existe plusieurs façon d'automatiser les déploiement avec clever cloud. Je ne sais pas si elle existait à l'époque, mais en tout cas je l'ai trouvée aujourd'hui ;-P.
+La première, c'est qu'il existe plusieurs façons d'automatiser les déploiements avec Clever Cloud. Je ne sais pas si elle existait à l'époque, mais en tout cas je l'ai trouvée aujourd'hui ;-P.
 
 On peut faire des environnements de preview par PR :
 
 * https://www.clever-cloud.com/developers/doc/ci-cd/github/
 * https://github.com/marketplace/actions/clever-cloud-review-app-on-prs
 
-Je ne vais pas dans cet article aborder cette action qui permet de déployer des apps en préview **par PR** car je n'en ai pas du tout le besoin pour ce site secondaire. Cela dit, si jamais j'ai une grosse mise à jour avec breaking changes, ça pourra valoir le coup de jeter un oeil.
+Je ne vais pas dans cet article aborder cette action qui permet de déployer des apps en préview **par PR** car je n'en ai pas du tout le besoin pour ce site secondaire. Cela dit, si jamais j'ai une grosse mise à jour avec breaking changes, ça pourra valoir le coup de jeter un œil.
 
 La seconde, c'est qu'il est possible de créer des tokens (là encore, je ne sais plus si c'était possible en 2023), qu'il sera possible de révoquer en cas de leak.
 
@@ -241,13 +241,13 @@ Et avec ces tokens, on peut se faire sa propre CI  :
 
 * https://www.clever-cloud.com/developers/doc/ci-cd/custom-scripts/
 
-Note : j'ai cependant l'impression qu'il n'y a pas encore de scope sur le token. Donc en terme de sécu, c'est mieux car je peux les révoquer, mais si ya un leak, on a accès à tout mon compte, pour l'instant (sauf si j'ai mal compris).
+Note : j'ai cependant l'impression qu'il n'y a pas encore de scope sur le token. Donc en termes de sécu, c'est mieux car je peux les révoquer, mais s'il y a un leak, on a accès à tout mon compte, pour l'instant (sauf si j'ai mal compris).
 
-Mais ici, je vais simplement me contenter de donner les droits à mon repo à clever cloud
+Mais ici, je vais simplement me contenter de donner les droits à mon repo à Clever Cloud
 
 > Clever Cloud provides a GitHub integration to deploy any repository hosted on GitHub to Clever Cloud
 
-Et ça, c'est grâce au `--github` de tout à l'heure ! Donc en fait, ya rien à faire... le rebuild sera trigger dès que je pousserai un nouveau commit :)
+Et ça, c'est grâce au `--github` de tout à l'heure ! Donc en fait, il n'y a rien à faire... le rebuild sera triggé dès que je pousserai un nouveau commit :)
 
 ```
 commit 788465fb980c09e597872a3b510ac44fdaa27d48 (HEAD -> main, origin/main, origin/HEAD)
@@ -268,3 +268,11 @@ Note : il faudra autoriser Clever Cloud à lister vos dépôts préalablement.
 Et on peut spécifier quelle branche on veut dans les paramètres de l'application :
 
 ![](/2025/07/github-main.png)
+
+## Conclusion
+
+Clever Cloud a énormément bougé ces derniers mois, avec beaucoup de nouvelles apps, de nouvelles fonctionnalités (la plus grosse étant Materia, ainsi que tout le travail autour de l'IA).
+
+Les static apps (et Linux, et V) pourraient presque paraître anecdotiques, mais couplées aux autres améliorations (tokens, Grafana managé avec les stats), ce n'est pas le même produit qu'en 2023. 
+
+C'est cool à voir :)
