@@ -4,9 +4,9 @@ authors:
   - zwindler
 type: post
 draft: true
-date: 2025-07-04T16:00:00+02:00
+date: 2025-07-07T10:00:00+02:00
 excerpt: "Retour d'expérience sur les nouvelles apps statiques de Clever Cloud après avoir essayé puis abandonné"
-url: /2025/07/04/je-reessaye-les-sites-statiques-chez-clever/
+url: /2025/07/07/je-reessaye-les-sites-statiques-chez-clever/
 image: /2025/07/9zdbra.jpg
 categories:
   - autohebergement
