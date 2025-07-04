@@ -4,7 +4,7 @@ authors:
   - zwindler
 type: post
 draft: true
-date: 2025-07-07T10:00:00+02:00
+date: 2025-07-07T09:00:00+02:00
 excerpt: "Retour d'expérience sur les nouvelles apps statiques de Clever Cloud après avoir essayé puis abandonné"
 url: /2025/07/07/je-reessaye-les-sites-statiques-chez-clever/
 image: /2025/07/9zdbra.jpg
@@ -153,43 +153,43 @@ Le pre-hook va lancer le `npm install` pour installer les prérequis pour Bloggr
 
 ```bash
 ...
-2025-07-04T13:26:48.295Z: ℹ .nuxt/dist/server/server.mjs                                   54.99 kB │ map: 127.60 kB
-2025-07-04T13:26:48.295Z: ℹ ✓ built in 4.06s
-2025-07-04T13:26:48.323Z: ✔ Server built in 4089ms
-2025-07-04T13:26:48.338Z: [nitro] ℹ Initializing prerenderer
-2025-07-04T13:26:51.131Z: [nitro] ℹ Prerendering 8 initial routes with crawler
-2025-07-04T13:26:51.187Z: [nitro]   ├─ /robots.txt (18ms)
-2025-07-04T13:26:51.378Z: [nitro]   ├─ /200.html (236ms)
-2025-07-04T13:26:51.378Z: [nitro]   ├─ /404.html (237ms)
-2025-07-04T13:26:51.476Z: [nitro]   ├─ /rss.xml (332ms)
-2025-07-04T13:26:51.476Z: [nitro]   ├─ /api/search (331ms)
-2025-07-04T13:26:51.477Z: [nitro]   ├─ /sitemap.xml (333ms)
-2025-07-04T13:26:51.530Z: [nitro]   ├─ /api/_content/cache.1751635596771.json (367ms)
-2025-07-04T13:26:51.572Z: [nitro]   ├─ / (434ms)
+2025-07-06T08:26:48.295Z: ℹ .nuxt/dist/server/server.mjs                                   54.99 kB │ map: 127.60 kB
+2025-07-06T08:26:48.295Z: ℹ ✓ built in 4.06s
+2025-07-06T08:26:48.323Z: ✔ Server built in 4089ms
+2025-07-06T08:26:48.338Z: [nitro] ℹ Initializing prerenderer
+2025-07-06T08:26:51.131Z: [nitro] ℹ Prerendering 8 initial routes with crawler
+2025-07-06T08:26:51.187Z: [nitro]   ├─ /robots.txt (18ms)
+2025-07-06T08:26:51.378Z: [nitro]   ├─ /200.html (236ms)
+2025-07-06T08:26:51.378Z: [nitro]   ├─ /404.html (237ms)
+2025-07-06T08:26:51.476Z: [nitro]   ├─ /rss.xml (332ms)
+2025-07-06T08:26:51.476Z: [nitro]   ├─ /api/search (331ms)
+2025-07-06T08:26:51.477Z: [nitro]   ├─ /sitemap.xml (333ms)
+2025-07-06T08:26:51.530Z: [nitro]   ├─ /api/_content/cache.1751635596771.json (367ms)
+2025-07-06T08:26:51.572Z: [nitro]   ├─ / (434ms)
 ...
-2025-07-04T13:26:53.849Z: [nitro] ✔ Generated public .output/public
-2025-07-04T13:26:53.881Z: [nitro] ✔ You can preview this build using npx serve .output/public
-2025-07-04T13:26:53.884Z: ✔ You can now deploy .output/public to any static hosting!
+2025-07-06T08:26:53.849Z: [nitro] ✔ Generated public .output/public
+2025-07-06T08:26:53.881Z: [nitro] ✔ You can preview this build using npx serve .output/public
+2025-07-06T08:26:53.884Z: ✔ You can now deploy .output/public to any static hosting!
 ```
 
 Une fois le generate terminé, la machine de build génère un artefact contenant notre site, et passe la main à la machine qui va servir le trafic :
 
 ```bash
-2025-07-04T13:26:54.206Z: Uploading application build cache archive… file is 21M before compression.
-2025-07-04T13:26:54.802Z: 2025-07-04T13:26:54.802149Z  INFO multipart_upload_lib::uploader: Uploaded part=1
-2025-07-04T13:26:54.908Z: 2025-07-04T13:26:54.908852Z  INFO multipart_upload_lib::uploader: Completed the multipart upload
-2025-07-04T13:26:55.584Z: Done uploading build cache archive
-2025-07-04T13:26:55.584Z: Build succeeded in 1 minute and 0 seconds
+2025-07-06T08:26:54.206Z: Uploading application build cache archive… file is 21M before compression.
+2025-07-06T08:26:54.802Z: 2025-07-06T08:26:54.802149Z  INFO multipart_upload_lib::uploader: Uploaded part=1
+2025-07-06T08:26:54.908Z: 2025-07-06T08:26:54.908852Z  INFO multipart_upload_lib::uploader: Completed the multipart upload
+2025-07-06T08:26:55.584Z: Done uploading build cache archive
+2025-07-06T08:26:55.584Z: Build succeeded in 1 minute and 0 seconds
 ```
 
 11 secondes plus tard, le site de promotion de mon livre est déployé sur Clever Cloud
 
 ```
-2025-07-04T13:27:25.357Z: Serving static website from /.output/public
-2025-07-04T13:27:25.357Z: Launching 'static-web-server' on port 8080
-2025-07-04T13:27:25.357Z: No cron to setup
-2025-07-04T13:27:25.357Z: Successfully deployed in 0 minutes and 11 seconds
-2025-07-04T13:27:25.357Z: No build cache archive was created, not uploading anything
+2025-07-06T08:27:25.357Z: Serving static website from /.output/public
+2025-07-06T08:27:25.357Z: Launching 'static-web-server' on port 8080
+2025-07-06T08:27:25.357Z: No cron to setup
+2025-07-06T08:27:25.357Z: Successfully deployed in 0 minutes and 11 seconds
+2025-07-06T08:27:25.357Z: No build cache archive was created, not uploading anything
 
 ✓ Access your application: https://app-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.cleverapps.io
 → Manage your application: https://console.clever-cloud.com/goto/app_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
