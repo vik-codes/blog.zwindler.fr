@@ -3,7 +3,6 @@ title: 'Je réessaye les sites statiques (Bloggrify) chez Clever Cloud'
 authors:
   - zwindler
 type: post
-draft: true
 date: 2025-07-07T09:00:00+02:00
 excerpt: "Retour d'expérience sur les nouvelles apps statiques de Clever Cloud après avoir essayé puis abandonné"
 url: /2025/07/07/je-reessaye-les-sites-statiques-chez-clever/
@@ -22,7 +21,7 @@ tags:
 
 ## Introduction
 
-Pour celles et ceux qui suivent mes péripéties d'hébergement de blog, vous savez que j'ai une relation compliquée avec [Clever Cloud](https://www.clever-cloud.com/fr/). J'ai déjà écrit à ce sujet dans deux articles précédents :
+Pour celles et ceux qui suivent mes péripéties d'hébergement de blog, vous savez que j'ai une relation compliquée (le fameux "it's complicated" sur Facebook) avec [Clever Cloud](https://www.clever-cloud.com/fr/). J'ai déjà écrit à ce sujet dans deux articles précédents :
 
 * [Migration du blog sur Clever Cloud](/2023/12/30/its-migration-day-again/)
 * [Planifier les posts avec Clever Cloud](/2024/01/29/planifier-les-posts-clever-cloud/)
@@ -33,13 +32,21 @@ Mais depuis, Clever Cloud a ajouté les **apps statiques** à son catalogue. Plu
 
 Du coup, je me suis dit : pourquoi ne pas retenter l'expérience ?
 
-Pour ce test, j'ai choisi d'utiliser un autre site que celui-ci : **50ndk.zwindler.fr**, qui me sert pour faire la promotion de mon livre. Il est actuellement hébergé sur GitHub Pages et utilise le moteur [Bloggrify](https://bloggrify.io/) (un des projets d'[Hugo Lassiège](https://eventuallycoding.com/), quelqu'un que j'apprécie énormément dans l'écosystème tech français).
+Comme Julien Wittouck m'a devancé de 3 semaines et a fait un article sur l'hébergement de sites statiques avec Hugo via ce nouveau type d'app chez Clever Cloud, [vous pouvez aller lire son post ici](https://codeka.io/2025/06/05/d%C3%A9ployer-des-applications-statiques-sur-clever-cloud/), je n'ai pas envie de faire la même chose.
 
-Note : Julien Wittouck m'a devancé de 3 semaines et a fait un article sur l'hébergement de sites statiques avec Hugo via ce nouveau type d'app chez Clever Cloud, [vous pouvez aller lire son post ici](https://codeka.io/2025/06/05/d%C3%A9ployer-des-applications-statiques-sur-clever-cloud/). Dans ce post, je vais essayer de montrer les petites différences entre la méthode de 2023 et aujourd'hui (il y en a quelques-unes).
+Pour ce test, j'ai choisi d'utiliser un autre site que celui-ci : **50ndk.zwindler.fr**, qui me sert pour faire la promotion de mon livre.
+
+Il est actuellement hébergé sur GitHub Pages et utilise le moteur [Bloggrify](https://bloggrify.io/) (un des projets d'[Hugo Lassiège](https://eventuallycoding.com/), quelqu'un que j'apprécie énormément dans l'écosystème tech français). 
+
+Le principe est globalement le même qu'avec Hugo, à quelques petites différences près. C'est un site statique généré tout pareil, mais c'est Nuxt sous le capot et ça va nous être utile. Il y a quelques petites différences aussi depuis mon dernier test de 2023 que je ne manquerai pas de souligner.
+
+Les sources du site sont disponibles ici si vous êtes curieux / curieuse :
+
+* https://github.com/zwindler/50ndk
 
 ## Prérequis
 
-On pourrait aller créer l'application dans l'UI. Pour l'instant, la "tuile" Static et VLang, disponible à tout le monde depuis le 4 juillet. J'ai un petit accès anticipé (merci David) mais je n'en ai pas beaucoup profité 🙃 (occupé avec le livre). Grosso modo c'est comme les autres types d'Apps chez Clever, vous ne serez pas perdus.
+On pourrait aller créer l'application dans l'UI. Normalement, les "tuiles" Static, Linux et VLang sont disponibles à tout le monde depuis le 4 juillet. J'ai un petit accès anticipé (merci David) mais je n'en ai pas beaucoup profité 🙃 (occupé avec le livre). Grosso modo c'est comme les autres types d'Apps chez Clever, vous ne serez pas perdus.
 
 ![](/2025/06/cleverl-nouvelles-tuiles.png)
 
@@ -53,7 +60,7 @@ Login successful as Denis GERMAIN <denis@domain.org>
 
 ![](/2025/06/clever-login.png)
 
-eeeeuh, je vois 3.0.2 dans l'URL ??? Je ne suis pas à jour là. Visiblement j'avais installé la CLI clever avec npm (je m'en souviens pas). Plus simple, [il y a aussi des dépôts .deb (ou brew, autre selon votre distrib)](https://www.clever-cloud.com/developers/doc/cli/install/).
+Euh, je vois 3.0.2 dans l'URL ??? Je ne suis pas à jour. Visiblement j'avais installé la CLI clever avec npm (je ne m'en souviens pas). Plus simple, [il y a aussi des dépôts .deb (ou brew, autre selon votre distribution)](https://www.clever-cloud.com/developers/doc/cli/install/).
 
 ```
 clever version
@@ -75,7 +82,7 @@ $ clever version
 
 ## Configuration de l'app
 
-Oui oui ok.
+Un petit `clever create` avec le type de l'app et c'est parti !
 
 ```
 denis@coucou % clever create --type static                
@@ -98,7 +105,7 @@ denis@coucou % clever create --type static
 
 Note : si votre app est hébergée sur GitHub, vous pouvez rajouter aussi `--github OWNER/REPO` à la ligne de commande précédente. J'en parle plus tard, mais lisez tout avant de le faire.
 
-Comme fin 2023, je vais avoir besoin de 2 machines différentes. Une qui va builder mon site statique, une qui va le servir. Et du coup, là comme je n'ai pas l'Apache, je peux avoir accès à une pico et économiser quelques euros à la fin de l'année :
+Comme fin 2023, je vais avoir besoin de 2 machines différentes. Une qui va construire mon site statique, une qui va le servir. Et du coup, là comme je n'ai pas Apache, je peux avoir accès à une pico et économiser quelques euros à la fin de l'année :
 
 ```
 $ clever scale --build-flavor M
@@ -108,19 +115,13 @@ $ clever scale --flavor pico
 App rescaled successfully
 ```
 
-Comme dans l'article que j'avais fait pour Hugo+Clever, j'ai besoin pour Bloggrify de spécifier dans quel dossier le contenu statique doit être servi (et aussi quel dossier la machine qui build doit partager avec la machine qui sert). Dans le cas de Bloggrify, j'ai tout dans .output/public.
+Dans mon test précédent avec Hugo+Clever, j'avais besoin de spécifier dans quel dossier le contenu statique doit être servi (et aussi quel dossier la machine qui construit doit partager avec la machine qui sert).
 
-```bash
-$ clever env set CC_WEBROOT ".output/public"
-$ clever env set CC_OVERRIDE_BUILDCACHE ".output/public"
-```
+Dans le cas de Bloggrify, tout est dans .output/public. MAIS comme c'est du Nuxt, David m'a dit que je n'en avais pas besoin parce que Clever détecte automatiquement que c'est du Nuxt grâce au fichier `nuxt.config.ts` à la racine du projet.
 
-Pour générer le code statique, il faut aussi que je fasse un `npm install`, puis `npm run generate` dans la machine de build.
+Inutile donc de spécifier les variables CC_WEBROOT, CC_OVERRIDE_BUILDCACHE (pour pointer sur `.output/public`) CC_PRE_BUILD_HOOK et CC_BUILD_COMMAND (les commandes `npm`). 
 
-```bash
-$ clever env set CC_PRE_BUILD_HOOK "npm install"
-$ clever env set CC_BUILD_COMMAND "npm run generate"
-```
+Plutôt une bonne surprise :\).
 
 ## Déploiement de l'application
 
@@ -137,7 +138,7 @@ dgermain@dgermain-mac 50ndk % clever deploy
    Local commit    aaaaaa [will be deployed]
 ```
 
-La première partie du processus va donc me lancer une machine de taille M dans le but d'accélérer un peu le temps de build :
+La première partie du processus va donc lancer une machine de taille M dans le but d'accélérer un peu le temps de construction :
 
 ```bash
 🔄 Deployment progress
@@ -149,47 +150,47 @@ La première partie du processus va donc me lancer une machine de taille M dans 
    ...
 ```
 
-Le pre-hook va lancer le `npm install` pour installer les prérequis pour Bloggrify, puis le `npm run generate` pour générer le code HTML statique.
+Clever va détecter tout seul que j'ai du Nuxt, lancer un `npm install` pour installer les prérequis pour Bloggrify, puis le `npm run generate` pour générer le code HTML statique.
 
 ```bash
-...
-2025-07-06T08:26:48.295Z: ℹ .nuxt/dist/server/server.mjs                                   54.99 kB │ map: 127.60 kB
-2025-07-06T08:26:48.295Z: ℹ ✓ built in 4.06s
-2025-07-06T08:26:48.323Z: ✔ Server built in 4089ms
-2025-07-06T08:26:48.338Z: [nitro] ℹ Initializing prerenderer
-2025-07-06T08:26:51.131Z: [nitro] ℹ Prerendering 8 initial routes with crawler
-2025-07-06T08:26:51.187Z: [nitro]   ├─ /robots.txt (18ms)
-2025-07-06T08:26:51.378Z: [nitro]   ├─ /200.html (236ms)
-2025-07-06T08:26:51.378Z: [nitro]   ├─ /404.html (237ms)
-2025-07-06T08:26:51.476Z: [nitro]   ├─ /rss.xml (332ms)
-2025-07-06T08:26:51.476Z: [nitro]   ├─ /api/search (331ms)
-2025-07-06T08:26:51.477Z: [nitro]   ├─ /sitemap.xml (333ms)
-2025-07-06T08:26:51.530Z: [nitro]   ├─ /api/_content/cache.1751635596771.json (367ms)
-2025-07-06T08:26:51.572Z: [nitro]   ├─ / (434ms)
-...
-2025-07-06T08:26:53.849Z: [nitro] ✔ Generated public .output/public
-2025-07-06T08:26:53.881Z: [nitro] ✔ You can preview this build using npx serve .output/public
-2025-07-06T08:26:53.884Z: ✔ You can now deploy .output/public to any static hosting!
+[...]
+2025-07-07T10:23:47.847Z Deploying commit ID defc0be02d44ace246127e11a17d4f359262ccfb
+2025-07-07T10:23:47.847Z Nuxt.js configuration file detected
+2025-07-07T10:23:47.847Z Running build command: npm i && npm run generate && mv .output/public cc_static_autobuilt
+[...]
+2025-07-07T10:24:48.809Z [nitro] ℹ Initializing prerenderer
+2025-07-07T10:24:52.533Z [nitro] ℹ Prerendering 8 initial routes with crawler
+2025-07-07T10:24:52.598Z [nitro]   ├─ /robots.txt (17ms)
+2025-07-07T10:24:52.841Z [nitro]   ├─ /200.html (296ms)
+2025-07-07T10:24:52.842Z [nitro]   ├─ /404.html (297ms)
+2025-07-07T10:24:52.964Z [nitro]   ├─ /api/search (415ms)
+2025-07-07T10:24:52.965Z [nitro]   ├─ /sitemap.xml (417ms)
+2025-07-07T10:24:52.965Z [nitro]   ├─ /rss.xml (416ms)
+2025-07-07T10:24:53.105Z [nitro]   ├─ / (564ms)
+[...]
 ```
 
-Une fois le generate terminé, la machine de build génère un artefact contenant notre site, et passe la main à la machine qui va servir le trafic :
+Une fois le generate terminé, la machine de construction génère un artefact contenant notre site, et passe la main à la machine qui va servir le trafic :
 
 ```bash
-2025-07-06T08:26:54.206Z: Uploading application build cache archive… file is 21M before compression.
-2025-07-06T08:26:54.802Z: 2025-07-06T08:26:54.802149Z  INFO multipart_upload_lib::uploader: Uploaded part=1
-2025-07-06T08:26:54.908Z: 2025-07-06T08:26:54.908852Z  INFO multipart_upload_lib::uploader: Completed the multipart upload
-2025-07-06T08:26:55.584Z: Done uploading build cache archive
-2025-07-06T08:26:55.584Z: Build succeeded in 1 minute and 0 seconds
+2025-07-07T10:24:55.843Z ✔ You can now deploy .output/public to any static hosting!
+2025-07-07T10:24:56.137Z Creating build cache archive…
+2025-07-07T10:24:56.197Z build cache archive successfully created
+2025-07-07T10:24:56.197Z No cron to setup
+2025-07-07T10:24:56.213Z Uploading application build cache archive… file is 21M before compression.
+2025-07-07T10:24:56.899Z 2025-07-07T10:24:56.899385Z  INFO multipart_upload_lib::uploader: Uploaded part=1
+2025-07-07T10:24:57.041Z 2025-07-07T10:24:57.041879Z  INFO multipart_upload_lib::uploader: Completed the multipart upload
+2025-07-07T10:24:57.350Z Done uploading build cache archive
+2025-07-07T10:24:57.350Z Build succeeded in 1 minute and 14 seconds
 ```
 
 11 secondes plus tard, le site de promotion de mon livre est déployé sur Clever Cloud
 
-```
-2025-07-06T08:27:25.357Z: Serving static website from /.output/public
-2025-07-06T08:27:25.357Z: Launching 'static-web-server' on port 8080
-2025-07-06T08:27:25.357Z: No cron to setup
-2025-07-06T08:27:25.357Z: Successfully deployed in 0 minutes and 11 seconds
-2025-07-06T08:27:25.357Z: No build cache archive was created, not uploading anything
+```bash
+2025-07-07T10:25:28.425Z Serving static website from /cc_static_autobuilt
+2025-07-07T10:25:28.425Z Launching 'static-web-server' on port 8080
+2025-07-07T10:25:28.425Z No cron to setup
+2025-07-07T10:25:28.425Z Successfully deployed in 0 minutes and 10 seconds
 
 ✓ Access your application: https://app-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.cleverapps.io
 → Manage your application: https://console.clever-cloud.com/goto/app_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -275,4 +276,4 @@ Clever Cloud a énormément bougé ces derniers mois, avec beaucoup de nouvelles
 
 Les static apps (et Linux, et V) pourraient presque paraître anecdotiques, mais couplées aux autres améliorations (tokens, Grafana managé avec les stats), ce n'est pas le même produit qu'en 2023. 
 
-C'est cool à voir :)
+C'est cool à voir :\)
