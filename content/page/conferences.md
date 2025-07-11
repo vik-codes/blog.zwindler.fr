@@ -19,6 +19,7 @@ Parallèlement à ce blog, j'aime transmettre ma passion pour l'informatique en 
 
 Pratique pour suivre en live ou retrouver les liens 😉
 
+* Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes (avec Quentin Joly) (en cours d'écriture)
 * [Kubernetes : 5 façons créatives de flinguer sa prod 🔫](/talks/2025-kubernetes-5-facon-de-flinguer-prod/index.html)
 * [Ne perdez plus vos photos de vacances 🔥🏠🔥 (ou tout autre fichier important)](/talks/2025-3-2-1/index.html)
 * [En finir avec les Makefile en Go avec GoReleaser](/talks/2023-goreleaser/index.html) / [english version](/talks/2024-end-to-makefiles-goreleaser) / [(code)](https://gitlab.com/dt.germain/bdxio-goreleaser)
@@ -36,6 +37,8 @@ Pratique pour suivre en live ou retrouver les liens 😉
 
 J'ai été (ou vais bientôt être) speaker sur les événements suivants :
 
+* **DevFest Nantes 2025** (octobre) : Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes (avec Quentin Joly)
+* **Meetup quelque part en France** (octobre) : Kubernetes : 5 façons créatives de flinguer sa prod 🔫
 * **DevoxxFR 2025** : Kubernetes : 5 façons créatives de flinguer sa prod 🔫 ([video](https://youtu.be/IeIuUCmjXUQ?si=lG4rR0ShCriDCHR5))
 * **DevoxxFR 2025** : Ne perdez plus vos photos de vacances 🔥🏠🔥 (ou tout autre fichier important) ([video](https://www.youtube.com/watch?v=FsItkp58sP0))
 * **VoxxedDays Luxembourg 2024** : Démystifions le fonctionnement interne de Kubernetes ([video](https://www.youtube.com/watch?v=HvuX8UBqroI&list=PL4PrrYCV-zcmooZhSE_SSI8c2htBWkqEl&index=20))
@@ -71,6 +74,13 @@ J'ai été (ou vais bientôt être) speaker sur les événements suivants :
 * **Pas Sage En Seine 2019** : Le logiciel libre a-t-il de beaux jours devant lui ? [vidéo](https://video.passageenseine.fr/videos/watch/5092df3e-982c-4346-93c9-ec9eb3b286e2)
 * **CNCF Meetup Bordeaux #3** : Dans ton Kube : retour sur 2 ans d'incidents en production [(lien du meetup)]( https://www.meetup.com/fr-FR/Cloud-Native-Computing-Bordeaux/events/258351142/?rv=ea1_v2&_xtd=gatlbWFpbF9jbGlja9oAJDI3YTAzNzNhLWY2YmEtNDdjMy1hN2QwLWEyYWVhZjllZjc0OQ)
 * **BDX I/O 2018** : Ami développeur, deviens un Ops sans effort avec Ansible [(vidéo du talk)](https://www.youtube.com/watch?v=WPRE1_f0pyg)
+
+## Organisateur
+
+* Je suis actuellement membre de l'équipe d'organisation du Meetup CNCF Bordeaux, mené par Alexis Fala
+* J'ai relu le CFP de la conférence BDX I/O 2025
+* J'ai participé à l'organisation de la conférence BDX I/O 2024 ([j'en parle dans cet article](https://blog.zwindler.fr/2024/11/28/bdxio-un-an-orga-dune-conf/))
+* J'ai participé à l'organisation de la conférence KCD France 2023 ([j'en parle dans cet article](https://blog.zwindler.fr/2023/03/11/ma-premiere-experience-d-orga-kcd-france-2023/))
 
 ## Podcasts et interviews
 
