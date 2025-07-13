@@ -215,24 +215,30 @@ Une fois le FQDN associé, il est possible d'ajouter un CNAME chez votre gestion
 
 Imaginons que je sois un fainéant ou que je n'aie pas envie d'installer clever CLI sur tous les postes où je travaille. Admettons que j'aie envie qu'une nouvelle version de mon site soit automatiquement déployée dès que je pousse un commit sur GitHub.
 
+### deploy-to-clever-cloud
+
 Dans l'article [Planifier les posts de mon blog Hugo sur Clever Cloud](/2024/01/29/planifier-les-posts-clever-cloud), j'avais exploré la piste d'un Cron pour redéployer régulièrement mon site, notamment pour que les posts publiés dans le futur soient postés "au bon moment".
 
 J'avais aussi trouvé une GitHub Action tierce de quelqu'un ([47ng](https://github.com/47ng)) qui a l'air très bien mais que je ne connais pas : 
 
 * https://github.com/marketplace/actions/deploy-to-clever-cloud
 
-J'ai testé, elle fonctionne, mais j'étais moyen chaud à l'époque de déléguer mes creds (les fameuses variables CLEVER_TOKEN et CLEVER_SECRET affichées lors du `clever login`) à cette action.
+J'ai testé, elle fonctionne, mais j'étais moyen chaud à l'époque de déléguer mes creds à Github (les fameuses variables CLEVER_TOKEN et CLEVER_SECRET affichées lors du `clever login`), qui en retour les aurait injecté à cette "action".
 
 Et ben ça tombe bien parce qu'il y a deux nouvelles pour répondre à ces problématiques.
 
+### preview par PR
+
 La première, c'est qu'il existe plusieurs façons d'automatiser les déploiements avec Clever Cloud. Je ne sais pas si elle existait à l'époque, mais en tout cas je l'ai trouvée aujourd'hui ;-P.
 
-On peut faire des environnements de preview par PR :
+On peut faire des environnements de preview par PR (depuis 2024) :
 
 * https://www.clever-cloud.com/developers/doc/ci-cd/github/
 * https://github.com/marketplace/actions/clever-cloud-review-app-on-prs
 
 Je ne vais pas dans cet article aborder cette action qui permet de déployer des apps en préview **par PR** car je n'en ai pas du tout le besoin pour ce site secondaire. Cela dit, si jamais j'ai une grosse mise à jour avec breaking changes, ça pourra valoir le coup de jeter un œil.
+
+### Créer des tokens de CI
 
 La seconde, c'est qu'il est possible de créer des tokens (là encore, je ne sais plus si c'était possible en 2023), qu'il sera possible de révoquer en cas de leak.
 
@@ -244,11 +250,17 @@ Et avec ces tokens, on peut se faire sa propre CI  :
 
 Note : j'ai cependant l'impression qu'il n'y a pas encore de scope sur le token. Donc en termes de sécu, c'est mieux car je peux les révoquer, mais s'il y a un leak, on a accès à tout mon compte, pour l'instant (sauf si j'ai mal compris).
 
-Mais ici, je vais simplement me contenter de donner les droits à mon repo à Clever Cloud
+### Déploiements depuis GitHub (ou GitLab)
+
+Mais le plus simple ici, c'est d'utiliser une fonctionnalité de Clever qui existe depuis "toujours" mais dont j'ignorais l'existance : les déploiements via Github.
+
+Si vous voulez utiliser cette fonctionnalité, il faudra par contre autoriser Clever Cloud à lister vos dépôts préalablement (ce qui peut être un problème pour vous), et vous ne pourrez plus pousser des commits avec `clever deploy` ou `git push` sur le git remote de clever (vous prendrez une erreur 401).
 
 > Clever Cloud provides a GitHub integration to deploy any repository hosted on GitHub to Clever Cloud
 
-Et ça, c'est grâce au `--github` de tout à l'heure ! Donc en fait, il n'y a rien à faire... le rebuild sera triggé dès que je pousserai un nouveau commit :)
+On configure ça grâce au `--github` de tout à l'heure ! 
+
+A partir du moment où c'est fait, il n'y a rien à faire... le rebuild sera déclenché dès que je pousserai un nouveau commit sur ma branche Github :)
 
 ```
 commit 788465fb980c09e597872a3b510ac44fdaa27d48 (HEAD -> main, origin/main, origin/HEAD)
@@ -260,13 +272,11 @@ Date:   Fri Jul 4 16:31:11 2025 +0200
 
 ![](/2025/07/test-commit.png)
 
-Note : il faudra autoriser Clever Cloud à lister vos dépôts préalablement.
-
 ![](/2025/07/link.png)
 
 ![](/2025/07/authorize.png)
 
-Et on peut spécifier quelle branche on veut dans les paramètres de l'application :
+Note : on peut spécifier quelle branche on veut envoyer en prod dans les paramètres de l'application :
 
 ![](/2025/07/github-main.png)
 
