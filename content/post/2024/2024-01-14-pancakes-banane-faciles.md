@@ -21,8 +21,6 @@ tags:
 
 ---
 
-# Pancakes faciles banane sans beurre ni lait
-
 ## Une recette sur le blog ?
 
 C'est dimanche, on pose le clavier. On évite les dramas sur LinkedIn et X (ah non, ça, c'est raté).
@@ -84,13 +82,11 @@ Protip: il faut les retourner quand des petits trous se forment sur le dessus (b
 
 Dans la photo ci-dessus, on devine les bulles, qui font devenir des petits "trous" dans notre pancake. Là, il est encore trop tôt pour les retourner.
 
-## Astuces de conservation et réchauffage
+## Astuces et conclusion
 
 Les pancakes se conservent très bien ! Vous pouvez les garder au réfrigérateur pendant 2-3 jours dans un récipient hermétique ou un film alimentaire. Pour les réchauffer, passez-les 30 secondes au micro-ondes ou même directement dans le grille-pain. Ils resteront relativement moelleux.
 
 Ils se congèlent aussi parfaitement : placez du papier sulfurisé entre chaque pancake et conservez-les dans un sac de congélation jusqu'à 3 mois.
-
-## Le mot de la fin
 
 Avec les quantités que je vous ai données, vous devriez pouvoir faire entre 12 et 15 pancakes, selon la taille que vous leur donnerez.
 
