@@ -27,7 +27,7 @@ C'est dimanche, on pose le clavier. On évite les dramas sur LinkedIn et X (ah n
 
 Et si on faisait un peu de cuisine plutôt ? Des pancakes à la banane 🥞🍌, par exemple ?
 
-Ce n'est pas la première fois que je poste une recette sur le blog. Si vous l'avez loupée, je vous conseille d'aller voir celle que [j'avais postée en 2022 : le Chao Mian](/2022/09/24/chow-mein-facile), qui est vraiment super bon et relativement simple à faire.
+Ce n'est pas la première fois que je poste une recette sur le blog. Si vous l'avez loupée, je vous conseille d'aller voir celle que [j'avais postée en 2022 : le Chao Mian](/2022/09/24/chow-mein-facile), qui est vraiment super bon et relativement simple à faire. J'ai aussi posté depuis ma [recette de la galette frangipane](/2025/01/19/galette-rois-frangipane-trop-facile).
 
 Et ici, elle est réellement ENCORE plus simple, si bien que je n'hésite pas à en faire à l'arrache quand on n'a rien de prévu le dimanche matin ou pour le goûter, pourvu qu'on ait deux bananes un peu trop mûres (ce qui nous arrive souvent).
 
