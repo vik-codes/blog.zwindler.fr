@@ -86,7 +86,7 @@ Dans une autre catégorie, certaines sociétés de conseil éditent un blog avec
 
 _Note : pour un souci de transparence, je tiens à vous informer que je n’ai aucun intérêt à mettre en avant ces deux entreprises avec lesquelles je n’ai eu aucun contact._
 
-Dans les ressources que je consulte TRÈS régulièrement, il y a le Twitter @learnk8s (avec [le blog qui va avec](https://learnk8s.io/blog)) dans lequel je trouve souvent des tips and tricks intéressantes ainsi qu’une veille technique de qualité sur Kubernetes.
+Dans les ressources que je consulte TRÈS régulièrement, il y a le Twitter @learnk8s (avec [le blog qui va avec](https://learnkube.com/blog)) dans lequel je trouve souvent des tips and tricks intéressantes ainsi qu’une veille technique de qualité sur Kubernetes.
 
 ![](/2020/05/learnk8s.png) 
 
